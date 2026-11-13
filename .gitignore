@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js / build output
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets — never commit
+.env
+.env*.local
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# test / coverage
+coverage/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
