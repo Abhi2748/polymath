@@ -1,0 +1,382 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "lit04",
+ "title": "How a poem works",
+ "question": "How do sound, image and metaphor make meaning?",
+ "est_minutes": 15,
+ "objectives": [
+  "Hear and mark the beat of a line of iambic pentameter",
+  "Pick out the images and metaphors in a short poem and say what each carries",
+  "Explain why a summary of a poem is not the same as the poem"
+ ],
+ "key_terms": [
+  {
+   "term": "Metre",
+   "definition": "A regular pattern of stressed and unstressed syllables in a line of verse."
+  },
+  {
+   "term": "Iambic pentameter",
+   "definition": "A line of five iambs: ten syllables, alternating weak and strong."
+  },
+  {
+   "term": "Image",
+   "definition": "Words that put something before the senses: a thing you can see, hear or touch."
+  },
+  {
+   "term": "Metaphor",
+   "definition": "Speaking of one thing as if it were another, without like or as."
+  },
+  {
+   "term": "Sonnet",
+   "definition": "A poem of fourteen lines. Shakespeare's are three quatrains and a couplet."
+  }
+ ],
+ "when": {
+  "label": "1609",
+  "start_year": 1609
+ },
+ "guess": {
+  "prompt": "Say this line aloud: \"That time of year thou mayst in me behold\". How many strong beats does it have?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Three"
+   },
+   {
+    "id": "b",
+    "text": "Four"
+   },
+   {
+    "id": "c",
+    "text": "Five"
+   },
+   {
+    "id": "d",
+    "text": "Six"
+   }
+  ],
+  "answer_id": "c",
+  "reveal": "Five: that TIME of YEAR thou MAYST in ME beHOLD. Ten syllables, alternating weak and strong. The pattern is called iambic pentameter."
+ },
+ "hook": "This poem is about growing old, and the word old never appears in it. Everything is done with a branch, a sunset and a fire.",
+ "excerpt": {
+  "work": "Sonnet 73",
+  "author": "William Shakespeare",
+  "year": 1609,
+  "text": "That time of year thou mayst in me behold\nWhen yellow leaves, or none, or few, do hang\nUpon those boughs which shake against the cold,\nBare ruined choirs, where late the sweet birds sang.\nIn me thou see'st the twilight of such day\nAs after sunset fadeth in the west;\nWhich by and by black night doth take away,\nDeath's second self, that seals up all in rest.\nIn me thou see'st the glowing of such fire,\nThat on the ashes of his youth doth lie,\nAs the death-bed whereon it must expire,\nConsumed with that which it was nourished by.\nThis thou perceiv'st, which makes thy love more strong,\nTo love that well which thou must leave ere long.",
+  "rights": "public_domain",
+  "source_url": "https://www.folger.edu/explore/shakespeares-works/shakespeares-sonnets/read/73",
+  "note": "Read it aloud once before you go on. Thou and thy mean you and your; mayst means may; ere means before."
+ },
+ "explanation": {
+  "body_md": "A poem makes meaning with three tools at once.\n\n**Sound.** The lines have a pulse: weak, strong, weak, strong. One weak-strong pair is an **iamb**, and five in a line make **iambic pentameter**. When the pulse bends, you feel it. \"Bare ruined choirs\" piles strong syllables together and slows you down, in a line about emptiness.\n\n**Image.** The poem shows you things: yellow leaves, the light after sunset, a fire glowing on ashes. You are not told that age is cold. You are shown a branch shaking in the wind.\n\n**Metaphor.** The speaker says that in him you can see autumn, then twilight, then a dying fire. He speaks of himself as each of them. Each comparison brings its own meaning: autumn remembers summer, and the fire is being smothered by the ashes of what once fed it.\n\nNow look at the **shape**. Three groups of four lines, one metaphor each: a year, a day, a fire. Time shrinks. Then the last two lines turn from \"me\" to \"thy love\": seeing this makes your love stronger.\n\nNone of that survives a summary.",
+  "analogy": "A joke explained is no longer funny, although the explanation contains all the information. The timing was part of the joke. In a poem the sound, the pictures and the comparisons are the timing.",
+  "takeaways": [
+   "Sound sets a pulse, and the places where it bends carry feeling.",
+   "Images show; metaphors speak of one thing as another and carry extra meaning across.",
+   "A poem's meaning includes what it does as you read, so a summary cannot replace it."
+  ],
+  "visual": {
+   "kind": "svg",
+   "alt": "Three bars of shrinking width labelled a year, a day and a fire, followed by a filled bar labelled the turn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"14\" width=\"230\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"32\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">a year</text><text x=\"254\" y=\"32\" font-size=\"10\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">lines 1 to 4</text><rect x=\"14\" y=\"50\" width=\"150\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"68\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">a day</text><text x=\"174\" y=\"68\" font-size=\"10\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">lines 5 to 8</text><rect x=\"14\" y=\"86\" width=\"70\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"104\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">a fire</text><text x=\"94\" y=\"104\" font-size=\"10\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">lines 9 to 12</text><rect x=\"14\" y=\"122\" width=\"292\" height=\"26\" rx=\"5\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><text x=\"160\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"#fff\" font-weight=\"700\">the turn: so love more strongly</text><text x=\"160\" y=\"170\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">time shrinks, then the couplet turns to you</text></svg>"
+  }
+ },
+ "worked_example": {
+  "body_md": "Scan two lines: mark each strong syllable in capitals and count.\n\n**Line 1.** that TIME | of YEAR | thou MAYST | in ME | be-HOLD\n\nFive pairs, each weak then strong. Ten syllables. This is the regular pattern, and it sounds like calm speech.\n\n**Line 4.** BARE RU- | ined CHOIRS | where LATE | the SWEET | BIRDS SANG\n\nStill ten syllables, but the stresses have moved. The line opens on a strong syllable instead of a weak one, and it closes with three strong syllables in a row. You cannot say it quickly.\n\nNow ask why here. Line 4 is where the bare branches become ruined choirs and the birdsong is over. The poem slows down at the moment of greatest loss, and the weight falls on \"sweet birds sang\", the thing that is gone.\n\nPeople mark stress slightly differently, and that is normal. What matters is hearing where a line keeps the pattern and where it pushes against it."
+ },
+ "misconception": {
+  "claim": "A poem is a message in decoration. Find the hidden meaning, put it in plain words, and you have understood it.",
+  "correction_md": "Try it. \"I am getting old, and you love me more because I will not be here long.\" That is a fair summary of Sonnet 73, and nobody would remember it for four hundred years.\n\nThe summary leaves out the slowing line, the leaves that fall as you read, the three clocks running faster, and the turn at the end. Those are not decoration around the meaning. They are how the poem means. Read for what the poem does, then for what it says."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "Say the line aloud, naturally. How many strong beats do you hear?",
+   "visual": {
+    "kind": "svg",
+    "alt": "The first line of the poem, That time of year thou mayst in me behold, with the question of how many strong beats it has",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"160\" y=\"52\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">That time of year thou mayst</text><text x=\"160\" y=\"80\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">in me behold</text><text x=\"160\" y=\"126\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">say it aloud</text><text x=\"160\" y=\"160\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">how many strong beats do you hear?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "Old age without the word",
+   "body_md": "Shakespeare's Sonnet 73 is about nearing the end of life. It never says so. It shows you a branch, a sunset and a fire.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A nearly bare branch with two leaves left on it and one leaf falling",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M30 128C100 118 170 92 292 44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120 108L104 74M196 80L186 46M246 60L262 34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 74C82 64 96 64 104 74C96 84 82 84 74 74Z\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M156 46C164 36 178 36 186 46C178 56 164 56 156 46Z\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M232 134C240 124 254 124 262 134C254 144 240 144 232 134Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"170\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the poem never says: I am old</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "idea",
+   "title": "Sound: the pulse",
+   "body_md": "Weak then strong is an **iamb**. Five in a line is **iambic pentameter**. Where the pulse bends, as in \"Bare ruined choirs\", the line slows and you feel the weight.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Five pairs of a small circle and a large filled circle, standing for five iambs, an unstressed then a stressed syllable",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"160\" y=\"28\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">da-DUM  da-DUM  da-DUM  da-DUM  da-DUM</text><circle cx=\"36\" cy=\"60\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"60\" cy=\"60\" r=\"11\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M24 84H76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"50\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">iamb</text><circle cx=\"96\" cy=\"60\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"120\" cy=\"60\" r=\"11\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M84 84H136\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"110\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">iamb</text><circle cx=\"156\" cy=\"60\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"180\" cy=\"60\" r=\"11\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M144 84H196\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"170\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">iamb</text><circle cx=\"216\" cy=\"60\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"240\" cy=\"60\" r=\"11\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M204 84H256\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"230\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">iamb</text><circle cx=\"276\" cy=\"60\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"300\" cy=\"60\" r=\"11\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M264 84H316\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"290\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">iamb</text><text x=\"160\" y=\"136\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">five iambs to a line</text><text x=\"160\" y=\"158\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">= iambic pentameter</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "Image: show, do not tell",
+   "body_md": "Yellow leaves. The last light in the west. Embers on ash. An image puts a thing before your senses and lets you do the feeling yourself.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three small pictures in a row: a leaf, a sun half below the horizon, and a low flame",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M45 62C53 52 67 52 75 62C67 72 53 72 45 62Z\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 84H90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M134 80A26 26 0 0 1 186 80\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M118 80H202\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M260 32C272 48 278 56 272 68C267 76 253 76 248 68C244 58 252 48 260 32Z\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M232 82H288\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"60\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">yellow leaves</text><text x=\"160\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">twilight</text><text x=\"260\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">glowing embers</text><text x=\"160\" y=\"148\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">three pictures you can see and feel</text><text x=\"160\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">none of them is an idea</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "idea",
+   "title": "Metaphor: one thing as another",
+   "body_md": "\"In me\" you see autumn. The speaker is spoken of as a season, and the season's cold, bareness and remembered song come across with it.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two boxes joined by the word is. The speaker, which is what is meant, and late autumn, which is what is said",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"34\" width=\"116\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"72\" y=\"58\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">the speaker</text><text x=\"72\" y=\"76\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">what is meant</text><text x=\"160\" y=\"70\" font-size=\"18\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">is</text><rect x=\"190\" y=\"34\" width=\"116\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"248\" y=\"58\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">late autumn</text><text x=\"248\" y=\"76\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">what is said</text><text x=\"160\" y=\"124\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">carried across: cold, bareness,</text><text x=\"160\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">song that has stopped</text><text x=\"160\" y=\"168\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">a metaphor says one thing is another</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "picture",
+   "title": "The shape closes in",
+   "body_md": "Three metaphors, four lines each: a year, a day, a fire. Time shrinks. Then two lines turn to the listener, whose love grows stronger.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three bars of shrinking width labelled a year, a day and a fire, followed by a filled bar labelled the turn",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"14\" width=\"230\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"32\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">a year</text><text x=\"254\" y=\"32\" font-size=\"10\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">lines 1 to 4</text><rect x=\"14\" y=\"50\" width=\"150\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"68\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">a day</text><text x=\"174\" y=\"68\" font-size=\"10\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">lines 5 to 8</text><rect x=\"14\" y=\"86\" width=\"70\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"104\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">a fire</text><text x=\"94\" y=\"104\" font-size=\"10\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">lines 9 to 12</text><rect x=\"14\" y=\"122\" width=\"292\" height=\"26\" rx=\"5\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><text x=\"160\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"#fff\" font-weight=\"700\">the turn: so love more strongly</text><text x=\"160\" y=\"170\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">time shrinks, then the couplet turns to you</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "myth",
+   "title": "The summary is not the poem",
+   "body_md": "\"I am old; love me while you can\" is accurate and lifeless. Pulse, pictures and comparisons are not wrapping. They are how the poem means.",
+   "visual": {
+    "kind": "svg",
+    "alt": "On the left a short summary in a box, crossed out. On the right a box of lines standing for the poem itself",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"26\" width=\"132\" height=\"76\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"80\" y=\"54\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">I am getting old.</text><text x=\"80\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Love me while</text><text x=\"80\" y=\"90\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">you can.</text><path d=\"M20 32L140 96\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"174\" y=\"26\" width=\"132\" height=\"76\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><path d=\"M188 44H292\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M188 58H270\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M188 72H292\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M188 86H270\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"80\" y=\"124\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the summary</text><text x=\"240\" y=\"124\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">the poem</text><text x=\"160\" y=\"162\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the summary is true. it is not the poem.</text></svg>"
+   }
+  },
+  {
+   "id": "c8",
+   "kind": "takeaway",
+   "title": "Three tools at once",
+   "body_md": "Listen for the pulse and its breaks. Look for the things shown. Ask what is spoken of as something else. Then find the turn.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three boxes, sound, image and metaphor, joined by plus signs, with an arrow down to the words meaning you feel before you explain",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"30\" width=\"84\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"56\" y=\"57\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">sound</text><text x=\"108\" y=\"58\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">+</text><rect x=\"118\" y=\"30\" width=\"84\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"57\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">image</text><text x=\"212\" y=\"58\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">+</text><rect x=\"222\" y=\"30\" width=\"84\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"264\" y=\"57\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">metaphor</text><path d=\"M160 80L160 104M160 104l-5 -7M160 104l5 -7\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"128\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">meaning you feel before you explain</text><text x=\"160\" y=\"162\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">how a thing is said is part of what is said</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "Name the three tools a poem uses to make meaning, and give one example of each from Sonnet 73.",
+   "answer": "Sound: the iambic pulse, or the slow heavy stresses of \"Bare ruined choirs\". Image: yellow leaves, twilight, glowing embers. Metaphor: the speaker spoken of as autumn, twilight or a dying fire.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "cloze",
+   "prompt": "A line of five iambs, ten syllables in all, is written in iambic ___.",
+   "answer": "pentameter",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "pentameter"
+   ]
+  },
+  {
+   "id": "r3",
+   "kind": "mcq",
+   "prompt": "The speaker of Sonnet 73 is compared to three things. Which of these is not one of them?",
+   "answer": "d",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "A tree in late autumn"
+    },
+    {
+     "id": "b",
+     "text": "Twilight after sunset"
+    },
+    {
+     "id": "c",
+     "text": "A fire burning down to ash"
+    },
+    {
+     "id": "d",
+     "text": "A river freezing over"
+    }
+   ],
+   "explanation": "The three metaphors are autumn, twilight and a dying fire, one in each group of four lines."
+  },
+  {
+   "id": "r4",
+   "kind": "compare",
+   "prompt": "What is the difference between a metaphor and a simile?",
+   "answer": "Both speak of one thing in terms of another. A simile uses like or as. A metaphor does not: it speaks of the one thing as the other.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "apply",
+   "prompt": "Mark the strong beats in the last line: \"To love that well which thou must leave ere long\".",
+   "answer": "to LOVE that WELL which THOU must LEAVE ere LONG. Five strong beats, a regular iambic pentameter line.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "explain",
+   "prompt": "How does the time-scale change across the three metaphors, and what is the effect?",
+   "answer": "A season, then a single day, then a fire's last minutes. Time shrinks, so the ending seems to come closer and closer.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r7",
+   "kind": "explain",
+   "prompt": "What do the last two lines of the sonnet do?",
+   "answer": "They turn from the speaker to the listener: seeing all this makes the listener's love stronger, because they love what they must soon lose.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "true_false",
+   "prompt": "True or false: an accurate summary carries everything a poem means.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "The sound, the images and the comparisons do part of the meaning, and a summary drops them."
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain to a friend how Sonnet 73 tells you the speaker is growing old without ever saying it. Use the words sound, image and metaphor.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Sound: names the regular pulse or a place where it slows, and links it to feeling."
+   },
+   {
+    "id": "t2",
+    "point": "Image: gives at least one concrete picture from the poem."
+   },
+   {
+    "id": "t3",
+    "point": "Metaphor: the speaker is spoken of as autumn, twilight or a dying fire."
+   },
+   {
+    "id": "t4",
+    "point": "Structure: time shrinks across the three, or the couplet turns to the listener's love."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Says the poem states directly that the speaker is old",
+   "Treats the summary as the full meaning"
+  ]
+ },
+ "challenge": {
+  "kind": "predict",
+  "prompt": "Suppose the three metaphors came in the opposite order: the dying fire first, then twilight, then autumn. Nothing else changes. Predict what the poem would lose.",
+  "model_answer": [
+   "Time would widen instead of shrinking: minutes, then hours, then months. The sense of an ending closing in would be gone.",
+   "The fire is the most final image, since it is consumed by what fed it. Placing it first spends the strongest image early and lets the tension drain away.",
+   "The couplet's \"ere long\" would follow the slowest clock, a whole season, so the turn would land with less urgency."
+  ],
+  "follow_up": "What does this tell you about whether the order of images is part of a poem's meaning?"
+ },
+ "connections": [
+  {
+   "to": "lng05",
+   "body_md": "A metaphor is a case of meaning more than you say. \"In me you see the twilight\" is literally false, and no listener is confused. You work out what is meant from context, the same skill you use when a friend says \"nice weather\" in a storm. Poetry turns that everyday ability up to full strength."
+  },
+  {
+   "to": "mus02",
+   "body_md": "Metre in a poem and metre in music are the same thing: a regular pattern of strong and weak pulses that sets up an expectation. A composer plays against the beat, and a poet plays against the iamb. In both, the feeling comes from the pattern and from the places where it is broken."
+  },
+  {
+   "to": "lit01",
+   "body_md": "Close reading means slowing down and asking why this word, here. A short poem is the best place to practise, because every choice is visible. What you did with line 4 of this sonnet is the method for a novel too, only faster."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**Why poems are strange**\n\nMost writing wants you to take the meaning and forget the words. A poem wants you to stay with the words. It is built so that how something is said becomes part of what is said. Three tools do most of the work: sound, image and metaphor. This lesson follows them through one poem, Shakespeare's Sonnet 73, first printed in 1609. On the surface it says something simple: the speaker is nearing the end of his life, and the person he addresses loves him more strongly for it.\n\n**Sound: the pulse**\n\nSay the first line aloud and you will hear a pulse of weak and strong syllables: that TIME of YEAR thou MAYST in ME beHOLD. Each weak-strong pair is called an iamb. A regular pattern of stresses is called metre, and a line of five iambs, ten syllables in all, is iambic pentameter.\n\nThe pattern matters most when it bends. In line 4, \"Bare ruined choirs\" opens with strong syllables pressed together, and the line ends on three more: \"sweet birds sang\". You have to slow down to say it. The line about emptiness is itself heavy and halting.\n\nSounds repeat too. Repeating a consonant at the start of nearby words is called alliteration. Listen to line 8: \"Death's second self, that seals up all in rest\". The run of s sounds is a hush, in a line about sleep and death. Rhyme then ties lines into groups: behold with cold, hang with sang.\n\n**Image: something to see**\n\nThe poem gives you things, not ideas. Yellow leaves, or none, or few. Boughs shaking against the cold. The last light after sunset. A fire glowing on its own ashes. Language that speaks to the senses like this is called imagery. An image makes you do the feeling yourself. Nobody tells you that age is cold; you are shown a branch in the wind.\n\nNotice the stumble in \"yellow leaves, or none, or few\". The speaker corrects himself as he looks, and the leaves seem to fall while you read.\n\n**Metaphor: one thing as another**\n\nA metaphor speaks of one thing as if it were another. A simile does the same with \"like\" or \"as\". Sonnet 73 is three metaphors in a row: in me you see late autumn, in me you see twilight, in me you see a dying fire. The speaker never says \"I am old\". He does not need to.\n\nA metaphor carries more than it states. Autumn brings cold and bareness, but also the memory of summer, because the boughs are \"choirs, where late the sweet birds sang\". The fire lies on \"the ashes of his youth\", so that what once fed it is now what smothers it. Each comparison has an argument folded inside it.\n\n**Shape: fourteen lines that turn**\n\nA sonnet is a poem of fourteen lines. This one is built from three quatrains, groups of four lines, and a closing couplet, a pair of rhyming lines. Each quatrain holds one metaphor.\n\nLook at what happens to time. The first quatrain is a season, which lasts months. The second is the end of a day, which lasts hours. The third is a fire burning out, which lasts minutes. The poem closes in.\n\nThen the couplet turns. For twelve lines the speaker has said \"in me\". Now he speaks of \"thy love\": you see all this, and it makes your love stronger, because you love what you must soon lose. The poem moves from a man looking at his own ending to two people, and from fading to strength.\n\n**Why a summary is not the poem**\n\nYou could state the content in a sentence: I am getting old, and you love me more because time is short. The sentence is accurate, and everything is missing from it. It has no slowing line, no falling leaves, no shrinking of time, no turn. The meaning of the poem includes what it does to you as you read, and that is made by the three tools working together.\n\n**How to read any poem**\n\nRead it aloud, twice. Find the pulse, and the places where it breaks. List the things you can see, hear or touch. Ask what is being spoken of as something else, and what that comparison brings with it. Then look for the turn: the place where the poem changes direction. Only after that, ask what it means.",
+  "est_minutes": 8
+ },
+ "go_further": [
+  {
+   "kind": "short",
+   "title": "Sonnet 73, with notes and a synopsis",
+   "by": "Folger Shakespeare Library",
+   "url": "https://www.folger.edu/explore/shakespeares-works/shakespeares-sonnets/read/73",
+   "note": "The full text in a reliable edition, with a one-line summary and notes on difficult words.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "short",
+   "title": "Poetry glossary",
+   "by": "Academy of American Poets",
+   "url": "https://poets.org/lesson-plan/poetry-glossary",
+   "note": "Short definitions of the terms used here, and many more.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Folger Shakespeare Library: Shakespeare's Sonnets, Sonnet 73",
+   "url": "https://www.folger.edu/explore/shakespeares-works/shakespeares-sonnets/read/73",
+   "tier": "institution",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The text of the sonnet",
+    "The synopsis: the speaker nears the end of life and the beloved's love grows stronger"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Academy of American Poets: Poetry Glossary",
+   "url": "https://poets.org/lesson-plan/poetry-glossary",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Definitions of iamb, iambic pentameter and metre",
+    "Definitions of sonnet, quatrain and couplet",
+    "Definitions of metaphor, simile and imagery",
+    "Definition of alliteration"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "The poem is quoted in full; it was first printed in 1609 and is in the public domain. The terms follow the glossary. The close reading (the scansion of lines 1 and 4, the s sounds in line 8, the shrinking time-scale, the turn in the couplet) is the writer's own reading of the text. These are common observations about this sonnet, but no critical source was opened for them, and scansion varies between readers. The joke analogy and the reordering challenge are the writer's own."
+ }
+}

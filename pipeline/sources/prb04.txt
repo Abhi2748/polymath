@@ -1,0 +1,4 @@
+# prb04 Conditional probability and Bayes: the sources the hand-written lesson used
+# one address per line, then its tier
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4549558 research
+https://pmc.ncbi.nlm.nih.gov/articles/PMC200816 research

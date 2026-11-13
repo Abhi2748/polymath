@@ -1,0 +1,415 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "phi12",
+ "title": "Free will",
+ "question": "If causes fix everything, are you free?",
+ "est_minutes": 14,
+ "objectives": [
+  "State the free will problem and why it bears on blame and praise",
+  "Describe hard determinism, libertarianism and compatibilism, with the best argument for each",
+  "Tell determinism apart from fatalism"
+ ],
+ "key_terms": [
+  {
+   "term": "Determinism",
+   "definition": "The view that the past and the laws of nature together allow only one possible future."
+  },
+  {
+   "term": "Compatibilism",
+   "definition": "The view that free will and determinism can both be true."
+  },
+  {
+   "term": "Libertarianism (about free will)",
+   "definition": "The view that we have free will and that determinism is therefore false. It is unrelated to the political position of the same name."
+  },
+  {
+   "term": "Hard determinism",
+   "definition": "The view that determinism is true and that nobody has free will."
+  }
+ ],
+ "when": null,
+ "guess": {
+  "prompt": "In 2020, 1,758 philosophers were asked about free will. Which answer got the most support?",
+  "options": [
+   {
+    "id": "a",
+    "text": "There is no free will"
+   },
+   {
+    "id": "b",
+    "text": "We have free will, so the universe cannot be fully determined"
+   },
+   {
+    "id": "c",
+    "text": "We can have free will even if everything is determined"
+   },
+   {
+    "id": "d",
+    "text": "The three views were about equally popular"
+   }
+  ],
+  "answer_id": "c",
+  "reveal": "About 59 per cent chose the third answer, which is called compatibilism. About 19 per cent chose the second and 11 per cent the first. A majority is not a proof, and this lesson gives you the arguments on each side."
+ },
+ "hook": "Every choice you make has causes: your genes, your upbringing, what you ate this morning. Those causes had causes too, going back before you were born. So in what sense was the choice yours?",
+ "explanation": {
+  "body_md": "**Determinism** is the view that the past and the laws of nature together allow only one possible future. If it is true, everything you will ever do was settled long ago.\n\nThat seems to threaten freedom in two ways. First, we think a free person could have done otherwise, and under determinism nobody could. Second, we think a free person is the true source of what they do, and under determinism the sources lie before their birth.\n\nIt matters because of responsibility. It seems unfair to blame or praise someone for what they did not control.\n\nPhilosophers give three main answers.\n\n| Position | Is determinism true? | Do we have free will? |\n| --- | --- | --- |\n| Hard determinism | Yes | No |\n| Libertarianism | No | Yes |\n| Compatibilism | It may be | Yes |\n\nThe first two agree that freedom and determinism cannot both be true, and disagree about which to give up. Compatibilists deny the clash. For them, being free means acting from your own wants and reasons without being forced, and that is possible in a determined world.\n\nNone of these has won. The aim of this lesson is that you can state all three fairly.",
+  "analogy": "Two pictures compete. In one you are a traveller at a fork, with both roads truly open. In the other you are a river: the water goes where the land sends it, and yet the flowing is the river's own. The debate is over which picture a free person needs.",
+  "takeaways": [
+   "Determinism says only one future is possible given the past and the laws of nature.",
+   "Hard determinists and libertarians agree that this would rule out freedom. Compatibilists disagree.",
+   "The question is open. Knowing the best argument on each side is the skill."
+  ],
+  "visual": {
+   "kind": "svg",
+   "alt": "Two pictures side by side: an open future that branches three ways, and determinism, where a single line continues and the branches are only dotted",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"80\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">open future</text><path d=\"M20 100h40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 100C80 100 90 60 140 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 100h80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 100C80 100 90 140 140 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"60\" cy=\"100\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M160 20V160\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\"/><text x=\"240\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">determinism</text><path d=\"M180 100h120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"220\" cy=\"100\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M220 100C240 100 250 60 300 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 5\" opacity=\"0.45\"/><path d=\"M220 100C240 100 250 140 300 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 5\" opacity=\"0.45\"/><text x=\"160\" y=\"174\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">under determinism only one path was ever possible</text></svg>"
+  }
+ },
+ "positions": [
+  {
+   "name": "Hard determinism",
+   "claim": "Determinism is true, so nobody has free will.",
+   "best_argument": "Nobody has power over the past or over the laws of nature. If those fix a single future, nobody has power over the future either.",
+   "main_objection": "The argument assumes that freedom requires being able to do otherwise. Compatibilists reject that assumption, and physics has not shown that determinism is true."
+  },
+  {
+   "name": "Libertarianism",
+   "claim": "We have free will, so determinism is false.",
+   "best_argument": "Deliberating feels like choosing between options that are really open, and holding people responsible seems to require that they were.",
+   "main_objection": "If a choice is not settled by your reasons and character, it looks partly like luck, and luck is not control."
+  },
+  {
+   "name": "Compatibilism",
+   "claim": "Free will and determinism can both be true.",
+   "best_argument": "Frankfurt's case: Jones decides by himself to act, while Black stood ready to force him if he wavered. Jones could not have done otherwise and still seems responsible, so freedom does not need open alternatives.",
+   "main_objection": "Manipulation: if a brainwasher installs your wants and your approval of them, you pass the compatibilist test and still do not seem free. Critics say determinism is the same thing done slowly."
+  }
+ ],
+ "worked_example": {
+  "body_md": "Three people each take a loaf of bread without paying.\n\n- **Asha** does it with a gun at her back.\n- **Ben** has a compulsion to steal that he hates and has tried to stop.\n- **Cal** wants the bread, thinks about it, and is content to be someone who takes it.\n\nSuppose determinism is true and all three acts were fixed by earlier causes.\n\nA compatibilist says the three cases still differ, and the difference is what the word free is for. Asha was forced. Ben was moved by a want he rejects. Only Cal acted from wants he endorses, so only Cal acted freely.\n\nA hard determinist agrees the cases feel different and denies that the difference goes deep enough. Cal's wants, and his contentment with them, came from causes he never chose.\n\nA libertarian says Cal is responsible only if, at the moment of choice, he really could have walked away.\n\nNotice that all three agree about Asha. The dispute is over Cal."
+ },
+ "misconception": {
+  "claim": "If determinism is true, nothing I do matters, so there is no point in trying.",
+  "correction_md": "That is fatalism, a different idea. Fatalism says the outcome will happen whatever you do. Determinism says the outcome happens because of what comes before it, and what you do is part of what comes before it. Whether you revise is one of the causes of whether you pass. Under determinism your effort is a link in the chain, not a spectator of it.\n\nA second mistake is to think that quantum randomness rescues free will. A choice that happens by chance is no more under your control than one that was fixed in advance."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "In 2020, 1,758 philosophers were asked about free will. Which answer do you think got the most support?",
+   "visual": {
+    "kind": "svg",
+    "alt": "A road that splits in two, with a question mark above the fork",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M40 150C100 150 130 100 160 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 90C200 78 230 50 290 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 90C205 100 240 130 290 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"160\" cy=\"90\" r=\"9\" fill=\"var(--accent, #3b82f6)\"/><text x=\"160\" y=\"60\" font-size=\"44\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">?</text><text x=\"160\" y=\"172\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">which answer do most philosophers pick?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "Whose choice was it?",
+   "body_md": "Every choice has causes: genes, upbringing, this morning's breakfast. Those causes had causes too, running back before you were born.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A chain of causes, genes, upbringing and this morning, each leading to the next and ending at your choice",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M4 80h10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"3 4\"/><circle cx=\"44\" cy=\"80\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">genes</text><path d=\"M74 80L90 80M90 80l-7 -5M90 80l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"122\" cy=\"80\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"122\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">upbringing</text><path d=\"M152 80L168 80M168 80l-7 -5M168 80l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"200\" cy=\"80\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"200\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">today</text><path d=\"M230 80L246 80M246 80l-7 -5M246 80l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"278\" cy=\"80\" r=\"26\" fill=\"var(--accent, #3b82f6)\"/><text x=\"278\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">your choice</text><text x=\"160\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">every cause had a cause</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "idea",
+   "title": "The threat",
+   "body_md": "**Determinism** says the past and the laws of nature allow only one future. If so, you could never have done otherwise, and blame starts to look unfair.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two pictures side by side: an open future that branches three ways, and determinism, where a single line continues and the branches are only dotted",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"80\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">open future</text><path d=\"M20 100h40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 100C80 100 90 60 140 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 100h80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 100C80 100 90 140 140 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"60\" cy=\"100\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M160 20V160\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\"/><text x=\"240\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">determinism</text><path d=\"M180 100h120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"220\" cy=\"100\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M220 100C240 100 250 60 300 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 5\" opacity=\"0.45\"/><path d=\"M220 100C240 100 250 140 300 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 5\" opacity=\"0.45\"/><text x=\"160\" y=\"174\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">under determinism only one path was ever possible</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "Three answers",
+   "body_md": "Hard determinists give up free will. Libertarians give up determinism. Compatibilists say the two never clashed: freedom is acting from your own reasons, unforced.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three boxes: hard determinism says all is caused so there is no free will, libertarianism says we are free so not all is fixed, compatibilism says all can be caused and we can still be free",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"10\" y=\"18\" width=\"300\" height=\"36\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"22\" y=\"41\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">Hard determinism</text><text x=\"160\" y=\"41\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">caused, so not free</text><rect x=\"10\" y=\"62\" width=\"300\" height=\"36\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"22\" y=\"85\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">Libertarianism</text><text x=\"160\" y=\"85\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">free, so not all caused</text><rect x=\"10\" y=\"106\" width=\"300\" height=\"36\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"22\" y=\"129\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">Compatibilism</text><text x=\"160\" y=\"129\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">caused and still free</text><text x=\"160\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">three answers to one problem</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "idea",
+   "title": "Frankfurt's case",
+   "body_md": "Jones decides by himself to act. Black would have forced him had he wavered, but never needed to. Jones could not have done otherwise. Is he still responsible?",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two stick figures: Jones, who decides by himself, and Black, holding a device he never needs to use",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"90\" cy=\"62\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M90 76V118M72 92H108M90 118l-14 26M90 118l14 26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"80\" y=\"164\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Jones decides alone</text><circle cx=\"230\" cy=\"62\" r=\"14\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><path d=\"M230 76V118M212 92H248M230 118l-14 26M230 118l14 26\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"252\" y=\"84\" width=\"26\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\"/><circle cx=\"265\" cy=\"92\" r=\"3\" fill=\"var(--accent, #3b82f6)\"/><text x=\"238\" y=\"164\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"400\">Black never steps in</text><path d=\"M108 70H200\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 5\" opacity=\"0.6\"/><text x=\"160\" y=\"28\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">could not have done otherwise</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "myth",
+   "title": "Determinism is not fatalism",
+   "body_md": "\"Nothing I do matters\" is fatalism. Under determinism your effort is one of the causes of what happens next, not a bystander to it.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three linked wheels labelled causes, your effort and what happens, with your effort in the middle",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"70\" cy=\"80\" r=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"70\" cy=\"80\" r=\"5\" fill=\"currentColor\"/><text x=\"70\" y=\"130\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">causes</text><circle cx=\"150\" cy=\"96\" r=\"34\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\"/><circle cx=\"150\" cy=\"96\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><text x=\"150\" y=\"150\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">your effort</text><circle cx=\"236\" cy=\"76\" r=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"236\" cy=\"76\" r=\"5\" fill=\"currentColor\"/><text x=\"236\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">what happens</text><path d=\"M104 86L114 86M114 86l-7 -5M114 86l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M187 86L203 86M203 86l-7 -5M203 86l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">your effort is one of the causes</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "takeaway",
+   "title": "An open question",
+   "body_md": "Most philosophers surveyed lean compatibilist, but a majority is not a proof. The skill is stating each side so well that its defenders would agree.",
+   "visual": {
+    "kind": "chart",
+    "alt": "Bar chart of a 2020 survey of philosophers: 59 per cent accept or lean towards compatibilism, 19 per cent libertarianism and 11 per cent no free will",
+    "chart": {
+     "type": "bar",
+     "x_label": "View",
+     "y_label": "Philosophers (%)",
+     "series": [
+      {
+       "name": "2020 survey of 1,758 philosophers",
+       "points": [
+        [
+         "Compatibilism",
+         59.2
+        ],
+        [
+         "Libertarianism",
+         18.8
+        ],
+        [
+         "No free will",
+         11.2
+        ]
+       ]
+      }
+     ]
+    },
+    "caption": "A majority view, not a proof. Figures from the 2020 PhilPapers survey."
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "State the free will problem in one or two sentences.",
+   "answer": "If every event, including my choices, is fixed by earlier causes and the laws of nature, it is unclear how any choice is free or how anyone deserves blame or praise.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "mcq",
+   "prompt": "Which position says free will and determinism can both be true?",
+   "answer": "c",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "Hard determinism"
+    },
+    {
+     "id": "b",
+     "text": "Libertarianism"
+    },
+    {
+     "id": "c",
+     "text": "Compatibilism"
+    },
+    {
+     "id": "d",
+     "text": "Fatalism"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "kind": "cloze",
+   "prompt": "The view that the past and the laws of nature allow only one possible future is called ___.",
+   "answer": "determinism",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "determinism",
+    "causal determinism"
+   ]
+  },
+  {
+   "id": "r4",
+   "kind": "explain",
+   "prompt": "Why does adding randomness not obviously rescue free will?",
+   "answer": "A choice that happens by chance is not under your control, any more than one fixed by earlier causes.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "apply",
+   "prompt": "A sleepwalker breaks a vase. A burglar breaks the same vase. Both acts had causes. How would a compatibilist explain why we blame only the burglar?",
+   "answer": "The burglar acted from his own wants and reasons without being forced. The sleepwalker's movements did not come from his wants or reasons at all.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "true_false",
+   "prompt": "True or false: determinism says your efforts make no difference to what happens.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "That is fatalism. Under determinism your efforts are among the causes of what happens."
+  },
+  {
+   "id": "r7",
+   "kind": "compare",
+   "prompt": "What do hard determinists and libertarians agree on, and where do they split?",
+   "answer": "Both hold that free will and determinism cannot both be true. Hard determinists keep determinism and give up free will. Libertarians keep free will and give up determinism.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "explain",
+   "prompt": "What is Frankfurt's case of Jones and Black meant to show?",
+   "answer": "That a person can be responsible for an act even though they could not have done otherwise, so freedom may not require open alternatives.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain the free will problem and the three main answers to a friend. Do not say which one you believe until the end.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Says what determinism is and why it seems to threaten freedom or responsibility."
+   },
+   {
+    "id": "t2",
+    "point": "Names and correctly describes hard determinism, libertarianism and compatibilism."
+   },
+   {
+    "id": "t3",
+    "point": "Gives a real argument for at least one position the speaker does not hold."
+   },
+   {
+    "id": "t4",
+    "point": "Keeps determinism and fatalism apart."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Says that science or philosophy has settled the question",
+   "Describes libertarianism about free will as the political view"
+  ]
+ },
+ "challenge": {
+  "kind": "argue_other_side",
+  "prompt": "Pick the position you find least convincing. Write the strongest three-sentence case for it that you can.",
+  "model_answer": [
+   "It uses that side's best argument, not its weakest.",
+   "It answers the standard objection instead of ignoring it.",
+   "A defender of the view would accept it as a fair statement."
+  ],
+  "follow_up": "Did writing it shift your confidence in your own view at all?"
+ },
+ "connections": [
+  {
+   "to": "pol08",
+   "body_md": "Criminal courts treat people as responsible for what they chose, and excuse those who were forced or who could not understand what they were doing. Those excuses track the compatibilist's distinctions closely. A hard determinist would say the whole system needs a different justification, such as protecting others."
+  },
+  {
+   "to": "phy14",
+   "body_md": "Quantum physics is the main reason anyone doubts determinism. But there is no agreement on how to interpret it, and no good evidence either way on whether the world is determined. Even if it is not, randomness alone does not give you control."
+  },
+  {
+   "to": "phi07",
+   "body_md": "Hume, from the previous lesson, was an early compatibilist. He held that you act freely when you do what you want, and that this is all the freedom responsibility needs."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**Why the problem will not go away**\n\nTwo things both seem true. You choose: you weighed staying in against going out, and you went out. And everything has causes: your mood, your habits, your brain, and behind those your genes and your history. Determinism is the claim that the past and the laws of nature together leave only one possible future. If that is right, your going out was settled before you were born. The puzzle is what is left of \"you chose\".\n\nIt matters because of blame and praise. We do not blame someone who was pushed. It seems unfair to hold a person responsible for what they did not control. If nobody controls anything, the whole practice looks unfair.\n\n**The case against freedom**\n\nThe sharpest argument is short. Nobody has power over the past. Nobody has power over the laws of nature. If determinism is true, the past and the laws together fix exactly one future. So nobody has power over the future either. Philosophers call this the Consequence Argument.\n\nA second argument asks where your action comes from. You act freely only if you are its ultimate source. But the causes of your action run back to before you existed. So you are never the ultimate source.\n\n**The compatibilist reply**\n\nCompatibilists say these arguments ask for the wrong kind of freedom. Thomas Hobbes defined freedom as acting without being stopped by something outside you. David Hume, whom you met in the last lesson, took a similar line: you were free if you would have done otherwise had you wanted to.\n\nThat early version ran into trouble. Suppose a phobia makes it impossible for you to want something. It is still true that if you had wanted it you would have done it, yet you were plainly not free to. So later compatibilists looked for something better.\n\nIn 1969 Harry Frankfurt offered a famous case. Jones decides, entirely by himself, to shoot Smith. Unknown to him, a man called Black was ready to force him to do it if he wavered. Jones never wavers, so Black does nothing. Jones could not have done otherwise, yet he seems fully responsible. If so, responsibility does not need open alternatives.\n\nFrankfurt's own account is about levels of wanting. You have wants, and you have wants about your wants. An unwilling addict wants the drug and wishes he did not. You act freely when the want that moves you is one you endorse. Critics reply with manipulation: if a brainwasher installs both the want and the endorsement, the test is passed and the person is still not free.\n\nP. F. Strawson took another road. He pointed to the feelings we have toward one another, such as resentment, gratitude and guilt. Holding people responsible is built into those feelings, he argued, and we could not give them up even if a theory told us to.\n\n**The libertarian's difficulty**\n\nLibertarians, in this sense of the word, say we are free and so determinism must be false. Their problem is to say how a gap in causation helps. If your choice is not settled by your reasons and character, it seems to be partly a matter of luck, and luck is not control.\n\nPhysics does not settle it. Quantum mechanics is well confirmed, but there is no agreement on how to interpret it, and no good evidence that determinism is true. Nor is it known whether the brain contains the kind of indeterminism a libertarian needs.\n\n**Where things stand**\n\nIn a 2020 survey, 1,758 philosophers answered the question. About 59 per cent accepted or leaned towards compatibilism, 19 per cent towards libertarianism and 11 per cent towards no free will. That is a count of opinions among people who have studied the arguments. It is not a proof, and majorities in philosophy have been wrong before.\n\nThe useful skill here is not picking the winner. It is being able to state each position so well that its defenders would agree with your summary, and to say exactly where you think it fails.",
+  "est_minutes": 7
+ },
+ "go_further": [
+  {
+   "kind": "long",
+   "title": "Compatibilism",
+   "by": "Stanford Encyclopedia of Philosophy",
+   "url": "https://plato.stanford.edu/archives/spr2005/entries/compatibilism/",
+   "note": "A thorough reference entry on the problem and the compatibilist answers. Demanding but clear.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "short",
+   "title": "Free will: results of the 2020 survey of philosophers",
+   "by": "PhilPapers Survey",
+   "year": 2020,
+   "url": "https://survey2020.philpeople.org/survey/results/4838",
+   "note": "The survey figures used in this lesson, with breakdowns.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Stanford Encyclopedia of Philosophy: Compatibilism (archived 2005 edition)",
+   "url": "https://plato.stanford.edu/archives/spr2005/entries/compatibilism/",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Definitions of free will and determinism",
+    "The positions and how they relate",
+    "The two incompatibilist arguments",
+    "Hobbes, Hume and the failure of the conditional analysis",
+    "The Consequence Argument",
+    "Frankfurt's case and hierarchical account, and the manipulation objection",
+    "Strawson's reactive attitudes",
+    "The link to moral responsibility"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Stanford Encyclopedia of Philosophy: Incompatibilist (Nondeterministic) Theories of Free Will (archived 2004 edition)",
+   "url": "https://plato.stanford.edu/archives/sum2004/entries/incompatibilism-theories",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The luck objection to libertarianism",
+    "Quantum mechanics has no agreed interpretation and there is no good evidence that determinism is true"
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "PhilPapers Survey 2020: Free will",
+   "url": "https://survey2020.philpeople.org/survey/results/4838",
+   "tier": "research",
+   "accessed": "2026-11-13",
+   "supports": [
+    "1,758 respondents",
+    "59.16 per cent compatibilism, 18.83 per cent libertarianism, 11.21 per cent no free will"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "A contested topic: the lesson states positions and takes none. The river analogy, the bread example, the fatalism correction and the remarks on courts are the writer's own reasoning. The date of Frankfurt's paper (1969) and the phobia counterexample are standard in the literature but were paraphrased from s1, which describes a similar case; check against a current edition of the entry."
+ }
+}

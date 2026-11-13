@@ -1,0 +1,5 @@
+# his04 First cities and writing: the sources the hand-written lesson used
+# one address per line, then its tier
+https://openstax.org/books/world-history-volume-1/pages/3-2-ancient-mesopotamia textbook
+https://openstax.org/books/world-history-volume-1/pages/3-section-summary textbook
+https://www.metmuseum.org/toah/hd/wrtg/hd_wrtg.htm institution

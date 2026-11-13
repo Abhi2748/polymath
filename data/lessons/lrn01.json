@@ -1,0 +1,557 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "lrn01",
+ "title": "The forgetting curve",
+ "question": "Why does most of what you learn vanish within days?",
+ "est_minutes": 12,
+ "objectives": [
+  "Describe the shape of the forgetting curve and say what it implies for when to review",
+  "Explain how savings measures a memory you can no longer recall",
+  "Say why the popular 70 per cent figure misuses the original data"
+ ],
+ "key_terms": [
+  {
+   "term": "Forgetting curve",
+   "definition": "The pattern of memory loss over time: steep soon after learning, then nearly flat."
+  },
+  {
+   "term": "Savings",
+   "definition": "The share of the original learning work you are spared when you learn the same thing again."
+  },
+  {
+   "term": "Nonsense syllable",
+   "definition": "A meaningless three-letter combination such as WIB, used so that meaning cannot help memory."
+  }
+ ],
+ "when": {
+  "label": "1885",
+  "start_year": 1885,
+  "end_year": 1885
+ },
+ "guess": {
+  "prompt": "You study a row of meaningless three-letter syllables until you can recite it perfectly. One hour later, with no review, how much of that work is still with you?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Nearly all of it"
+   },
+   {
+    "id": "b",
+    "text": "About three quarters"
+   },
+   {
+    "id": "c",
+    "text": "Less than half"
+   },
+   {
+    "id": "d",
+    "text": "None of it"
+   }
+  ],
+  "answer_id": "c",
+  "reveal": "Less than half. In the original experiment the saving after one hour was about 44 per cent."
+ },
+ "hook": "In the 1880s a German psychologist spent months memorising nonsense to answer a question nobody had measured: how fast does memory fade? His answer explains why most of what you watch, read and screenshot is gone by next week.",
+ "explanation": {
+  "body_md": "Forgetting is not random, and it is not a personal flaw. It follows a predictable shape.\n\nHermann Ebbinghaus tested himself. He learned rows of 13 nonsense syllables, such as WIB or MEP, until he could recite each row without error. Then he waited: 20 minutes, an hour, a day, a month. After the wait he learned the same row again. If relearning took less work than the first time, the difference was memory that had survived. He called that difference savings.\n\n| Time since learning | Work saved on relearning |\n| --- | --- |\n| 20 minutes | 58% |\n| 1 hour | 44% |\n| 1 day | 34% |\n| 31 days | 21% |\n\nPlot those numbers and you get the forgetting curve: a steep drop at first, then a long, nearly flat tail. Most of the loss happens in the first hours. What survives the first day fades slowly.",
+  "analogy": "Think of a path across a field. Walk it once and the grass springs back within hours, though a faint trace stays for a long time. Walk it again and the path gets deeper and lasts longer.",
+  "takeaways": [
+   "Forgetting is fastest right after learning.",
+   "It slows down, and what remains after the early drop is fairly stable.",
+   "The curve is not fixed: material that is meaningful, well attended to and revisited fades more slowly."
+  ],
+  "visual": {
+   "kind": "chart",
+   "alt": "Work saved on relearning plotted against days since learning for two experiments. Both fall steeply in the first day and then level off.",
+   "caption": "Steep at first, then nearly flat. Figures from Murre and Dros, 2015.",
+   "chart": {
+    "type": "scatter",
+    "x_label": "Days since learning",
+    "y_label": "Work saved (%)",
+    "series": [
+     {
+      "name": "Ebbinghaus, 1885",
+      "points": [
+       [
+        0.014,
+        58.2
+       ],
+       [
+        0.042,
+        44.2
+       ],
+       [
+        0.375,
+        35.8
+       ],
+       [
+        1,
+        33.7
+       ],
+       [
+        2,
+        27.8
+       ],
+       [
+        6,
+        25.4
+       ],
+       [
+        31,
+        21.1
+       ]
+      ]
+     },
+     {
+      "name": "Repeat, 2015",
+      "points": [
+       [
+        0.014,
+        47.2
+       ],
+       [
+        0.042,
+        37.3
+       ],
+       [
+        0.375,
+        27.6
+       ],
+       [
+        1,
+        31.7
+       ],
+       [
+        2,
+        23.0
+       ],
+       [
+        6,
+        16.8
+       ],
+       [
+        31,
+        4.1
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "worked_example": {
+  "body_md": "On Tuesday night you watch a 60-second clip on how black holes form. It feels like you learned something.\n\nApply the curve. Your attention was split, so the memory was weakly formed. The idea connects to little you already know, so it has low meaning for you. Nothing asked you to recall it. This is the steepest version of the curve. On Thursday a friend asks how black holes form, and you can say something about stars collapsing. The gist is the flat tail. The details went in the steep drop.\n\nNow change one thing. On Tuesday, right after the clip, you look away and say the three steps in your own words. On Wednesday you answer one question about it, and on Saturday another. Each recall is another walk along the path, and the curve that follows it falls more slowly."
+ },
+ "misconception": {
+  "claim": "People forget 70 per cent of what they learn within 24 hours.",
+  "correction_md": "The claim flips the one-day saving of about 34 per cent upside down, and it is wrong in three ways. The figure measures relearning effort, not the share of facts you can recall. It comes from one person. And the material was built to be meaningless. The shape of the curve applies to you. The percentages do not.\n\nA second mistake is to think that forgotten means gone. A month later, relearning a row still took 21 per cent less work than the first time. Something you cannot recall is usually still there in a weaker form, and returning to it costs less than starting over."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "You learn a row of meaningless syllables perfectly. One hour later, with no review, how much of that work is still with you?",
+   "visual": {
+    "kind": "svg",
+    "alt": "A clock face next to a large question mark, labelled one hour later",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"130\" cy=\"84\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M130 84V44M130 84l32 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"130\" cy=\"84\" r=\"4\" fill=\"currentColor\"/><text x=\"236\" y=\"112\" font-size=\"84\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">?</text><text x=\"130\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">one hour later</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "A man and his syllables",
+   "body_md": "In the 1880s Hermann Ebbinghaus memorised rows of nonsense, alone, for months. He wanted to measure something nobody had: how fast memory fades.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Thirteen three-letter nonsense syllables such as WIB and MEP arranged in a row",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"19\" y=\"22\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"44.0\" y=\"43\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">WIB</text><rect x=\"77\" y=\"22\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"102.0\" y=\"43\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">MEP</text><rect x=\"135\" y=\"22\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"160.0\" y=\"43\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">ZOF</text><rect x=\"193\" y=\"22\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"218.0\" y=\"43\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">KAJ</text><rect x=\"251\" y=\"22\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"276.0\" y=\"43\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">DUT</text><rect x=\"48\" y=\"70\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"73.0\" y=\"91\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">NAR</text><rect x=\"106\" y=\"70\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"131.0\" y=\"91\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">LEB</text><rect x=\"164\" y=\"70\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"189.0\" y=\"91\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">TIV</text><rect x=\"222\" y=\"70\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"247.0\" y=\"91\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">GOM</text><rect x=\"48\" y=\"118\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"73.0\" y=\"139\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">PUX</text><rect x=\"106\" y=\"118\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"131.0\" y=\"139\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">HIK</text><rect x=\"164\" y=\"118\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"189.0\" y=\"139\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">SOZ</text><rect x=\"222\" y=\"118\" width=\"50\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"247.0\" y=\"139\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">FEB</text><text x=\"160\" y=\"172\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">one row: 13 syllables with no meaning</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "method",
+   "title": "Learn, wait, relearn",
+   "body_md": "He learned a row, waited, then learned it again. If the second time took less work, the difference was memory that had survived. He called it **savings**.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three boxes reading learn, wait, relearn, above two bars showing that relearning takes less work, with the difference marked as work saved",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"30\" width=\"72\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"56\" y=\"57\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">Learn</text><path d=\"M96 52h22m-7-6 7 6-7 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"124\" y=\"30\" width=\"72\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"57\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">Wait</text><path d=\"M200 52h22m-7-6 7 6-7 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"228\" y=\"30\" width=\"72\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"264\" y=\"57\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">Relearn</text><text x=\"20\" y=\"108\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">first time</text><rect x=\"100\" y=\"97\" width=\"200\" height=\"14\" rx=\"3\" fill=\"currentColor\" opacity=\"0.35\"/><text x=\"20\" y=\"138\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">second time</text><rect x=\"100\" y=\"127\" width=\"132\" height=\"14\" rx=\"3\" fill=\"currentColor\" opacity=\"0.35\"/><rect x=\"232\" y=\"127\" width=\"68\" height=\"14\" rx=\"3\" fill=\"var(--accent, #3b82f6)\"/><text x=\"266\" y=\"160\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">work saved</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "numbers",
+   "title": "What survived",
+   "body_md": "After 20 minutes, 58% of the work was saved. After an hour, 44%. After a day, 34%. After a month, 21%.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Four bars showing work saved: 58 per cent after 20 minutes, 44 after one hour, 34 after one day and 21 after 31 days",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"70\" y=\"36\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"400\">20 min</text><rect x=\"80\" y=\"18\" width=\"186\" height=\"26\" rx=\"4\" fill=\"var(--accent, #3b82f6)\" opacity=\"1.00\"/><text x=\"273.6\" y=\"36\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">58%</text><text x=\"70\" y=\"74\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"400\">1 hour</text><rect x=\"80\" y=\"56\" width=\"141\" height=\"26\" rx=\"4\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.82\"/><text x=\"228.8\" y=\"74\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">44%</text><text x=\"70\" y=\"112\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"400\">1 day</text><rect x=\"80\" y=\"94\" width=\"109\" height=\"26\" rx=\"4\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.64\"/><text x=\"196.8\" y=\"112\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">34%</text><text x=\"70\" y=\"150\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"400\">31 days</text><rect x=\"80\" y=\"132\" width=\"67\" height=\"26\" rx=\"4\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.46\"/><text x=\"155.2\" y=\"150\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">21%</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "picture",
+   "title": "The forgetting curve",
+   "body_md": "A steep drop, then a long flat tail. Most of the loss happens in the first hours. A repeat of the experiment in 2015 found the same shape.",
+   "visual": {
+    "kind": "chart",
+    "alt": "Work saved on relearning plotted against days since learning for two experiments. Both fall steeply in the first day and then level off.",
+    "caption": "Steep at first, then nearly flat. Figures from Murre and Dros, 2015.",
+    "chart": {
+     "type": "scatter",
+     "x_label": "Days since learning",
+     "y_label": "Work saved (%)",
+     "series": [
+      {
+       "name": "Ebbinghaus, 1885",
+       "points": [
+        [
+         0.014,
+         58.2
+        ],
+        [
+         0.042,
+         44.2
+        ],
+        [
+         0.375,
+         35.8
+        ],
+        [
+         1,
+         33.7
+        ],
+        [
+         2,
+         27.8
+        ],
+        [
+         6,
+         25.4
+        ],
+        [
+         31,
+         21.1
+        ]
+       ]
+      },
+      {
+       "name": "Repeat, 2015",
+       "points": [
+        [
+         0.014,
+         47.2
+        ],
+        [
+         0.042,
+         37.3
+        ],
+        [
+         0.375,
+         27.6
+        ],
+        [
+         1,
+         31.7
+        ],
+        [
+         2,
+         23.0
+        ],
+        [
+         6,
+         16.8
+        ],
+        [
+         31,
+         4.1
+        ]
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "analogy",
+   "title": "A path across a field",
+   "body_md": "Walk it once and the grass springs back. Walk it again and it lasts longer. Meaning, full attention and recall over time are what deepen the path.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A path worn across a grassy field",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M30 60l-3-10M30 60l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M70 40l-3-10M70 40l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M120 70l-3-10M120 70l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M175 36l-3-10M175 36l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M230 62l-3-10M230 62l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M285 44l-3-10M285 44l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M45 130l-3-10M45 130l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M100 150l-3-10M100 150l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M150 122l-3-10M150 122l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M255 140l-3-10M255 140l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M300 118l-3-10M300 118l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M205 158l-3-10M205 158l3-10\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" fill=\"none\"/><path d=\"M10 150C80 150 110 96 160 92s90-40 150-56\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"9\" stroke-linecap=\"round\" opacity=\"0.85\"/><text x=\"160\" y=\"174\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">each walk makes the path deeper</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "myth",
+   "title": "The 70% myth",
+   "body_md": "\"You forget 70% in a day\" misuses the data. It measured relearning effort, in one person, on material built to be meaningless.",
+   "visual": {
+    "kind": "svg",
+    "alt": "The figure 70 per cent struck through, with the note that it came from one person relearning nonsense syllables",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"160\" y=\"96\" font-size=\"78\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"800\">70%</text><path d=\"M62 100L258 44\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"160\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">one person · nonsense · relearning effort</text><text x=\"160\" y=\"162\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">the shape applies to you, the number does not</text></svg>"
+   }
+  },
+  {
+   "id": "c8",
+   "kind": "takeaway",
+   "title": "Forgetting has a shape",
+   "body_md": "Forgetting is the default, and it is fastest at the start. So review has to be planned, soonest first. Next lesson: how to push the curve back.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two curves over time: without review memory falls and stays low, while each recall lifts it back up and it falls more slowly afterwards",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M24 20V150H304\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M26 30C50 110 90 132 300 142\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 5\" opacity=\"0.6\"/><path d=\"M26 30C40 70 50 84 70 90V34C92 62 108 72 140 78V36C176 54 200 60 236 64V38C262 46 284 50 300 52\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"300\" y=\"136\" font-size=\"11\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"400\">no review</text><text x=\"300\" y=\"30\" font-size=\"11\" text-anchor=\"end\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">with recall</text><text x=\"164\" y=\"172\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">time</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "Describe the shape of the forgetting curve in one sentence.",
+   "answer": "A steep drop soon after learning, then it levels off.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "cloze",
+   "prompt": "Ebbinghaus measured memory by ___, the work saved when relearning.",
+   "answer": "savings",
+   "accept": [
+    "savings",
+    "saving",
+    "the savings"
+   ],
+   "grading": "auto",
+   "first_check": true,
+   "probe": false
+  },
+  {
+   "id": "r3",
+   "kind": "mcq",
+   "prompt": "Why did Ebbinghaus use nonsense syllables?",
+   "options": [
+    {
+     "id": "a",
+     "text": "They are easy to say"
+    },
+    {
+     "id": "b",
+     "text": "They carry no meaning that could help memory"
+    },
+    {
+     "id": "c",
+     "text": "They are harder than words"
+    },
+    {
+     "id": "d",
+     "text": "He had no books"
+    }
+   ],
+   "answer": "b",
+   "explanation": "He wanted to measure memory itself, with no help from meaning.",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false
+  },
+  {
+   "id": "r4",
+   "kind": "number",
+   "prompt": "Roughly how much work was saved after one day?",
+   "answer": "About a third (34 per cent).",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "apply",
+   "prompt": "You must remember a new colleague's name for a meeting next week. When is the name most at risk, and when would a first reminder help most?",
+   "answer": "It is most at risk in the first hours. A reminder the same day helps most.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "explain",
+   "prompt": "Why is \"people forget 70 per cent in a day\" a misuse of the data?",
+   "answer": "It measured relearning effort, in one person, on meaningless material. Meaningful material fades more slowly.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r7",
+   "kind": "true_false",
+   "prompt": "True or false: if you cannot recall something, the memory is completely gone.",
+   "answer": "false",
+   "explanation": "Relearning is faster than first learning. A month later, 21 per cent of the work was still saved.",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "free_recall",
+   "prompt": "Name three things that slow forgetting.",
+   "answer": "Meaning, full attention when learning, and revisiting over time.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r9",
+   "kind": "compare",
+   "prompt": "Which fades faster, a phone number or the plot of a film you loved? Why?",
+   "answer": "The number. It is arbitrary and connects to nothing you know.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain the forgetting curve to a friend who thinks they just have a bad memory. Two minutes, no notes.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Forgetting follows a predictable curve, fast at first and then slow."
+   },
+   {
+    "id": "t2",
+    "point": "We know this from relearning experiments on meaningless material."
+   },
+   {
+    "id": "t3",
+    "point": "How steep the curve is depends on the material and how it was learned."
+   },
+   {
+    "id": "t4",
+    "point": "So forgetting is the default, and review has to be planned, soonest at the start."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "States as fact that people forget 70 per cent (or any fixed share) of everything within a day"
+  ]
+ },
+ "challenge": {
+  "kind": "spot_the_flaw",
+  "prompt": "An advert says: \"Science proves you forget 90 per cent of what you learn within a week, unless you use our app.\" Write at least three questions you would ask before believing it.",
+  "model_answer": [
+   "Ninety per cent of what? Words recalled, or effort to relearn?",
+   "Who was tested, and how many people?",
+   "What material? Nonsense, or something understood?",
+   "Compared with what? No review at all, or ordinary study?",
+   "Who gains if I believe this?"
+  ],
+  "follow_up": "This site makes a similar promise. Apply the same questions to it."
+ },
+ "connections": [
+  {
+   "to": "mnd05",
+   "body_md": "Memory systems covers the kinds of memory you have. The curve describes long-term memory behaving normally: without use, access to a memory weakens. Forgetting is the system working as designed, not a fault in you."
+  },
+  {
+   "to": "mat09",
+   "body_md": "The forgetting curve is a function: one quantity, memory, depending on another, time. Functions and graphs gives you the language for its shape, steep where it changes fast and flat where it changes slowly."
+  },
+  {
+   "to": "lrn02",
+   "body_md": "The curve shows the problem. Pulling an answer out of memory is the first tool against it."
+  },
+  {
+   "to": "lrn03",
+   "body_md": "Because the drop is steepest early, the first reviews must come soon and later ones can be further apart."
+  },
+  {
+   "to": "lrn09",
+   "body_md": "In the 2015 repeat the one-day saving was higher than the nine-hour one. Earlier researchers put a bump like this down to sleep, and the authors treat that as likely but not yet shown for this kind of experiment."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**One man and his syllables**\n\nBefore the 1880s, memory was a subject for philosophers. Hermann Ebbinghaus wanted numbers. He had no pool of volunteers, so he used the one subject who was always available: himself.\n\nHis problem was that real words carry baggage. A word tied to your own life sticks more easily than one that is not, and that help differs from word to word. To measure memory itself he needed material with no meaning at all. So he built nonsense syllables, three letters that almost sound like a word, and arranged them in rows of 13. He studied each row at a steady pace until he could recite it in order without a mistake. The experiments behind the curve took about seven months, often with several sessions a day, and he published the results in 1885.\n\n**Savings, a clever measure**\n\nHow do you measure a memory that is partly gone? Counting how many syllables you can still recite misses memories that are too weak to recall but not erased. Ebbinghaus relearned the row and counted the work. If a row took 25 repetitions the first time and 20 the next day, 5 were saved, a saving of 20 per cent. Zero means nothing was left. A full saving means nothing was lost.\n\n**The numbers, and a modern repeat**\n\nOne man in the 1880s is thin evidence. In 2015 two researchers at the University of Amsterdam repeated the experiment with one subject, about 70 hours of learning and the same waiting times.\n\n| Time since learning | Ebbinghaus, 1885 | Repeat, 2015 |\n| --- | --- | --- |\n| 20 minutes | 58% | 47% |\n| 1 hour | 44% | 37% |\n| 9 hours | 36% | 28% |\n| 1 day | 34% | 32% |\n| 2 days | 28% | 23% |\n| 6 days | 25% | 17% |\n| 31 days | 21% | 4% |\n\nRead down the first column. Between 20 minutes and nine hours Ebbinghaus lost 22 points. Between nine hours and 31 days he lost 15. More went in the first nine hours than in the month that followed.\n\nThe repeat shows the same shape with lower savings, and a much lower figure at 31 days. The authors judged it a successful replication. They also noted that the curve is not perfectly smooth: the one-day point sits higher than expected, which may be an effect of sleep.\n\n**Why forgetting happens**\n\nPsychologists give several explanations, and they work together.\n\n- **Encoding failure.** The information never got into long-term memory, often because attention was divided.\n- **Decay.** Traces fade when unused. This is thought to contribute without being the main cause.\n- **Interference.** Memories compete. New material disrupts old, old disrupts new, and similar material interferes most.\n- **Retrieval failure.** The memory exists, but nothing in front of you triggers it.\n\n**What the curve does not say**\n\nThe percentages belong to one person learning meaningless material. How fast you forget depends on how well the material was taken in, how meaningful it is to you and how often you return to it. So the numbers do not transfer to a history lesson you understood. The shape does: fast first, slow later.\n\n**What this means for you**\n\nLook at an hour of short videos through those four causes. Attention is split, so encoding is weak. Each clip is followed at once by another of the same kind, which is the condition for the most interference. Nothing asks you to recall anything, and little connects to what you already know. Forgetting a feed quickly is not evidence of a bad memory. It is what these causes predict for that kind of input. This is reasoning from the causes above, not a result measured on feeds.\n\nThe daily deck reverses each condition: one idea at a time, a question before and after, a link to something you know, and recall spread over days.",
+  "est_minutes": 6
+ },
+ "go_further": [
+  {
+   "kind": "short",
+   "title": "Science of learning book offers tips to \"Make It Stick\"",
+   "by": "Washington University in St. Louis",
+   "year": 2014,
+   "url": "https://source.washu.edu/2014/04/science-of-learning-book-offers-tips-to-make-it-stick/",
+   "note": "A five-minute summary of why recalling beats rereading.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "long",
+   "title": "Replication and Analysis of Ebbinghaus' Forgetting Curve",
+   "by": "Jaap Murre and Joeri Dros, PLOS ONE",
+   "year": 2015,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928",
+   "note": "The modern repeat, free to read, with the original method explained.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "book",
+   "title": "Make It Stick: The Science of Successful Learning",
+   "by": "Peter C. Brown, Henry L. Roediger III and Mark A. McDaniel, Harvard University Press",
+   "year": 2014,
+   "note": "The readable book-length case for recall and spacing.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Murre and Dros (2015), Replication and Analysis of Ebbinghaus' Forgetting Curve, PLOS ONE",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928",
+   "tier": "research",
+   "accessed": "2026-11-13",
+   "supports": [
+    "All savings figures for 1885 and 2015",
+    "The savings measure and its worked example",
+    "Rows of 13 syllables, self-experiment, about seven months",
+    "The 2015 repeat: one subject, about 70 hours",
+    "The one-day bump and the caution about sleep"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Hockenbury, Psychology, 7th edition, chapter 6: Forgetting",
+   "url": "https://digfir-published.macmillanusa.com/hockenbury7e/hockenbury7e_ch6_4.html",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "What a nonsense syllable is",
+    "The shape of the curve",
+    "Encoding, meaning and rehearsal change the rate of forgetting",
+    "Encoding failure, decay, interference and retrieval failure"
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Washington University: Science of learning book offers tips to Make It Stick",
+   "url": "https://source.washu.edu/2014/04/science-of-learning-book-offers-tips-to-make-it-stick/",
+   "tier": "institution",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Authors, publisher and year of Make It Stick",
+    "Recall builds more durable learning than rereading",
+    "Recall at spaced intervals slows forgetting"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "Figures checked against s1. The path analogy, the worked example and the application to video feeds are the writer's own reasoning and are marked as such in the text."
+ }
+}

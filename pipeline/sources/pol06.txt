@@ -1,0 +1,5 @@
+# pol06 Political ideologies: the sources the hand-written lesson used
+# one address per line, then its tier
+https://openstax.org/books/introduction-political-science/pages/3-summary textbook
+https://openstax.org/books/introduction-philosophy/pages/11-4-political-ideologies textbook
+https://www.britannica.com/topic/right reference

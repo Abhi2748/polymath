@@ -1,0 +1,4 @@
+# lit04 How a poem works: the sources the hand-written lesson used
+# one address per line, then its tier
+https://www.folger.edu/explore/shakespeares-works/shakespeares-sonnets/read/73 institution
+https://poets.org/lesson-plan/poetry-glossary reference

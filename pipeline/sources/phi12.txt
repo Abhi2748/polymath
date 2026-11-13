@@ -1,0 +1,5 @@
+# phi12 Free will: the sources the hand-written lesson used
+# one address per line, then its tier
+https://plato.stanford.edu/archives/spr2005/entries/compatibilism/ reference
+https://plato.stanford.edu/archives/sum2004/entries/incompatibilism-theories reference
+https://survey2020.philpeople.org/survey/results/4838 research

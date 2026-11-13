@@ -1,0 +1,5 @@
+# phy07 Entropy: the sources the hand-written lesson used
+# one address per line, then its tier
+https://openstax.org/books/university-physics-volume-2/pages/4-7-entropy-on-a-microscopic-scale textbook
+https://openstax.org/books/college-physics/pages/15-7-statistical-interpretation-of-entropy-and-the-second-law-of-thermodynamics-the-underlying-explanation textbook
+https://britannica.com/science/principles-of-physical-science/Entropy-and-disorder reference

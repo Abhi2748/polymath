@@ -1,0 +1,447 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "pol06",
+ "title": "Political ideologies",
+ "question": "What do liberals, conservatives, socialists and nationalists each want?",
+ "est_minutes": 15,
+ "objectives": [
+  "State what each of the four ideologies puts first",
+  "Give the strongest argument for each and the main objection to it",
+  "Explain why the word liberal means different things in different places"
+ ],
+ "key_terms": [
+  {
+   "term": "Ideology",
+   "definition": "A connected set of ideas about what a good society is and how to get there."
+  },
+  {
+   "term": "Liberalism",
+   "definition": "The view that individual rights come first and that government should be limited and rest on consent."
+  },
+  {
+   "term": "Conservatism",
+   "definition": "The view that long-standing institutions hold tested wisdom and that change should be gradual."
+  },
+  {
+   "term": "Socialism",
+   "definition": "The view that major productive resources should be owned in common and goods shared more equally."
+  },
+  {
+   "term": "Nationalism",
+   "definition": "The view that a people with a shared identity should govern itself and put its own members first."
+  }
+ ],
+ "when": {
+  "label": "from the 1790s",
+  "start_year": 1789
+ },
+ "guess": {
+  "prompt": "Where do the political words left and right come from?",
+  "options": [
+   {
+    "id": "a",
+    "text": "The hand members raised to vote in the English parliament"
+   },
+   {
+    "id": "b",
+    "text": "Where members sat in the French parliament during the Revolution"
+   },
+   {
+    "id": "c",
+    "text": "The left and right banks of the river in Paris"
+   },
+   {
+    "id": "d",
+    "text": "The left and right pages of early party newspapers"
+   }
+  ],
+  "answer_id": "b",
+  "reveal": "They come from a seating plan. In the French revolutionary parliament of the 1790s, those who wanted to conserve the old order sat to the right of the presiding officer."
+ },
+ "hook": "You hear these four words every day, usually as insults. Each one names a serious answer to the same question: what should a society put first?",
+ "explanation": {
+  "body_md": "An **ideology** is a connected set of ideas about what a good society looks like. A useful way to tell the main four apart is to ask what each one puts first.\n\n| Ideology | Puts first | Typical demand |\n| --- | --- | --- |\n| Liberalism | Individual liberty | Rights, consent, limited government, free exchange |\n| Conservatism | Continuity | Keep tested institutions, change gradually |\n| Socialism | Equality | Common ownership, sharing by need |\n| Nationalism | Belonging | Self-rule for the nation, its members first |\n\n**Liberalism** begins with the individual, who has rights that government exists to protect. **Conservatism** begins with doubt about grand plans: institutions that have lasted hold more experience than any reformer. **Socialism** begins with the fact that wealth is made by many and argues it should be owned and shared by many. **Nationalism** begins with a people who share an identity and holds that they should rule themselves.\n\nThese are different starting points, not points on one line. Left and right capture part of the picture, mostly the dispute about markets and the state. Nationalism, for one, can be combined with either side of that dispute.\n\nThis lesson describes the four. It does not rank them.",
+  "analogy": "Four people are asked to fix an old house. One says each resident should decide about their own room. One says the house has stood for two hundred years, so repair it and change little. One says the rooms are unequal and should be shared out fairly. One says first decide who belongs to this household. They are not answering the same question in different ways. They are asking different first questions.",
+  "takeaways": [
+   "Liberalism puts liberty first, conservatism continuity, socialism equality, nationalism belonging.",
+   "Each has a strong argument and a serious objection. Knowing both is the point.",
+   "Liberal has two meanings: centre-left in American usage, rights first in political theory."
+  ],
+  "visual": {
+   "kind": "svg",
+   "alt": "A grid of four boxes: liberalism and liberty, conservatism and continuity, socialism and equality, nationalism and belonging",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"14\" width=\"140\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"84\" y=\"38\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Liberalism</text><text x=\"84\" y=\"58\" font-size=\"16\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">liberty</text><rect x=\"166\" y=\"14\" width=\"140\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"236\" y=\"38\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Conservatism</text><text x=\"236\" y=\"58\" font-size=\"16\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">continuity</text><rect x=\"14\" y=\"80\" width=\"140\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"84\" y=\"104\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Socialism</text><text x=\"84\" y=\"124\" font-size=\"16\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">equality</text><rect x=\"166\" y=\"80\" width=\"140\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"236\" y=\"104\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Nationalism</text><text x=\"236\" y=\"124\" font-size=\"16\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">belonging</text><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">four ideologies, four things put first</text></svg>"
+  }
+ },
+ "positions": [
+  {
+   "name": "Liberalism",
+   "claim": "Individuals have rights that come before the state, and government should be limited to protecting them.",
+   "best_argument": "Each person is the best judge of their own life, and power over others is easily abused. Mill's test follows: force may be used against someone only to prevent harm to others. Free speech and free exchange also let a society find and correct its mistakes.",
+   "main_objection": "Freedom on paper is worth little without the means to use it. Socialists say free markets leave some people with few real choices. Conservatives say a society of separate individuals wears away the shared customs that freedom depends on."
+  },
+  {
+   "name": "Conservatism",
+   "claim": "Institutions and customs that have lasted hold tested wisdom, and change should be gradual.",
+   "best_argument": "A society is too complicated for anyone to redesign from first principles. Arrangements that have survived have been tested in ways no theory has, and sweeping them away has often brought in something worse. Human beings are flawed, so restraint matters.",
+   "main_objection": "Long life is not proof of justice. Some very old institutions were very old wrongs, and for those who suffer under them gradual change can mean no change. Conservatism also needs some other standard to say which traditions deserve keeping."
+  },
+  {
+   "name": "Socialism",
+   "claim": "Major productive resources should be owned in common, and goods should be shared more according to need.",
+   "best_argument": "Wealth is produced by the work of many, yet private ownership lets owners keep much of the value that workers create, which Marx called surplus value. Whoever controls people's livelihoods has power over their lives, so that power should answer to everyone.",
+   "main_objection": "Hayek's reply: no planner can gather the knowledge that is spread among millions of people and carried by prices, so planned economies work badly, and a state that controls economic life has the means to control everything else."
+  },
+  {
+   "name": "Nationalism",
+   "claim": "A people with a shared history, culture and homeland should govern itself and put its members first.",
+   "best_argument": "People accept sacrifices, such as taxes and military service, for those they feel they belong with, so a shared identity makes solidarity and self-government possible. Rule by outsiders is experienced as a wrong even when it is competent.",
+   "main_objection": "Who counts as the nation is always disputed, and drawing the line leaves minorities outside it. Putting one nation first can turn into hostility to others. Fascism is the extreme case."
+  }
+ ],
+ "worked_example": {
+  "body_md": "One event, four lines of reasoning. The largest employer in a town announces it will close its factory and move production abroad, where costs are lower.\n\n- **A liberal** starts with rights. The owners are free to move and customers gain from lower prices. A classical liberal would stop there. A welfare liberal would add that the state should help the workers retrain, so that their freedom to start again is real.\n- **A conservative** starts with the town. A community built over generations is about to be broken up quickly. They would look for ways to slow the change and support the local institutions that hold people together, and would distrust any sweeping scheme, whether from the company or from the state.\n- **A socialist** starts with who made the wealth. The workers built the value of the firm and have no say in its fate. They would argue for public or worker ownership so that the decision is made by those it affects.\n- **A nationalist** starts with the country. Jobs and industry are leaving the nation. They would favour tariffs or penalties to keep production at home.\n\nThese are typical lines of reasoning, written for this lesson. Real people and real parties mix them. Notice that the four do not disagree only about the answer. They disagree about what the problem is."
+ },
+ "misconception": {
+  "claim": "Liberal means left-wing.",
+  "correction_md": "In American news the word usually names the centre-left. In political theory, and in much of the rest of the world, liberalism is the older tradition of individual rights, government by consent and free exchange.\n\nIn that sense most centre-right parties in democracies are liberal too. The American meaning grew from one branch of the tradition, welfare liberalism, which holds that the state must secure fair conditions for liberty to mean anything. When you meet the word, check which meaning is in use."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "Left and right are the two most used words in politics. Where do they come from?",
+   "visual": {
+    "kind": "svg",
+    "alt": "A line with arrows pointing left and right, labelled left and right, and a question mark",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M160 70L30 70M30 70l7 -5M30 70l7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 70L290 70M290 70l-7 -5M290 70l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"60\" y=\"50\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"800\">LEFT</text><text x=\"260\" y=\"50\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"800\">RIGHT</text><text x=\"160\" y=\"122\" font-size=\"40\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">?</text><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">where do these two words come from?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "picture",
+   "title": "A seating plan",
+   "body_md": "In the French parliament of the 1790s, members who wanted to conserve the old order sat to the right of the chair. Those who wanted change sat to the left.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A half circle of seats facing a chair. The seats to the right of the chair are filled in",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"109.3\" cy=\"120.4\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"119.3\" cy=\"99.6\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"137.4\" cy=\"85.1\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"160.0\" cy=\"80.0\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\"/><circle cx=\"182.6\" cy=\"85.1\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"200.7\" cy=\"99.6\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"210.7\" cy=\"120.4\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"87.1\" cy=\"119.2\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"95.9\" cy=\"95.0\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"112.4\" cy=\"75.3\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"134.7\" cy=\"62.5\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"160.0\" cy=\"58.0\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\"/><circle cx=\"185.3\" cy=\"62.5\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"207.6\" cy=\"75.3\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"224.1\" cy=\"95.0\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"232.9\" cy=\"119.2\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"65.0\" cy=\"118.3\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"72.7\" cy=\"92.1\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"87.4\" cy=\"69.1\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"108.1\" cy=\"51.2\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"133.0\" cy=\"39.9\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"160.0\" cy=\"36.0\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\"/><circle cx=\"187.0\" cy=\"39.9\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"211.9\" cy=\"51.2\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"232.6\" cy=\"69.1\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"247.3\" cy=\"92.1\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"255.0\" cy=\"118.3\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><rect x=\"146\" y=\"126\" width=\"28\" height=\"16\" rx=\"3\" fill=\"currentColor\"/><text x=\"160\" y=\"160\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the chair</text><text x=\"40\" y=\"160\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">left</text><text x=\"280\" y=\"160\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">right</text><text x=\"160\" y=\"176\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">France, 1790s: the old order's defenders sat right</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "idea",
+   "title": "Liberalism",
+   "body_md": "People have rights that come before the state. Government exists to protect them, rests on consent, and should otherwise leave people free. Locke, Smith, Mill.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A simple icon for liberalism: the individual comes first: rights, consent, limited government",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"160\" cy=\"32\" r=\"10\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><path d=\"M160 42V68M147 52H173M160 68l-9 18M160 68l9 18\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"160\" cy=\"56\" r=\"42\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4 5\"/><text x=\"160\" y=\"124\" font-size=\"20\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">Liberalism</text><text x=\"160\" y=\"148\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the individual comes first:</text><text x=\"160\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">rights, consent, limited government</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "Conservatism",
+   "body_md": "Institutions that have lasted hold more experience than any plan. People are flawed, so reform should be gradual and repair what exists. Burke.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A simple icon for conservatism: what has lasted has been tested: change slowly, and with care",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M108 50L160 20L212 50Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M122 54V92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M147 54V92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M173 54V92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M198 54V92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M104 96H216\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"124\" font-size=\"20\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">Conservatism</text><text x=\"160\" y=\"148\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">what has lasted has been tested:</text><text x=\"160\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">change slowly, and with care</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "idea",
+   "title": "Socialism",
+   "body_md": "Wealth is made by many, so the main productive resources should be owned in common and goods shared by need. Marx. Its sharpest critic: Hayek.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A simple icon for socialism: what all produce, all should share: common ownership, equality",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"160\" cy=\"58\" r=\"42\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M118.0 58.0L202.0 58.0\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M139.0 21.6L181.0 94.4\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M181.0 21.6L139.0 94.4\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"124\" font-size=\"20\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">Socialism</text><text x=\"160\" y=\"148\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">what all produce, all should share:</text><text x=\"160\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">common ownership, equality</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "idea",
+   "title": "Nationalism",
+   "body_md": "A people with a shared history and homeland should rule itself and put its members first. It rose in the 1800s and can pair with left or right economics.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A simple icon for nationalism: the nation comes first: one people, governing itself",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M132 14V90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"134\" y=\"18\" width=\"56\" height=\"34\" rx=\"2\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><rect x=\"96\" y=\"6\" width=\"128\" height=\"90\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 5\"/><text x=\"160\" y=\"124\" font-size=\"20\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">Nationalism</text><text x=\"160\" y=\"148\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the nation comes first:</text><text x=\"160\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">one people, governing itself</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "myth",
+   "title": "Liberal is not a synonym for left",
+   "body_md": "In American usage liberal means centre-left. In political theory it means rights and limited government, which most centre-right parties also accept.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two boxes showing two meanings of the word liberal: centre-left in American news, and rights first in political theory",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"22\" width=\"138\" height=\"86\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"83\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">in American news</text><text x=\"83\" y=\"74\" font-size=\"20\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"800\">liberal</text><text x=\"83\" y=\"96\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">= centre-left</text><rect x=\"168\" y=\"22\" width=\"138\" height=\"86\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"237\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">in political theory</text><text x=\"237\" y=\"74\" font-size=\"20\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">liberal</text><text x=\"237\" y=\"96\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">= rights first</text><text x=\"160\" y=\"140\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">one word, two meanings</text><text x=\"160\" y=\"162\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the centre-right is liberal in the second sense</text></svg>"
+   }
+  },
+  {
+   "id": "c8",
+   "kind": "takeaway",
+   "title": "Four starting points",
+   "body_md": "Liberty, continuity, equality, belonging. Each ideology has a strong case and a serious objection. Learn both before you judge.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A grid of four boxes: liberalism and liberty, conservatism and continuity, socialism and equality, nationalism and belonging",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"14\" width=\"140\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"84\" y=\"38\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Liberalism</text><text x=\"84\" y=\"58\" font-size=\"16\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">liberty</text><rect x=\"166\" y=\"14\" width=\"140\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"236\" y=\"38\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Conservatism</text><text x=\"236\" y=\"58\" font-size=\"16\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">continuity</text><rect x=\"14\" y=\"80\" width=\"140\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"84\" y=\"104\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Socialism</text><text x=\"84\" y=\"124\" font-size=\"16\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">equality</text><rect x=\"166\" y=\"80\" width=\"140\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"236\" y=\"104\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Nationalism</text><text x=\"236\" y=\"124\" font-size=\"16\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">belonging</text><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">four ideologies, four things put first</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "What does each of the four ideologies (liberalism, conservatism, socialism, nationalism) put first?",
+   "answer": "Liberalism: individual liberty and rights. Conservatism: continuity and tested institutions. Socialism: equality and common ownership. Nationalism: the nation and belonging.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "cloze",
+   "prompt": "The words left and right come from where members sat in the ___ parliament of the 1790s.",
+   "answer": "French",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "French",
+    "french",
+    "French revolutionary"
+   ]
+  },
+  {
+   "id": "r3",
+   "kind": "mcq",
+   "prompt": "Which thinker is most associated with conservatism?",
+   "answer": "c",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "John Locke"
+    },
+    {
+     "id": "b",
+     "text": "Karl Marx"
+    },
+    {
+     "id": "c",
+     "text": "Edmund Burke"
+    },
+    {
+     "id": "d",
+     "text": "John Rawls"
+    }
+   ],
+   "explanation": "Burke argued for gradual reform and against change designed from theory. Locke and Rawls are liberals, Marx a socialist."
+  },
+  {
+   "id": "r4",
+   "kind": "explain",
+   "prompt": "What is Mill's harm principle?",
+   "answer": "Power may rightly be used against a person's will only to prevent harm to others. Their own good is not enough reason.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "compare",
+   "prompt": "How do classical liberals and welfare liberals differ?",
+   "answer": "Classical liberals want a small state that protects rights and stays out of the economy. Welfare liberals say liberty needs fair conditions, so the state should provide things such as education and a safety net.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "mcq",
+   "prompt": "A speaker says: \"This arrangement has served us for three hundred years. Mend it if you must, but do not tear it down.\" Which ideology is speaking?",
+   "answer": "b",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "Liberalism"
+    },
+    {
+     "id": "b",
+     "text": "Conservatism"
+    },
+    {
+     "id": "c",
+     "text": "Socialism"
+    },
+    {
+     "id": "d",
+     "text": "Nationalism"
+    }
+   ],
+   "explanation": "The appeal is to long experience and gradual repair."
+  },
+  {
+   "id": "r7",
+   "kind": "explain",
+   "prompt": "What was Hayek's main objection to a planned economy?",
+   "answer": "No planner can gather the knowledge spread among millions of people, so planning works badly, and state control of the economy threatens freedom.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "true_false",
+   "prompt": "True or false: in political theory, liberal means the same as left-wing.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "Liberalism in theory means rights, consent and limited government. Parties of the centre-left and centre-right both draw on it."
+  },
+  {
+   "id": "r9",
+   "kind": "explain",
+   "prompt": "Why does nationalism not have a fixed place on the left to right line?",
+   "answer": "The line mostly measures views about markets and the state. Nationalism is about who belongs and who rules, and it can be combined with either kind of economic policy.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  }
+ ],
+ "teach_back": {
+  "prompt": "Describe the four ideologies to a friend so fairly that a supporter of each one would say: yes, that is what I believe.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Liberalism: individual rights first, limited government by consent."
+   },
+   {
+    "id": "t2",
+    "point": "Conservatism: tested institutions, gradual change, caution about human nature."
+   },
+   {
+    "id": "t3",
+    "point": "Socialism: common ownership and more equal sharing, because wealth is produced by many."
+   },
+   {
+    "id": "t4",
+    "point": "Nationalism: a people with a shared identity should govern itself."
+   },
+   {
+    "id": "t5",
+    "point": "No ideology is described with a caricature or an insult."
+   }
+  ],
+  "min_points": 4,
+  "false_claims": [
+   "Uses liberal to mean left-wing without noting the two meanings",
+   "Describes any of the four only by its worst followers"
+  ]
+ },
+ "challenge": {
+  "kind": "argue_other_side",
+  "prompt": "Pick the ideology of the four that you find least convincing. Write its strongest case in three or four sentences, well enough that a supporter would accept it as their own.",
+  "model_answer": [
+   "A good answer starts from what that ideology values, stated in its own words, not from what its opponents say it wants.",
+   "It names a real problem that the ideology handles better than its rivals do.",
+   "It meets the main objection directly instead of leaving it out.",
+   "Compare your answer with the best argument listed for that ideology in the positions above."
+  ],
+  "follow_up": "Did writing it change your view of the people who hold it, even if it did not change your view of the ideology?"
+ },
+ "connections": [
+  {
+   "to": "eco15",
+   "body_md": "Much of the left and right divide is an argument about markets and the state, and it has been fought out by economists. Smith's case for free exchange stands behind liberalism, Marx's account of surplus value behind socialism, and Hayek's attack on planning behind the modern defence of markets. When you reach the great debates in economics you will meet the same people again."
+  },
+  {
+   "to": "pol02",
+   "body_md": "Forms of government answer the question of who rules. Ideologies answer what the rulers should aim at. The two are separate: a democracy can be governed by liberals, conservatives, socialists or nationalists, and so can a dictatorship."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**Where left and right come from**\n\nThe two most used words in politics began as a seating plan. In the French revolutionary parliament of the 1790s, the members who wanted to conserve the old order sat to the right of the presiding officer, and those who wanted to change it sat to his left. The labels stuck and spread.\n\nAn ideology is more than a side, though. It is a connected set of ideas about what a good society is, what is wrong with the present one, and what should be done. Four of them have shaped the modern world.\n\n**Liberalism: the individual first**\n\nLiberalism starts from the individual. People have rights that no ruler grants and none may remove. John Locke argued that governments exist to protect those rights and draw their authority from the consent of the governed. Adam Smith made the matching case in economics: people trading freely tend to produce more prosperity than a state directing them.\n\nJohn Stuart Mill added a test for when power may be used against someone's will: only to prevent harm to others. A person's own good is not reason enough.\n\nLiberals later divided over what freedom requires. Classical liberals want a small state that protects rights and otherwise stands back. Welfare liberals, of whom John Rawls is the best known, argue that liberty is worth little to someone without schooling, health or income, so the state should secure fair conditions for everyone. This second branch is what Americans usually mean by \"liberal\", which is why the word causes confusion.\n\n**Conservatism: the tested over the new**\n\nConservatism starts from doubt about human reason and human nature. Institutions that have lasted, such as families, churches, courts and customs, hold more accumulated experience than any one generation can work out for itself. People are flawed, and those institutions restrain them.\n\nEdmund Burke, the thinker most associated with the tradition, did not oppose all change. He opposed change that is sudden and designed from theory. Reform should be gradual and should repair what exists. Because it defends what has grown up in a particular place, conservatism looks different from country to country.\n\n**Socialism: shared ownership**\n\nSocialism starts from equality and from the observation that wealth is produced by many hands. Karl Marx argued that under capitalism workers create more value than they are paid for, and that the difference, which he called surplus value, goes to whoever owns the workplace. The socialist remedy is for major productive resources to be owned in common and for goods to be shared more according to need.\n\nSocialists disagree about how. Some have sought it through revolution and a planned economy. Democratic socialists pursue it through elections, public services and regulation inside a democratic state.\n\nThe sharpest reply came from Friedrich Hayek, who argued that a planned economy cannot work as intended, because no planner can gather the knowledge that is spread among millions of people, and that giving the state control of economic life endangers freedom.\n\n**Nationalism: the nation first**\n\nNationalism starts from belonging. A nation is a people who see themselves as sharing a history, a culture and a homeland, and nationalists hold that such a people should govern itself and that its members come first. The idea rose to great force in the nineteenth century.\n\nNationalism can be joined to almost any economic programme, which is why it does not sit at one point on the left to right line. Because it defines who belongs, it also defines who does not, and it has often been turned against minorities and neighbours. Fascism is usually described as nationalism in an extreme form.\n\n**What the map looks like now**\n\nIn most democracies today the main parties of the centre-left and the centre-right both accept the core of liberalism: elections, rights, and a market economy with some degree of welfare state. Their quarrels are about how much of each. Conservative, socialist and nationalist ideas are argued over inside that frame and, at times, against it.\n\nFew people hold one ideology in pure form. The use of the four labels is to recognise the starting point of an argument, including your own.",
+  "est_minutes": 8
+ },
+ "go_further": [
+  {
+   "kind": "long",
+   "title": "Political Ideologies (Introduction to Philosophy, section 11.4)",
+   "by": "OpenStax",
+   "url": "https://openstax.org/books/introduction-philosophy/pages/11-4-political-ideologies",
+   "note": "A free textbook section on liberalism, conservatism, socialism and anarchism, with the thinkers behind each.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "short",
+   "title": "Chapter 3 summary (Introduction to Political Science)",
+   "by": "OpenStax",
+   "url": "https://openstax.org/books/introduction-political-science/pages/3-summary",
+   "note": "A two-page summary of classical and modern ideologies and where they stand today.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "OpenStax Introduction to Political Science, chapter 3 summary",
+   "url": "https://openstax.org/books/introduction-political-science/pages/3-summary",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Classical liberalism: rights, limited government, free trade, Locke and Smith",
+    "Conservatism: tested institutions, gradual change, Burke",
+    "Socialism and nationalism as nineteenth-century ideologies",
+    "Fascism as an extreme form of nationalism",
+    "Centre-left and centre-right as branches of democratic liberalism today"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "OpenStax Introduction to Philosophy, section 11.4: Political Ideologies",
+   "url": "https://openstax.org/books/introduction-philosophy/pages/11-4-political-ideologies",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Mill's harm principle",
+    "Rawls and welfare liberalism",
+    "Liberal has a different meaning in American usage",
+    "Conservatism and flawed human nature",
+    "Marx on surplus value; public ownership and allocation by need",
+    "Democratic socialism",
+    "Hayek's objection to a planned economy"
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Encyclopaedia Britannica: right (ideology)",
+   "url": "https://www.britannica.com/topic/right",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Left and right come from the seating in the French revolutionary parliament of the 1790s",
+    "Conservatives sat to the right of the presiding officer"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "The four best arguments and main objections are the writer's reconstruction of each tradition's standard case; a reader who holds each view should review them for fairness. The table of what each puts first, the house analogy and the factory example are the writer's own teaching devices. The points that nationalism can pair with either economic programme and that ideologies are separate from forms of government are standard but not stated in these words by the sources. Two of the three sources come from one publisher (different books and authors); Britannica is the independent one."
+ }
+}

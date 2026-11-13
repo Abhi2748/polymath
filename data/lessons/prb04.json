@@ -1,0 +1,380 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "prb04",
+ "title": "Conditional probability and Bayes",
+ "question": "How does evidence change a probability?",
+ "est_minutes": 15,
+ "objectives": [
+  "Work out what a positive test result means by counting people",
+  "Tell the chance of the evidence given the claim from the chance of the claim given the evidence",
+  "Name the three numbers Bayes' rule needs and say what happens when the base rate changes"
+ ],
+ "key_terms": [
+  {
+   "term": "Conditional probability",
+   "definition": "The probability of something counted only among the cases where something else is true."
+  },
+  {
+   "term": "Base rate",
+   "definition": "How common a condition is before any evidence is considered."
+  },
+  {
+   "term": "Bayes' rule",
+   "definition": "The rule for the chance a claim is true given the evidence: true positives divided by all positives."
+  },
+  {
+   "term": "Natural frequencies",
+   "definition": "A probability problem restated as counts of people or cases, such as 80 out of 10,000."
+  }
+ ],
+ "when": null,
+ "guess": {
+  "prompt": "One per cent of women in routine screening have breast cancer. The test is positive for 80 per cent of women who have it, and for 9.6 per cent of women who do not. A woman tests positive. How likely is it that she has breast cancer?",
+  "options": [
+   {
+    "id": "a",
+    "text": "About 90 per cent"
+   },
+   {
+    "id": "b",
+    "text": "About 80 per cent"
+   },
+   {
+    "id": "c",
+    "text": "About 50 per cent"
+   },
+   {
+    "id": "d",
+    "text": "About 8 per cent"
+   }
+  ],
+  "answer_id": "d",
+  "reveal": "About 7.8 per cent. If you said 80, you are in good company: in one study only about 5 per cent of answers were right when the problem was given in percentages."
+ },
+ "hook": "A test that catches 80 per cent of cases comes back positive, and nearly everyone concludes the patient probably has the disease. Nearly everyone is wrong, and the reason is one of the most useful ideas in all of statistics.",
+ "explanation": {
+  "body_md": "A **conditional probability** is a probability counted inside a group. The chance of a positive test *given cancer* is counted among women with cancer. The chance of cancer *given a positive test* is counted among women who tested positive. These are different groups, so the two numbers differ.\n\nThe easiest way to see it is to stop using percentages and count people.\n\n| Out of 10,000 women | Test positive |\n| --- | --- |\n| 100 have cancer | 80 |\n| 9,900 do not | 950 |\n| All | 1,030 |\n\nOf the 1,030 women with a positive result, 80 have cancer. That is about 7.8 per cent.\n\nThe reason is the **base rate**. Cancer is rare here, so the healthy group is enormous, and even a modest false alarm rate applied to an enormous group produces far more positives than the small group of real cases.\n\n**Bayes' rule** is this same division: true positives divided by all positives. It needs three numbers: the base rate, how often the test is positive when the condition is present, and how often it is positive when the condition is absent.\n\nThe evidence still mattered. It moved the chance from 1 per cent to 7.8 per cent, nearly eight times higher. It did not settle the matter.",
+  "analogy": "You hear a rustle in a bush in a city park and wonder if it is a rare bird. Rare birds do rustle. But so do pigeons, squirrels and the wind, and there are far more of those, so most rustles are not rare birds.",
+  "takeaways": [
+   "The chance of the evidence given the claim is not the chance of the claim given the evidence.",
+   "Count people: true positives divided by all positives.",
+   "When something is rare, most positives are false alarms, even from a good test."
+  ],
+  "visual": {
+   "kind": "svg",
+   "alt": "A bar of all 1,030 positive results, with a small slice of 80 true cases and the rest false alarms",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"60\" width=\"280\" height=\"34\" rx=\"4\" fill=\"currentColor\" opacity=\"0.25\"/><rect x=\"20\" y=\"60\" width=\"22\" height=\"34\" rx=\"4\" fill=\"var(--accent, #3b82f6)\"/><text x=\"20\" y=\"48\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">all 1,030 positive results</text><text x=\"31\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">80</text><text x=\"170\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">950 false alarms</text><text x=\"160\" y=\"152\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">80 out of 1,030 is about 7.8%</text></svg>"
+  }
+ },
+ "worked_example": {
+  "body_md": "Use the same test on a different group, one where 30 per cent have the condition. These figures are invented to show what the base rate does.\n\n1. Start with 10,000 people. 3,000 have the condition and 7,000 do not.\n2. The test is positive for 80 per cent of those who have it: 2,400.\n3. It is positive for 9.6 per cent of those who do not: 672.\n4. All positives: 2,400 + 672 = 3,072.\n5. True positives divided by all positives: 2,400 ÷ 3,072 is about 78 per cent.\n\nThe test is exactly as good as before. In the first group a positive meant about 8 per cent. In this one it means about 78 per cent. The only thing that changed is how common the condition was to begin with."
+ },
+ "misconception": {
+  "claim": "If a test detects 80 per cent of cases, a positive result means an 80 per cent chance of having the condition.",
+  "correction_md": "This swaps two different questions. Eighty per cent answers: of the people who have it, how many test positive? What you want to know is: of the people who test positive, how many have it? The second depends on how common the condition is, and the first does not mention it.\n\nIgnoring how common something is has a name, base rate neglect. The cure is always the same: imagine a large crowd, split it by who has the condition, and count the positives in each part."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "1% of women screened have breast cancer. The test is positive for 80% who have it and 9.6% who do not. A woman tests positive. How likely is cancer?",
+   "visual": {
+    "kind": "svg",
+    "alt": "A plus sign in a circle beside a question mark, standing for a positive test result",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"120\" cy=\"84\" r=\"52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M120 58V110M94 84H146\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"232\" y=\"108\" font-size=\"80\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">?</text><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">a positive result: how worried should she be?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "The gap",
+   "body_md": "The test catches 80% of cases, yet a positive result means only about 7.8%. These are answers to two different questions.",
+   "visual": {
+    "kind": "svg",
+    "alt": "The figure 80 per cent, what the test catches, beside 7.8 per cent, what a positive result means",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"90\" y=\"92\" font-size=\"54\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"800\">80%</text><text x=\"90\" y=\"122\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">what the test catches</text><text x=\"240\" y=\"92\" font-size=\"54\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">7.8%</text><text x=\"240\" y=\"122\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">what a positive means</text><path d=\"M160 30V140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\"/><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">two different questions</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "idea",
+   "title": "Turn percentages into people",
+   "body_md": "Imagine 10,000 women. 100 have cancer. 9,900 do not. Counting people is far easier than juggling percentages.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A grid of one hundred dots, each standing for one hundred women, with a single dot highlighted for the hundred who have cancer",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"46\" cy=\"14\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"62\" cy=\"14\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"14\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"14\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"14\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"14\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"14\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"14\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"14\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"14\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"46\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"62\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"28\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"46\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"62\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"42\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"46\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"62\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"56\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"46\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"62\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"70\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"46\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"62\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"84\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"46\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"62\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"98\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"46\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"62\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"112\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"46\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"62\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"126\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"46\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"62\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"78\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"94\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"126\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"142\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"158\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"174\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><circle cx=\"190\" cy=\"140\" r=\"5\" fill=\"currentColor\" opacity=\"0.3\"/><text x=\"214\" y=\"22\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">1 dot =</text><text x=\"214\" y=\"40\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"600\">100 women</text><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">10,000 women: 100 have cancer, 9,900 do not</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "numbers",
+   "title": "Who tests positive",
+   "body_md": "Of the 100 with cancer, 80 test positive. Of the 9,900 without, 950 test positive. The healthy group is so big that its false alarms dominate.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two rows: of 100 women with cancer, 80 test positive; of 9,900 without, 950 test positive",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"20\" y=\"30\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"600\">100 with cancer</text><rect x=\"20\" y=\"38\" width=\"20\" height=\"22\" rx=\"3\" fill=\"var(--accent, #3b82f6)\"/><text x=\"46\" y=\"54\" font-size=\"12\" text-anchor=\"start\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">80 test positive</text><text x=\"20\" y=\"92\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"600\">9,900 without cancer</text><rect x=\"20\" y=\"100\" width=\"280\" height=\"22\" rx=\"3\" fill=\"currentColor\" opacity=\"0.2\"/><rect x=\"20\" y=\"100\" width=\"27\" height=\"22\" rx=\"3\" fill=\"currentColor\" opacity=\"0.75\"/><text x=\"54\" y=\"116\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">950 test positive</text><text x=\"160\" y=\"158\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">most positives come from the healthy group</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "numbers",
+   "title": "The answer",
+   "body_md": "There are 1,030 positive results and 80 are real. 80 out of 1,030 is about 7.8%.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A bar of all 1,030 positive results, with a small slice of 80 true cases and the rest false alarms",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"60\" width=\"280\" height=\"34\" rx=\"4\" fill=\"currentColor\" opacity=\"0.25\"/><rect x=\"20\" y=\"60\" width=\"22\" height=\"34\" rx=\"4\" fill=\"var(--accent, #3b82f6)\"/><text x=\"20\" y=\"48\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">all 1,030 positive results</text><text x=\"31\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">80</text><text x=\"170\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">950 false alarms</text><text x=\"160\" y=\"152\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">80 out of 1,030 is about 7.8%</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "idea",
+   "title": "Bayes' rule",
+   "body_md": "Divide the true positives by all the positives. You need three numbers: how common the condition is, the hit rate, and the false alarm rate.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A fraction: true positives over true positives plus false positives, equal to the chance the condition is really there",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"160\" y=\"52\" font-size=\"16\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">true positives</text><path d=\"M60 66H260\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"94\" font-size=\"16\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">true positives + false positives</text><text x=\"160\" y=\"132\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">= chance the condition is really there</text><text x=\"160\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Bayes' rule, in plain words</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "myth",
+   "title": "Do not flip the question",
+   "body_md": "The chance of a positive test given cancer is 80%. The chance of cancer given a positive test is 7.8%. Treating them as the same is the classic mistake.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two boxes: given cancer, the chance of a positive test is 80 per cent; given a positive test, the chance of cancer is 7.8 per cent",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"30\" width=\"130\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"85\" y=\"49\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">has cancer</text><text x=\"85\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">→ tests positive</text><text x=\"85\" y=\"106\" font-size=\"26\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"800\">80%</text><rect x=\"170\" y=\"30\" width=\"130\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"235\" y=\"49\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">tests positive</text><text x=\"235\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">→ has cancer</text><text x=\"235\" y=\"106\" font-size=\"26\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">7.8%</text><path d=\"M120 126C140 146 180 146 200 126M200 126l-9 1M200 126l-2 9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">reversing the question changes the answer</text></svg>"
+   }
+  },
+  {
+   "id": "c8",
+   "kind": "takeaway",
+   "title": "Evidence moves belief",
+   "body_md": "The result raised the chance from 1% to 7.8%. Start from how common something is, then let each piece of evidence move you.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A small circle marked 1 per cent before the test, an arrow labelled positive result, and a larger circle marked 7.8 per cent after the test",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"60\" cy=\"84\" r=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"60\" y=\"90\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"800\">1%</text><text x=\"60\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">before the test</text><path d=\"M100 84L196 84M196 84l-7 -5M196 84l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"148\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">positive result</text><circle cx=\"250\" cy=\"84\" r=\"44\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\"/><text x=\"250\" y=\"91\" font-size=\"22\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">7.8%</text><text x=\"250\" y=\"148\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">after the test</text><text x=\"160\" y=\"172\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">evidence moves a belief, it rarely settles it</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "Why can a positive result from a good test still most likely be a false alarm?",
+   "answer": "When the condition is rare, the group without it is so large that its false positives outnumber the true positives from the small group that has it.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "mcq",
+   "prompt": "The chance of cancer given a positive test is counted among which group?",
+   "answer": "b",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "All women"
+    },
+    {
+     "id": "b",
+     "text": "Women who tested positive"
+    },
+    {
+     "id": "c",
+     "text": "Women who have cancer"
+    },
+    {
+     "id": "d",
+     "text": "Women who tested negative"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "kind": "cloze",
+   "prompt": "How common a condition is before any test is called the ___ rate.",
+   "answer": "base",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "base",
+    "base rate",
+    "prior"
+   ]
+  },
+  {
+   "id": "r4",
+   "kind": "number",
+   "prompt": "Out of 10,000 screened women, 80 with cancer and 950 without test positive. What share of the positive results are women with cancer?",
+   "answer": "80 out of 1,030, about 7.8 per cent.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "apply",
+   "prompt": "One email in 100 is a scam. A filter flags 90 per cent of scams and 5 per cent of normal emails. Of the emails it flags, roughly what share are scams? Use 10,000 emails.",
+   "answer": "100 are scams and 90 are flagged. 9,900 are normal and 495 are flagged. 90 out of 585 is about 15 per cent.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "explain",
+   "prompt": "Why are these problems easier when given as counts of people?",
+   "answer": "The percentages are shares of different groups and cannot be combined directly. Counts put everyone in one crowd, so you can simply divide.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r7",
+   "kind": "true_false",
+   "prompt": "True or false: the chance of a positive test given the disease equals the chance of the disease given a positive test.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "They are counted in different groups. In the lesson's example they are 80 per cent and 7.8 per cent."
+  },
+  {
+   "id": "r8",
+   "kind": "compare",
+   "prompt": "The same test is used on a group where a condition is rare and on a group where it is common. In which group is a positive result more believable, and why?",
+   "answer": "Where it is common. There are more true cases to find and fewer healthy people to produce false alarms.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  }
+ ],
+ "teach_back": {
+  "prompt": "A friend has just had a positive result from a screening test. Explain why they should ask how common the condition is, using a crowd of 10,000 people.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Splits a crowd into those with the condition and those without, using the base rate."
+   },
+   {
+    "id": "t2",
+    "point": "Counts the positives in each group."
+   },
+   {
+    "id": "t3",
+    "point": "Divides true positives by all positives."
+   },
+   {
+    "id": "t4",
+    "point": "Says the result still raised the chance, and that a follow-up test is the next step."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Treats the test's detection rate as the chance of having the condition",
+   "Tells the friend the result means nothing"
+  ]
+ },
+ "challenge": {
+  "kind": "spot_the_flaw",
+  "prompt": "A prosecutor says: \"Only 1 person in 10,000 would match this DNA sample by chance. The defendant matches. So there is a 99.99 per cent chance he is guilty.\" The city has a million people and there is no other evidence. What is wrong?",
+  "model_answer": [
+   "The 1 in 10,000 is the chance of a match given innocence. The prosecutor presents it as the chance of innocence given a match.",
+   "In a city of a million, about 100 innocent people would match by chance.",
+   "On this evidence alone the defendant is one of roughly 101 matching people, so the chance is about 1 per cent, not 99.99.",
+   "Other evidence could raise that a great deal. The flaw is in the reasoning, not necessarily in the verdict."
+  ],
+  "follow_up": "What extra piece of evidence would raise the chance the most, and why?"
+ },
+ "connections": [
+  {
+   "to": "thk13",
+   "body_md": "Updating beliefs is this lesson without the arithmetic. You hold a belief with some confidence, evidence arrives, and you move by an amount that depends on how much more likely the evidence is if you are right than if you are wrong. Bayes' rule tells you exactly how far."
+  },
+  {
+   "to": "thk12",
+   "body_md": "The base rate is the first number in the calculation and the one people skip. Asking how common something is before judging a single case is the habit that prevents the 80 per cent mistake."
+  },
+  {
+   "to": "pol08",
+   "body_md": "A court has to decide how likely guilt is given the evidence. The evidence usually comes as the chance of the evidence given innocence, such as a DNA match rate. Confusing the two is common enough to have a name, the prosecutor's fallacy."
+  },
+  {
+   "to": "cmp15",
+   "body_md": "A language model produces text one word at a time by estimating the probability of each possible next word given all the words so far. That is a conditional probability, computed at enormous scale."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**The question that fools almost everyone**\n\nThe mammography problem has been put to students, patients and doctors for decades. In its usual form it gives three percentages: 1 per cent of women in routine screening have breast cancer, the test is positive for 80 per cent of those who do, and it is positive for 9.6 per cent of those who do not. Then it asks how likely cancer is, given a positive result.\n\nThe common answer is somewhere near 80 per cent. The right answer is about 7.8 per cent. In one study of 259 students aged 16 to 18, only about 5 per cent of answers were correct when the problem was given in percentages.\n\n**Why the percentages mislead**\n\nThe three percentages are each a share of a different group. One per cent is a share of all women. Eighty per cent is a share of the women with cancer. And 9.6 per cent is a share of the women without it. Your mind tries to combine them directly and cannot, so it grabs the most striking number.\n\nA conditional probability is a probability inside a group. The chance of a positive test given cancer is counted among women who have cancer. The chance of cancer given a positive test is counted among women who tested positive. Those are different groups of very different sizes, so the two numbers have no reason to match.\n\n**Counting people instead**\n\nPsychologists Gerd Gigerenzer and Ulrich Hoffrage proposed a fix in 1995: restate the problem as counts of people, which they called natural frequencies.\n\nPicture 10,000 women. A hundred have cancer, and 80 of those test positive. The other 9,900 do not have cancer, and 950 of them test positive anyway. So there are 1,030 positive results, and 80 of them belong to women with cancer. Eighty out of 1,030 is about 7.8 per cent.\n\nNothing about the facts has changed. Only the format has. In the same study, about 42 per cent of answers were correct when the problem was given this way, and a diagram on top raised it to about half.\n\nTraining does not protect you. In a study reported in a medical journal in 2003, 48 doctors with an average of 14 years' experience were given a version of the problem whose correct answer is about 9 per cent. Those who received it as probabilities gave answers ranging from 1 per cent to 90 per cent. Most of those who received it as natural frequencies were right or close.\n\n**Bayes' rule**\n\nThe division you just did is Bayes' rule. Written with probabilities it reads:\n\nP(cancer given positive) = P(positive given cancer) × P(cancer), divided by the total chance of a positive result.\n\nThe total on the bottom is the true positives plus the false positives: 80 per cent of 1 per cent, plus 9.6 per cent of 99 per cent. Work it through and you get the same 7.8 per cent. The formula and the picture of 10,000 people are one calculation in two notations.\n\n**The three things you always need**\n\n- **The base rate.** How common the condition is before any test. Here, 1 per cent.\n- **The hit rate.** How often the test is positive when the condition is present. Here, 80 per cent.\n- **The false alarm rate.** How often it is positive when the condition is absent. Here, 9.6 per cent.\n\nLeaving out the first one has a name: base rate neglect. When a condition is rare, even a small false alarm rate applies to a very large healthy group and swamps the true cases.\n\n**When the base rate changes**\n\nTake the same test and use it on a group in which 30 per cent have the condition. These numbers are invented to show the effect. Of 10,000 people, 3,000 have it and 2,400 of them test positive. Of the 7,000 who do not, 672 test positive. Now 2,400 of 3,072 positives are real, which is about 78 per cent. The test did not improve. The group changed.\n\nThis is why a screening result in the general population calls for a follow-up test, and why the same result in someone with symptoms is taken far more seriously.\n\n**Evidence stacks up**\n\nA positive result moved the chance from 1 per cent to 7.8 per cent. That new figure becomes the starting point for the next piece of evidence. If a second test with the same hit and false alarm rates also came back positive, and if its errors were unrelated to the first test's, the chance would rise to about 41 per cent. Each piece of evidence moves the belief. It takes several to make it firm.\n\nThat is the general lesson, and it reaches well beyond medicine. A belief should start from how common something is and then move by an amount that depends on how much more likely the evidence is if the belief is true than if it is false.",
+  "est_minutes": 7
+ },
+ "go_further": [
+  {
+   "kind": "short",
+   "title": "Simple tools for understanding risks: from innumeracy to insight",
+   "by": "Gerd Gigerenzer and Adrian Edwards, BMJ",
+   "year": 2003,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC200816",
+   "note": "Four pages for doctors on why percentages mislead and how counting people fixes it.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "long",
+   "title": "Effects of visualizing statistical information: an empirical study on tree diagrams and 2 × 2 tables",
+   "by": "Karin Binder, Stefan Krauss and Georg Bruckmaier, Frontiers in Psychology",
+   "year": 2015,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4549558",
+   "note": "The open-access study behind this lesson's figures, with both versions of the mammography problem printed in full.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Binder, Krauss and Bruckmaier (2015), Effects of visualizing statistical information: an empirical study on tree diagrams and 2 × 2 tables, Frontiers in Psychology 6:1186",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4549558",
+   "tier": "research",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The mammography problem: 1 per cent, 80 per cent and 9.6 per cent",
+    "The answer of about 7.8 per cent and the Bayes calculation",
+    "The natural frequency version: 100, 80 and 950 out of 10,000",
+    "About 5 per cent correct with probabilities and 42 per cent with natural frequencies",
+    "Diagrams raise performance further",
+    "Gigerenzer and Hoffrage (1995) introduced the natural frequency version",
+    "The term base rate neglect"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Gigerenzer and Edwards (2003), Simple tools for understanding risks: from innumeracy to insight, BMJ 327:741-744",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC200816",
+   "tier": "research",
+   "accessed": "2026-11-13",
+   "supports": [
+    "48 doctors with an average of 14 years' experience",
+    "With probabilities, answers ranged from 1 to 90 per cent",
+    "With natural frequencies most were right or close",
+    "Their version: 7 of about 77 positives have cancer, about 9 per cent",
+    "Why natural frequencies help: every number refers to the same group of people"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "The 30 per cent example, the second-test figure of about 41 per cent, the email question and the DNA example are the writer's own arithmetic on invented numbers, and the lesson says so where they appear. The terms hit rate and false alarm rate are the writer's plain-language labels. The doctors' study in s2 uses slightly different figures from the classic problem (8 in 1,000 women with cancer), which is why its answer is about 9 per cent and not 7.8."
+ }
+}

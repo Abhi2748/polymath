@@ -1,0 +1,416 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "his04",
+ "title": "First cities and writing",
+ "question": "Why did states, writing and inequality appear together?",
+ "est_minutes": 14,
+ "objectives": [
+  "Explain how a farm surplus led to storehouses, records and rulers in Sumer",
+  "Say what the earliest writing was used for and who could read it",
+  "Describe the layers of Sumerian society"
+ ],
+ "key_terms": [
+  {
+   "term": "Sumer",
+   "definition": "Southern Mesopotamia, between the Tigris and Euphrates rivers, where the first great cities arose."
+  },
+  {
+   "term": "Surplus",
+   "definition": "Food produced beyond what the farmers themselves need, which can feed people who do other work."
+  },
+  {
+   "term": "Cuneiform",
+   "definition": "The wedge-shaped script of Mesopotamia, pressed into wet clay."
+  },
+  {
+   "term": "Ziggurat",
+   "definition": "A stepped tower of mud brick at the centre of a Sumerian temple complex."
+  }
+ ],
+ "when": {
+  "label": "about 3500 to 2000 BCE",
+  "start_year": -3500,
+  "end_year": -2000
+ },
+ "guess": {
+  "prompt": "By about 3000 BCE, Uruk in southern Mesopotamia was the largest settlement in its region. Roughly how many people may have lived there?",
+  "options": [
+   {
+    "id": "a",
+    "text": "About 500"
+   },
+   {
+    "id": "b",
+    "text": "About 5,000"
+   },
+   {
+    "id": "c",
+    "text": "Up to 50,000"
+   },
+   {
+    "id": "d",
+    "text": "About 500,000"
+   }
+  ],
+  "answer_id": "c",
+  "reveal": "Up to 50,000. The next largest places nearby had about 5,000, and most people still lived in villages of around a hundred."
+ },
+ "hook": "For almost all of human history nobody had a king, paid a tax or signed anything. Then, in one river valley, all three appeared within a few centuries of each other.",
+ "explanation": {
+  "body_md": "The first great cities arose in **Sumer**, the plain between the Tigris and Euphrates rivers, in the fourth millennium BCE.\n\nThe rivers gave rich soil but flooded without warning. Taming them took canals and dikes, which meant people working together under direction. The reward was a **surplus**: more food than the farmers needed.\n\nA surplus has to be kept somewhere. In Sumer it went to the temple, which collected farm goods as taxes, stored them, and paid them out to artisans and merchants.\n\nA storehouse serving thousands of strangers cannot run on memory. It needs records. **Cuneiform**, wedge-shaped marks in clay, was in use as true writing by about 3000 BCE, for laws, contracts, taxes and payrolls. Only a small group of trained scribes could read it.\n\nWhoever controls the store and the records holds power. Sumerian society had a tiny elite of priests, scribes and commanders, a large body of free commoners, peasants tied to the land, and slaves. Kings rose as war leaders in fights between cities over land and water.\n\nSo the three arrived together because each made the next necessary. This is one reading of the evidence, and historians still argue over parts of it.",
+  "analogy": "Five friends can split a restaurant bill from memory. A company of five thousand cannot pay its staff that way. It needs ledgers, people whose job is to keep them, and someone with authority over both. Sumer met that problem first.",
+  "takeaways": [
+   "Irrigation farming produced a surplus, and a surplus needs storing and sharing out.",
+   "Writing began as administration: taxes, contracts and pay.",
+   "Control of the store and the records put a small elite above everyone else."
+  ],
+  "visual": {
+   "kind": "svg",
+   "alt": "Four boxes in a row joined by arrows: surplus, storehouse, records, rulers",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"3\" y=\"66\" width=\"74\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"90\" font-size=\"10.5\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">surplus</text><path d=\"M78 86h4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"83\" y=\"66\" width=\"74\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"120\" y=\"90\" font-size=\"10.5\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">storehouse</text><path d=\"M158 86h4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"163\" y=\"66\" width=\"74\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"200\" y=\"90\" font-size=\"10.5\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">records</text><path d=\"M238 86h4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"243\" y=\"66\" width=\"74\" height=\"40\" rx=\"6\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><text x=\"280\" y=\"90\" font-size=\"10.5\" text-anchor=\"middle\" fill=\"#fff\" font-weight=\"700\">rulers</text><text x=\"160\" y=\"40\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">each step makes the next one necessary</text><text x=\"160\" y=\"146\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">cities, writing and rank arrive as a package</text></svg>"
+  }
+ },
+ "worked_example": {
+  "body_md": "Follow one sack of barley through Uruk. The details are a reconstruction for illustration, built from the roles the records describe.\n\n1. A farmer harvests more barley than his family will eat. Part of it is owed to the temple.\n2. At the storehouse a scribe presses marks into a clay tablet: who delivered, and how much.\n3. The barley sits in the temple's store alongside thousands of other deliveries.\n4. A weaver who makes cloth for the temple is paid in barley. The scribe records that too.\n5. The farmer, the weaver and the scribe may never meet. The tablet connects them.\n\nNow ask who gains power from this. The farmer cannot read the tablet. The priest who runs the store and the scribe who keeps the count decide what is owed and what is paid. The same system that feeds a city puts a few people in charge of it."
+ },
+ "misconception": {
+  "claim": "Writing was invented to record stories and ideas.",
+  "correction_md": "The earliest uses we know of were practical: laws, contracts, taxes and payrolls. Literature came much later. The Epic of Gilgamesh took the form we know around 2100 BCE, some nine centuries after cuneiform was in use.\n\nHow writing started is still debated. One view traces it to clay tokens used in accounting. Another holds that it was a deliberate invention to record spoken Sumerian. Both agree that its first job was running a city, not telling a tale."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "By about 3000 BCE, Uruk in southern Mesopotamia was the largest settlement in its region. Roughly how many people may have lived there?",
+   "visual": {
+    "kind": "svg",
+    "alt": "A stepped temple tower among small houses, with a question mark, asking how many people lived in Uruk",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"100\" y=\"108\" width=\"120\" height=\"22\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"117\" y=\"86\" width=\"86\" height=\"22\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"134\" y=\"64\" width=\"52\" height=\"22\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M30 130H290\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"40\" y=\"116\" width=\"16\" height=\"14\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"110\" width=\"16\" height=\"20\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"82\" y=\"118\" width=\"16\" height=\"12\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"224\" y=\"112\" width=\"16\" height=\"18\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"246\" y=\"118\" width=\"16\" height=\"12\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"268\" y=\"108\" width=\"16\" height=\"22\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"250\" y=\"60\" font-size=\"56\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">?</text><text x=\"160\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Uruk, about 3000 BCE: how many people?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "A very recent invention",
+   "body_md": "For almost all of human history nobody had a king, paid a tax or signed anything. Then, in one river valley, all three appeared within a few centuries.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A long bar for human history with a thin slice at the far right marked cities",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"70\" width=\"280\" height=\"26\" rx=\"4\" fill=\"currentColor\" opacity=\"0.25\"/><rect x=\"289\" y=\"70\" width=\"11\" height=\"26\" rx=\"2\" fill=\"var(--accent, #3b82f6)\"/><text x=\"20\" y=\"60\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">about 300,000 years of human history</text><text x=\"300\" y=\"122\" font-size=\"12\" text-anchor=\"end\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">cities</text><path d=\"M294 100V110\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"156\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">kings, taxes and writing are very recent</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "idea",
+   "title": "Rivers and surplus",
+   "body_md": "In **Sumer** the rivers gave rich soil but flooded without warning. Canals tamed them, and farms began to grow more food than the farmers needed.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two rivers with a grid of irrigated fields between them, fed by canals",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M62 8C34 50 84 100 56 150\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M258 8C286 50 236 100 264 150\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M110 84V138\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M128 84V138\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M146 84V138\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M164 84V138\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M182 84V138\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M200 84V138\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M218 84V138\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M100 84H218\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M100 102H218\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M100 120H218\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M100 138H218\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.4\"/><path d=\"M68 93H100M218 111H250\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">floods bring soil</text><text x=\"160\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">canals bring water</text><text x=\"84\" y=\"18\" font-size=\"11\" text-anchor=\"start\" fill=\"var(--accent, #3b82f6)\" font-weight=\"400\">Tigris</text><text x=\"236\" y=\"18\" font-size=\"11\" text-anchor=\"end\" fill=\"var(--accent, #3b82f6)\" font-weight=\"400\">Euphrates</text><text x=\"160\" y=\"172\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">more food than farmers need</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "The storehouse",
+   "body_md": "The temple collected farm goods as taxes, stored them, and paid them out to artisans and merchants. It was the city's bank, warehouse and paymaster.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A temple tower with an arrow of grain flowing in from farms and an arrow of rations flowing out to artisans",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"105\" y=\"98\" width=\"110\" height=\"22\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"122\" y=\"76\" width=\"76\" height=\"22\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"139\" y=\"54\" width=\"42\" height=\"22\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M30 120H290\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 96L96 96M96 96l-7 -5M96 96l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">grain in</text><path d=\"M224 96L282 96M282 96l-7 -5M282 96l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"254\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">rations out</text><text x=\"66\" y=\"142\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">taxes from farms</text><text x=\"254\" y=\"142\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">pay for artisans</text><text x=\"160\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the temple is the storehouse</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "idea",
+   "title": "Writing begins as accounts",
+   "body_md": "Thousands of strangers cannot be tracked from memory. By about 3000 BCE scribes pressed **cuneiform** into clay for taxes, contracts and pay.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A clay tablet covered in rows of wedge-shaped marks",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"96\" y=\"30\" width=\"128\" height=\"112\" rx=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M110 46l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M118 51h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M132 46l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M140 51h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154 46l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M162 51h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 46l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 51h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M198 46l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206 51h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M110 70l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M118 75h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M132 70l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M140 75h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154 70l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M162 75h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 70l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 75h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M198 70l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206 75h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M110 94l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M118 99h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M132 94l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M140 99h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154 94l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M162 99h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 94l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 99h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M198 94l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206 99h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M110 118l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M118 123h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M132 118l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M140 123h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154 118l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M162 123h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 118l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 123h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M198 118l8 5l-8 5z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206 123h7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">who gave what, who is owed what</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "idea",
+   "title": "A pyramid of people",
+   "body_md": "A tiny elite of priests, scribes and commanders. About half were free commoners. Below them, peasants tied to the land, and slaves.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A stepped pyramid of society: a small top layer of priests, scribes and commanders, then free commoners, then peasants tied to the land, then slaves",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"130\" y=\"36\" width=\"60\" height=\"26\" rx=\"3\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><text x=\"160\" y=\"26\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">priests, scribes, commanders</text><rect x=\"62\" y=\"68\" width=\"196\" height=\"26\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"160\" y=\"85\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">free farmers, artisans, merchants</text><rect x=\"40\" y=\"100\" width=\"240\" height=\"26\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"160\" y=\"117\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">peasants tied to the land</text><rect x=\"18\" y=\"132\" width=\"284\" height=\"26\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"160\" y=\"149\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">slaves</text><text x=\"160\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">a small elite on top</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "myth",
+   "title": "Stories came later",
+   "body_md": "Writing was not invented for literature. Its first jobs were taxes and contracts. The Epic of Gilgamesh came some nine centuries afterwards.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A timeline with writing in use about 3000 BCE for taxes and contracts, and the Epic of Gilgamesh about 2100 BCE",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M30 90H290\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"70\" cy=\"90\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"250\" cy=\"90\" r=\"7\" fill=\"currentColor\"/><text x=\"70\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">about 3000 BCE</text><text x=\"70\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">writing in use</text><text x=\"70\" y=\"132\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">taxes, contracts, pay</text><text x=\"250\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">about 2100 BCE</text><text x=\"250\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Epic of Gilgamesh</text><text x=\"250\" y=\"132\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">in its known form</text><text x=\"160\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">stories came some nine centuries later</text></svg>"
+   }
+  },
+  {
+   "id": "c8",
+   "kind": "takeaway",
+   "title": "A package deal",
+   "body_md": "Surplus needed a storehouse. The storehouse needed records. Whoever held both, ruled. Cities, writing and rank arrived together.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Four boxes in a row joined by arrows: surplus, storehouse, records, rulers",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"3\" y=\"66\" width=\"74\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"90\" font-size=\"10.5\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">surplus</text><path d=\"M78 86h4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"83\" y=\"66\" width=\"74\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"120\" y=\"90\" font-size=\"10.5\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">storehouse</text><path d=\"M158 86h4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"163\" y=\"66\" width=\"74\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"200\" y=\"90\" font-size=\"10.5\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">records</text><path d=\"M238 86h4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"243\" y=\"66\" width=\"74\" height=\"40\" rx=\"6\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><text x=\"280\" y=\"90\" font-size=\"10.5\" text-anchor=\"middle\" fill=\"#fff\" font-weight=\"700\">rulers</text><text x=\"160\" y=\"40\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">each step makes the next one necessary</text><text x=\"160\" y=\"146\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">cities, writing and rank arrive as a package</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "In two sentences, why did the first cities bring rulers, records and ranks together?",
+   "answer": "A farm surplus had to be stored and shared out among thousands of strangers, which needed written records. Those who controlled the store and the records gained power over everyone else.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "mcq",
+   "prompt": "What was the earliest writing in Sumer mainly used for?",
+   "answer": "c",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "Poems and stories"
+    },
+    {
+     "id": "b",
+     "text": "Private letters"
+    },
+    {
+     "id": "c",
+     "text": "Taxes, contracts and payments"
+    },
+    {
+     "id": "d",
+     "text": "Recording the weather"
+    }
+   ],
+   "explanation": "Its first job was administration. Literature came centuries later."
+  },
+  {
+   "id": "r3",
+   "kind": "cloze",
+   "prompt": "The wedge-shaped script of Mesopotamia, pressed into clay, is called ___.",
+   "answer": "cuneiform",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "cuneiform"
+   ]
+  },
+  {
+   "id": "r4",
+   "kind": "number",
+   "prompt": "Roughly how many people may have lived in Uruk at its height in this period?",
+   "answer": "Up to 50,000.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "apply",
+   "prompt": "A company grows from 5 friends to 5,000 staff. Using this lesson, predict three things it will need that the 5 friends did not.",
+   "answer": "Written records, people whose job is keeping them, and a hierarchy with authority over both. Specialised roles is another good answer.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "true_false",
+   "prompt": "True or false: most people in Sumerian cities could read and write.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "Literacy was limited to a small elite of trained scribes."
+  },
+  {
+   "id": "r7",
+   "kind": "explain",
+   "prompt": "Why did irrigation push people toward organised authority?",
+   "answer": "The rivers flooded unpredictably, and canals and dikes were too large for one family. Building and maintaining them needed many people working under direction.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "compare",
+   "prompt": "Why do we know much less about how the Indus valley cities were ruled than about Sumer?",
+   "answer": "The Indus script has never been deciphered, while cuneiform was deciphered in the nineteenth century and thousands of tablets can be read.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r9",
+   "kind": "free_recall",
+   "prompt": "Name the layers of Sumerian society from top to bottom.",
+   "answer": "A small elite of priests, scribes and military leaders; free commoners; semi-free peasants tied to the land; slaves.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain to a friend why the first cities also produced the first kings, the first tax records and sharp inequality.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Irrigation farming in the river valley produced a surplus."
+   },
+   {
+    "id": "t2",
+    "point": "The surplus was collected and shared out through the temple, which needed records."
+   },
+   {
+    "id": "t3",
+    "point": "Early writing was used for administration, and few could read it."
+   },
+   {
+    "id": "t4",
+    "point": "Control of the store and the records concentrated power in a small elite and in kings."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Says writing was invented for stories or religion",
+   "Presents the surplus explanation as proven beyond debate"
+  ]
+ },
+ "challenge": {
+  "kind": "argue_other_side",
+  "prompt": "Was moving into the first cities a good deal for the ordinary person? Using only facts from this lesson, give the best one-paragraph case for yes and the best for no.",
+  "model_answer": [
+   "For yes: a stored surplus and shared irrigation gave protection against bad harvests, and specialised work produced bronze tools, the plough and the wheel.",
+   "For no: most people now paid taxes to a temple they did not control, many were tied to land they did not own, debt could lead to slavery, and cities fought wars over land and water.",
+   "A strong answer notes that the records were written by the elite, so they tell us more about the people at the top."
+  ],
+  "follow_up": "Which missing piece of evidence would most change your answer?"
+ },
+ "connections": [
+  {
+   "to": "geo04",
+   "body_md": "Sumer's cities grew between the Tigris and Euphrates, and Egypt's along the Nile. Rivers supplied soil and water, and they also made large shared projects unavoidable. That is the geography lesson's point about where cities grow, seen at the very beginning."
+  },
+  {
+   "to": "art06",
+   "body_md": "The ziggurat at the centre of each Sumerian city, and the goods buried in the royal tombs of Ur, are among the first monumental works. They exist because a surplus could support builders and craftsmen, and because rulers wanted their power to be seen."
+  },
+  {
+   "to": "rel12",
+   "body_md": "Each Sumerian city had its own patron god, such as Inanna at Uruk. The Epic of Gilgamesh, about a king of that city, is one of the oldest stories we can still read, and it survives because it was written in clay."
+  },
+  {
+   "to": "lng07",
+   "body_md": "Cuneiform started with signs for things and developed into a script in which each sign stood for a syllable. That move, from picturing objects to recording sounds, is the key step in the history of writing systems."
+  },
+  {
+   "to": "eng02",
+   "body_md": "Bronze, an alloy of tin and copper, replaced stone for tools and weapons in Sumer after 4000 BCE. Historians name whole ages after the material people made their tools from, and this is the start of the Bronze Age there."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**The land between the rivers**\n\nSouthern Mesopotamia, the plain between the Tigris and Euphrates in what is now Iraq, was called Sumer. The rivers laid down fertile soil, but they flooded often and without warning, and controlling the water took canals and dikes that no single family could build. Irrigation here was a shared project from the start.\n\nFarming reached the region by about 8000 BCE. People settled the south from around 5500 BCE, and by about 4500 BCE some farming villages had grown into centres of several thousand people. By the end of the fourth millennium BCE there were at least 124 villages of about a hundred people each, 20 towns of up to 2,000, another 20 small urban centres of about 5,000, and one giant: Uruk, which may have held up to 50,000.\n\n**What a city needed**\n\nA village can run on memory. Everyone knows who owes whom. A city of tens of thousands of strangers cannot.\n\nThe Sumerians' answer was the temple. Each city had a patron god and a temple complex built around a ziggurat, a stepped tower of mud brick, with priests' houses and workshops around it. Temples, and later palaces, worked as redistribution centres. They collected farm produce as taxes, stored it, and paid it out to artisans and merchants. There were no coins. Those arrived about a thousand years later, and until then precious metal was weighed out when goods changed hands.\n\nNew tools made the surplus larger. Bronze, an alloy of tin and copper, came into use after 4000 BCE and replaced stone. The Sumerians developed the plough, the wheel, and a number system built on sixty, ten and one.\n\n**Why writing appeared**\n\nCuneiform, a script of wedge-shaped marks pressed into wet clay, was a true writing system by around 3000 BCE, if not before. Scribes used it for laws, contracts, taxes, payrolls and religious texts. Only a small, highly trained group could read and write.\n\nThe oldest tablets show what writing was for. About 6,000 of them survive in the earliest script, called proto-cuneiform, and they are records kept by the temple estates: signs that picture rations and goods, with numbers beside them. At first a sign stood for a thing. Later, scribes began to use a sign for its sound, as if a drawing of a bee and a leaf were used to spell belief. That trick was in steady use after about 2600 BCE, and by about 2500 BCE writing was being used for literature and learning as well.\n\nHow it began is still argued over. One scholar, Denise Schmandt-Besserat, traced it to small clay tokens used for keeping accounts. Another, Jean-Jacques Glassner, argued that it was a deliberate invention to record the Sumerian language. Either way, its early work was administration, and the stories came later. The Epic of Gilgamesh, about a king of Uruk, was written down in the form we know around 2100 BCE.\n\n**Rank and rule**\n\nA stored surplus has to be guarded and shared out, and whoever does that holds power. Temples, kings and large landowners controlled much of the land. About half the population were free commoners: peasants, artisans and merchants. Below them were semi-free peasants tied to the land they worked. Slaves were a small group, mostly prisoners of war, criminals and debtors, and a man could sell his children to pay a debt. At the top sat a very small elite of priests, scribes and military leaders.\n\nKings came out of war. From about 2650 BCE dynasties of rulers called lugals governed the cities. They rose mainly as warlords in fights over farmland and water, and they justified their rule through control of the temples. The royal tombs of Ur show how far apart the top and bottom had grown: they contained rich goods and the bodies of servants.\n\nAround 2300 BCE Sargon of Akkad conquered the Sumerian cities and built the first known empire, which lasted about 150 years. Some five centuries later Hammurabi of Babylon published a law code on stone pillars. Its penalties depended on the social class of the people involved.\n\n**Not only Mesopotamia**\n\nEgypt took shape along the Nile in the same millennium, with its own writing system and, often, a single ruler. The Indus valley civilisation followed early in the third millennium BCE, with large, carefully planned cities such as Harappa and Mohenjo-Daro. Its script has never been deciphered, which is why far less is known about how it was ruled or why it declined.\n\n**How we know**\n\nClay lasts. Thousands of tablets survived, and after scholars deciphered cuneiform in the nineteenth century they could read them. The picture above comes largely from the records these cities kept about themselves.\n\n**Reading the pattern**\n\nThe chain from surplus to storehouse to records to rulers is one way of joining these facts, and it fits Sumer well. It should be held loosely. The Indus cities were as large and seem to have been organised differently, and since nobody can read their writing, the comparison cannot yet be made properly.",
+  "est_minutes": 7
+ },
+ "go_further": [
+  {
+   "kind": "long",
+   "title": "Ancient Mesopotamia",
+   "by": "OpenStax, World History Volume 1, section 3.2",
+   "url": "https://openstax.org/books/world-history-volume-1/pages/3-2-ancient-mesopotamia",
+   "note": "The free textbook section this lesson rests on, with maps and images of the sites.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "short",
+   "title": "Early Civilizations and Urban Societies: section summary",
+   "by": "OpenStax, World History Volume 1",
+   "url": "https://openstax.org/books/world-history-volume-1/pages/3-section-summary",
+   "note": "One page comparing Mesopotamia, Egypt and the Indus valley.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "short",
+   "title": "The Origins of Writing",
+   "by": "Ira Spar, The Metropolitan Museum of Art",
+   "year": 2004,
+   "url": "https://www.metmuseum.org/toah/hd/wrtg/hd_wrtg.htm",
+   "note": "A museum curator's short essay on the first tablets, with photographs of them.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "OpenStax World History Volume 1, section 3.2: Ancient Mesopotamia",
+   "url": "https://openstax.org/books/world-history-volume-1/pages/3-2-ancient-mesopotamia",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Dates for farming, settlement and the first cities",
+    "Settlement sizes and Uruk's population",
+    "Temples and palaces as redistribution centres",
+    "Bronze, the plough, the wheel and the base-sixty system",
+    "Cuneiform by about 3000 BCE, its uses, and limited literacy",
+    "The debate between Schmandt-Besserat and Glassner",
+    "Social layers and slavery",
+    "Lugals, the royal tombs of Ur, Sargon and Hammurabi",
+    "The Epic of Gilgamesh around 2100 BCE",
+    "Decipherment in the nineteenth century"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "OpenStax World History Volume 1, chapter 3 section summary",
+   "url": "https://openstax.org/books/world-history-volume-1/pages/3-section-summary",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Egypt along the Nile in the fourth millennium BCE with its own writing",
+    "The Indus valley civilisation, its planned cities and undeciphered script"
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Ira Spar, The Origins of Writing, Heilbrunn Timeline of Art History, The Metropolitan Museum of Art (2004)",
+   "url": "https://www.metmuseum.org/toah/hd/wrtg/hd_wrtg.htm",
+   "tier": "institution",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Uruk as the first city, and its size",
+    "Record keeping grew out of the accounts of temple estates",
+    "About 6,000 proto-cuneiform tablets, with signs picturing rations",
+    "Signs used for their sounds, consistently after about 2600 BCE",
+    "Literary and scholarly uses by about 2500 BCE"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "The chain from surplus to storehouse to records to rulers is the writer's synthesis of the sourced facts and is labelled in the lesson as one reading. The barley walk-through is an illustrative reconstruction, and the bee and leaf example of a sign used for its sound is the writer's own. s3 is the independent check on the account of early writing. The figure of about 300,000 years of human history on card 2 is a standard estimate and is not in the sources; check it when the human origins lesson is written. The gap of about five centuries between Sargon and Hammurabi is computed from the dates in s1."
+ }
+}

@@ -1,0 +1,437 @@
+{
+ "about": "Approved places to look for sources, by field. The pipeline searches these sites for each topic; it never takes an address from a model. Sites marked opened were read while the model lessons were written. The others are listed from general knowledge: run `python -m pipeline.sources --check` to confirm each home page answers, and add or remove sites as you learn which are good.",
+ "notes": [
+  "Music and Visual Art have no OpenStax book. Add an open music theory textbook for MUS when you find one you trust.",
+  "Britannica is the fallback reference for every field.",
+  "Per-topic addresses in pipeline/sources/<topic_id>.txt are tried first."
+ ],
+ "sites": {
+  "openstax": {
+   "name": "OpenStax open textbooks",
+   "home": "https://openstax.org",
+   "tier": "textbook",
+   "opened": true
+  },
+  "sep": {
+   "name": "Stanford Encyclopedia of Philosophy",
+   "home": "https://plato.stanford.edu",
+   "tier": "reference",
+   "opened": true
+  },
+  "britannica": {
+   "name": "Encyclopaedia Britannica",
+   "home": "https://www.britannica.com",
+   "tier": "reference",
+   "opened": true
+  },
+  "pmc": {
+   "name": "PubMed Central (open research papers)",
+   "home": "https://pmc.ncbi.nlm.nih.gov",
+   "tier": "research",
+   "opened": true
+  },
+  "met": {
+   "name": "The Met, Heilbrunn Timeline of Art History",
+   "home": "https://www.metmuseum.org/toah",
+   "tier": "institution",
+   "opened": true
+  },
+  "poets": {
+   "name": "Academy of American Poets",
+   "home": "https://poets.org",
+   "tier": "reference",
+   "opened": true
+  },
+  "folger": {
+   "name": "Folger Shakespeare Library",
+   "home": "https://www.folger.edu",
+   "tier": "institution",
+   "opened": true
+  },
+  "ucmp": {
+   "name": "Understanding Evolution, UC Museum of Paleontology",
+   "home": "https://evolution.berkeley.edu",
+   "tier": "institution",
+   "opened": true
+  },
+  "arxiv": {
+   "name": "arXiv (lecture notes and papers)",
+   "home": "https://arxiv.org",
+   "tier": "research",
+   "opened": true
+  },
+  "iep": {
+   "name": "Internet Encyclopedia of Philosophy",
+   "home": "https://iep.utm.edu",
+   "tier": "reference",
+   "opened": false
+  },
+  "ncbi_books": {
+   "name": "NCBI Bookshelf",
+   "home": "https://www.ncbi.nlm.nih.gov/books",
+   "tier": "textbook",
+   "opened": false
+  },
+  "medlineplus": {
+   "name": "MedlinePlus",
+   "home": "https://medlineplus.gov",
+   "tier": "institution",
+   "opened": false
+  },
+  "nasa": {
+   "name": "NASA Science",
+   "home": "https://science.nasa.gov",
+   "tier": "institution",
+   "opened": false
+  },
+  "usgs": {
+   "name": "US Geological Survey",
+   "home": "https://www.usgs.gov",
+   "tier": "institution",
+   "opened": false
+  },
+  "noaa": {
+   "name": "NOAA",
+   "home": "https://www.noaa.gov",
+   "tier": "institution",
+   "opened": false
+  },
+  "smarthistory": {
+   "name": "Smarthistory",
+   "home": "https://smarthistory.org",
+   "tier": "institution",
+   "opened": false
+  },
+  "gutenberg": {
+   "name": "Project Gutenberg (primary texts published before 1929)",
+   "home": "https://www.gutenberg.org",
+   "tier": "institution",
+   "opened": false
+  },
+  "owid": {
+   "name": "Our World in Data",
+   "home": "https://ourworldindata.org",
+   "tier": "institution",
+   "opened": false
+  },
+  "worldbank": {
+   "name": "World Bank Open Data",
+   "home": "https://data.worldbank.org",
+   "tier": "institution",
+   "opened": false
+  },
+  "libretexts": {
+   "name": "LibreTexts open textbooks",
+   "home": "https://libretexts.org",
+   "tier": "textbook",
+   "opened": false
+  },
+  "mitocw": {
+   "name": "MIT OpenCourseWare",
+   "home": "https://ocw.mit.edu",
+   "tier": "institution",
+   "opened": false
+  },
+  "whe": {
+   "name": "World History Encyclopedia",
+   "home": "https://www.worldhistory.org",
+   "tier": "reference",
+   "opened": false
+  },
+  "lii": {
+   "name": "Legal Information Institute, Cornell",
+   "home": "https://www.law.cornell.edu",
+   "tier": "reference",
+   "opened": false
+  },
+  "feynman": {
+   "name": "The Feynman Lectures on Physics",
+   "home": "https://www.feynmanlectures.caltech.edu",
+   "tier": "textbook",
+   "opened": false
+  },
+  "investor": {
+   "name": "Investor.gov",
+   "home": "https://www.investor.gov",
+   "tier": "institution",
+   "opened": false
+  }
+ },
+ "fields": {
+  "LRN": {
+   "openstax_books": [
+    "Psychology 2e"
+   ],
+   "sites": [
+    "openstax",
+    "pmc",
+    "britannica"
+   ]
+  },
+  "THK": {
+   "openstax_books": [
+    "Introduction to Philosophy"
+   ],
+   "sites": [
+    "openstax",
+    "sep",
+    "iep",
+    "pmc",
+    "britannica"
+   ]
+  },
+  "MAT": {
+   "openstax_books": [
+    "Contemporary Mathematics",
+    "Calculus Volume 1",
+    "Precalculus 2e"
+   ],
+   "sites": [
+    "openstax",
+    "libretexts",
+    "arxiv",
+    "mitocw",
+    "britannica"
+   ]
+  },
+  "PRB": {
+   "openstax_books": [
+    "Introductory Statistics 2e"
+   ],
+   "sites": [
+    "openstax",
+    "pmc",
+    "libretexts",
+    "britannica"
+   ]
+  },
+  "LNG": {
+   "openstax_books": [
+    "Writing Guide with Handbook"
+   ],
+   "sites": [
+    "openstax",
+    "sep",
+    "iep",
+    "britannica"
+   ]
+  },
+  "PHY": {
+   "openstax_books": [
+    "University Physics Volumes 1 to 3",
+    "College Physics 2e"
+   ],
+   "sites": [
+    "openstax",
+    "feynman",
+    "libretexts",
+    "britannica"
+   ]
+  },
+  "CHM": {
+   "openstax_books": [
+    "Chemistry 2e"
+   ],
+   "sites": [
+    "openstax",
+    "libretexts",
+    "britannica"
+   ]
+  },
+  "AST": {
+   "openstax_books": [
+    "Astronomy 2e"
+   ],
+   "sites": [
+    "openstax",
+    "nasa",
+    "britannica"
+   ]
+  },
+  "EAR": {
+   "openstax_books": [],
+   "sites": [
+    "usgs",
+    "noaa",
+    "nasa",
+    "libretexts",
+    "britannica"
+   ]
+  },
+  "MND": {
+   "openstax_books": [
+    "Psychology 2e"
+   ],
+   "sites": [
+    "openstax",
+    "pmc",
+    "sep",
+    "britannica"
+   ]
+  },
+  "BIO": {
+   "openstax_books": [
+    "Biology 2e",
+    "Microbiology"
+   ],
+   "sites": [
+    "openstax",
+    "ucmp",
+    "ncbi_books",
+    "pmc",
+    "britannica"
+   ]
+  },
+  "MED": {
+   "openstax_books": [
+    "Anatomy and Physiology 2e",
+    "Microbiology"
+   ],
+   "sites": [
+    "openstax",
+    "ncbi_books",
+    "medlineplus",
+    "pmc",
+    "britannica"
+   ]
+  },
+  "HIS": {
+   "openstax_books": [
+    "World History Volumes 1 and 2"
+   ],
+   "sites": [
+    "openstax",
+    "met",
+    "whe",
+    "britannica"
+   ]
+  },
+  "GEO": {
+   "openstax_books": [],
+   "sites": [
+    "owid",
+    "usgs",
+    "worldbank",
+    "britannica"
+   ]
+  },
+  "ECO": {
+   "openstax_books": [
+    "Principles of Economics 3e"
+   ],
+   "sites": [
+    "openstax",
+    "owid",
+    "worldbank",
+    "britannica"
+   ]
+  },
+  "POL": {
+   "openstax_books": [
+    "Introduction to Political Science",
+    "American Government 3e"
+   ],
+   "sites": [
+    "openstax",
+    "sep",
+    "lii",
+    "britannica"
+   ]
+  },
+  "BUS": {
+   "openstax_books": [
+    "Introduction to Business",
+    "Principles of Finance",
+    "Principles of Accounting"
+   ],
+   "sites": [
+    "openstax",
+    "investor",
+    "britannica"
+   ]
+  },
+  "SOC": {
+   "openstax_books": [
+    "Introduction to Sociology 3e",
+    "Introduction to Anthropology"
+   ],
+   "sites": [
+    "openstax",
+    "owid",
+    "pmc",
+    "britannica"
+   ]
+  },
+  "PHI": {
+   "openstax_books": [
+    "Introduction to Philosophy"
+   ],
+   "sites": [
+    "openstax",
+    "sep",
+    "iep",
+    "gutenberg",
+    "britannica"
+   ]
+  },
+  "REL": {
+   "openstax_books": [
+    "World History Volumes 1 and 2",
+    "Introduction to Anthropology"
+   ],
+   "sites": [
+    "openstax",
+    "sep",
+    "whe",
+    "met",
+    "britannica"
+   ]
+  },
+  "ART": {
+   "openstax_books": [],
+   "sites": [
+    "met",
+    "smarthistory",
+    "britannica"
+   ]
+  },
+  "MUS": {
+   "openstax_books": [],
+   "sites": [
+    "libretexts",
+    "britannica"
+   ]
+  },
+  "LIT": {
+   "openstax_books": [],
+   "sites": [
+    "poets",
+    "folger",
+    "gutenberg",
+    "britannica"
+   ]
+  },
+  "CMP": {
+   "openstax_books": [
+    "Introduction to Computer Science",
+    "Introduction to Python Programming"
+   ],
+   "sites": [
+    "openstax",
+    "mitocw",
+    "arxiv",
+    "sep",
+    "britannica"
+   ]
+  },
+  "ENG": {
+   "openstax_books": [],
+   "sites": [
+    "mitocw",
+    "libretexts",
+    "nasa",
+    "britannica"
+   ]
+  }
+ }
+}

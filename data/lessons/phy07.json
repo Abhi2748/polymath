@@ -1,0 +1,432 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "phy07",
+ "title": "Entropy",
+ "question": "Why does time run only one way?",
+ "est_minutes": 13,
+ "objectives": [
+  "Explain entropy as a count of the arrangements that match what you see",
+  "State the second law and say why local order does not break it",
+  "Explain why some processes never run backwards"
+ ],
+ "key_terms": [
+  {
+   "term": "Entropy",
+   "definition": "A measure of how many hidden arrangements of particles produce the same outward state. More arrangements means higher entropy."
+  },
+  {
+   "term": "Second law of thermodynamics",
+   "definition": "The entropy of the universe never decreases in any process."
+  },
+  {
+   "term": "Irreversible process",
+   "definition": "A change that raises total entropy and so does not undo itself, such as a gas spreading out or heat flowing from hot to cold."
+  }
+ ],
+ "when": null,
+ "guess": {
+  "prompt": "A hundred gas molecules bounce around a box. What are the odds that, at one given moment, all 100 are in the left half?",
+  "options": [
+   {
+    "id": "a",
+    "text": "About 1 in 100"
+   },
+   {
+    "id": "b",
+    "text": "About 1 in a million"
+   },
+   {
+    "id": "c",
+    "text": "About 1 in a billion"
+   },
+   {
+    "id": "d",
+    "text": "Far less than 1 in a billion billion billion"
+   }
+  ],
+  "answer_id": "d",
+  "reveal": "Far less. Each molecule has two choices, so there are 2 multiplied by itself 100 times arrangements, a 1 followed by 30 zeros, and only one of them has every molecule on the left."
+ },
+ "hook": "A cup of coffee cools down and never heats itself back up. An egg breaks and never unbreaks. No law of motion forbids the reverse. So why does it never happen?",
+ "explanation": {
+  "body_md": "Everything you can see is made of a vast number of particles, and the same outward state can be produced by many different hidden arrangements of them.\n\n**Entropy** is a measure of how many. A state that can be made in more ways has higher entropy.\n\nTake four molecules in a box and ask how many are in the left half.\n\n| In the left half | Arrangements |\n| --- | --- |\n| 4 | 1 |\n| 3 | 4 |\n| 2 | 6 |\n| 1 | 4 |\n| 0 | 1 |\n\nAn even split is the most likely result, simply because it can happen in the most ways. With the huge numbers of molecules in real things, spread-out arrangements outnumber bunched-up ones so heavily that bunching is never seen.\n\nThat is why gas fills a room, and why heat flows from hot to cold: both changes move to states with more arrangements.\n\nThe **second law of thermodynamics** sums it up. The entropy of the universe never decreases. Changes that raise it do not undo themselves, and that one-way rule is what separates the past from the future.",
+  "analogy": "A new deck of cards is in one special order. Shuffle it and it ends up disordered. Shuffling does not aim at disorder. There is one sorted order and an astronomical number of unsorted ones, so almost anything you do lands on an unsorted one.",
+  "takeaways": [
+   "Entropy counts the arrangements that match what you see.",
+   "Systems drift to high entropy because those states can happen in vastly more ways.",
+   "Total entropy never falls, which is why some changes never run backwards."
+  ],
+  "visual": {
+   "kind": "chart",
+   "alt": "Bar chart for four molecules: one arrangement has all four on the left, four have three, six have two, four have one and one has none",
+   "chart": {
+    "type": "bar",
+    "x_label": "Molecules in the left half",
+    "y_label": "Number of arrangements",
+    "series": [
+     {
+      "name": "4 molecules, 16 arrangements in all",
+      "points": [
+       [
+        "4",
+        1
+       ],
+       [
+        "3",
+        4
+       ],
+       [
+        "2",
+        6
+       ],
+       [
+        "1",
+        4
+       ],
+       [
+        "0",
+        1
+       ]
+      ]
+     }
+    ]
+   },
+   "caption": "An even split can happen in the most ways."
+  }
+ },
+ "worked_example": {
+  "body_md": "Drop 50 grams of ice at 0 degrees Celsius into a room at 20 degrees and wait.\n\n1. The ice melts and warms. Its molecules go from fixed sites to moving freely, so its entropy rises, by about 76.3 joules per kelvin.\n2. The heat came from the room. Losing heat lowers the room's entropy, by about 71.7.\n3. Add them. The total rises by about 4.6.\n\nSo entropy went down in one place and the second law was still obeyed, because the law is about the total. The total rose, and that is also why the reverse never happens: warm water in a warm room does not turn itself back into ice."
+ },
+ "misconception": {
+  "claim": "Living things and freezers break the second law, because they create order.",
+  "correction_md": "The second law is about the total entropy of everything involved, not about one object. A freezer orders the water inside it and pushes more than enough heat out of its back to make up for it. A plant builds ordered tissue while increasing entropy in its surroundings by more. Entropy can fall in one place whenever it rises by more somewhere else.\n\nA related slip is to treat entropy as plain messiness. Disorder is a useful first picture, but what is actually being measured is a count of arrangements."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "A hundred gas molecules bounce around a box. What are the odds that, at one moment, all 100 are in the left half?",
+   "visual": {
+    "kind": "svg",
+    "alt": "A box with a dotted line down the middle and all its gas molecules on the left side",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"95\" y=\"30\" width=\"130\" height=\"90\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M160 30V120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\"/><circle cx=\"109\" cy=\"46\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"129\" cy=\"60\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"115\" cy=\"80\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"141\" cy=\"92\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"125\" cy=\"106\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"147\" cy=\"48\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"107\" cy=\"100\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"145\" cy=\"72\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><text x=\"160\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">all 100 on the left?</text><text x=\"160\" y=\"172\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">how likely is this, at any one moment?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "Why never backwards?",
+   "body_md": "Coffee cools and never reheats itself. An egg breaks and never unbreaks. No law of motion forbids the reverse. Something else must.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A steaming hot cup with an arrow labelled always pointing to a cool cup, and a thin arrow labelled never pointing back",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M40 60h50v52a10 10 0 0 1-10 10h-30a10 10 0 0 1-10-10zM90 72h10a9 9 0 0 1 0 26h-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M54 50c-6-8 6-12 0-20M66 50c-6-8 6-12 0-20M78 50c-6-8 6-12 0-20\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"65\" y=\"146\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">hot</text><path d=\"M120 90L190 90M190 90l-7 -5M190 90l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"155\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">always</text><path d=\"M210 60h50v52a10 10 0 0 1-10 10h-30a10 10 0 0 1-10-10zM260 72h10a9 9 0 0 1 0 26h-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"235\" y=\"146\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">cool</text><path d=\"M190 122L120 122M120 122l7 -5M120 122l7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"155\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">never</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "numbers",
+   "title": "Count the arrangements",
+   "body_md": "Four molecules, 16 arrangements. One has all four on the left. Six have an even split. The even split wins because it can happen in the most ways.",
+   "visual": {
+    "kind": "chart",
+    "alt": "Bar chart for four molecules: one arrangement has all four on the left, four have three, six have two, four have one and one has none",
+    "chart": {
+     "type": "bar",
+     "x_label": "Molecules in the left half",
+     "y_label": "Number of arrangements",
+     "series": [
+      {
+       "name": "4 molecules, 16 arrangements in all",
+       "points": [
+        [
+         "4",
+         1
+        ],
+        [
+         "3",
+         4
+        ],
+        [
+         "2",
+         6
+        ],
+        [
+         "1",
+         4
+        ],
+        [
+         "0",
+         1
+        ]
+       ]
+      }
+     ]
+    },
+    "caption": "An even split can happen in the most ways."
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "What entropy measures",
+   "body_md": "**Entropy** is a measure of how many hidden arrangements match what you see. Spread out: many arrangements, high entropy. Bunched up: few, low.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two boxes: one with all molecules bunched on the left, labelled few arrangements, and one with molecules spread out, labelled many arrangements",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"30\" width=\"130\" height=\"90\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M85 30V120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\"/><circle cx=\"34\" cy=\"46\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"54\" cy=\"60\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"40\" cy=\"80\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"66\" cy=\"92\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"50\" cy=\"106\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"72\" cy=\"48\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"32\" cy=\"100\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"70\" cy=\"72\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><text x=\"85\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">few arrangements</text><rect x=\"170\" y=\"30\" width=\"130\" height=\"90\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M235 30V120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\"/><circle cx=\"184\" cy=\"46\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"254\" cy=\"60\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"190\" cy=\"90\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"276\" cy=\"92\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"210\" cy=\"106\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"242\" cy=\"44\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"288\" cy=\"70\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"228\" cy=\"70\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><text x=\"235\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">many arrangements</text><text x=\"160\" y=\"170\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">more arrangements = higher entropy</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "idea",
+   "title": "The second law",
+   "body_md": "The entropy of the universe never decreases. Heat flows from hot to cold because sharing the energy out opens up more arrangements.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A hot block passing heat to a cold block, with the reverse direction crossed out, and the caption total entropy never goes down",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"40\" y=\"50\" width=\"90\" height=\"70\" rx=\"6\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.85\"/><text x=\"85\" y=\"90\" font-size=\"15\" text-anchor=\"middle\" fill=\"#fff\" font-weight=\"700\">hot</text><rect x=\"190\" y=\"50\" width=\"90\" height=\"70\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"235\" y=\"90\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">cold</text><path d=\"M136 74L184 74M184 74l-7 -5M184 74l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">heat</text><path d=\"M184 100L136 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 5\" opacity=\"0.5\"/><path d=\"M150 92l20 16M170 92l-20 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"150\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">total entropy never goes down</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "myth",
+   "title": "Order does not break the law",
+   "body_md": "Ice melting in a room: the ice gains 76.3, the room loses 71.7, the total rises 4.6. Entropy can fall in one place if it rises by more elsewhere.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three bars: the melting ice gains 76.3 units of entropy, the room loses 71.7, and the total rises by 4.6",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M190 20V150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"8\" y=\"46\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">ice gains</text><rect x=\"190\" y=\"28\" width=\"76\" height=\"26\" rx=\"3\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><text x=\"272\" y=\"46\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">+76.3</text><text x=\"8\" y=\"88\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">room loses</text><rect x=\"118\" y=\"70\" width=\"72\" height=\"26\" rx=\"3\" fill=\"currentColor\" opacity=\"0.4\"/><text x=\"112\" y=\"88\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"700\">−71.7</text><text x=\"8\" y=\"130\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">total</text><rect x=\"190\" y=\"112\" width=\"5\" height=\"26\" rx=\"3\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><text x=\"201\" y=\"130\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">+4.6</text><text x=\"160\" y=\"172\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">entropy change in joules per kelvin</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "takeaway",
+   "title": "The arrow of time",
+   "body_md": "Systems move from rare arrangements to common ones and do not come back. That one-way drift is what makes the future different from the past.",
+   "visual": {
+    "kind": "svg",
+    "alt": "An arrow labelled time running from a box of bunched molecules marked past to a box of spread-out molecules marked future",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"50\" width=\"80\" height=\"60\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"66\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"44\" cy=\"76\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"36\" cy=\"88\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"48\" cy=\"98\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"56\" cy=\"70\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"60\" cy=\"86\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><rect x=\"220\" y=\"50\" width=\"80\" height=\"60\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"232\" cy=\"64\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"266\" cy=\"70\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"288\" cy=\"62\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"246\" cy=\"86\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"280\" cy=\"90\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"260\" cy=\"102\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M112 80L208 80M208 80l-7 -5M208 80l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"60\" y=\"132\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">past</text><text x=\"260\" y=\"132\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">future</text><text x=\"160\" y=\"66\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">time</text><text x=\"160\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">low entropy to high, never back</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "In one sentence, what does entropy measure?",
+   "answer": "How many hidden arrangements of particles produce the same outward state.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "cloze",
+   "prompt": "The second law says that the entropy of the ___ never decreases.",
+   "answer": "universe",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "universe",
+    "whole universe",
+    "the universe"
+   ]
+  },
+  {
+   "id": "r3",
+   "kind": "mcq",
+   "prompt": "Why does a gas spread to fill its container?",
+   "answer": "c",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "The molecules repel each other"
+    },
+    {
+     "id": "b",
+     "text": "Nature prefers things to be untidy"
+    },
+    {
+     "id": "c",
+     "text": "Far more arrangements are spread out than bunched up"
+    },
+    {
+     "id": "d",
+     "text": "The gas is losing energy"
+    }
+   ],
+   "explanation": "Nothing pushes the gas outward. Spread-out arrangements simply outnumber the rest."
+  },
+  {
+   "id": "r4",
+   "kind": "number",
+   "prompt": "For 4 molecules in a box, how many of the 16 arrangements have exactly 2 in each half?",
+   "answer": "6",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "apply",
+   "prompt": "Your freezer turns water into ice, which is more ordered. Why is that not a violation of the second law?",
+   "answer": "The law is about total entropy. The freezer releases heat into the kitchen, raising entropy there by more than it falls in the ice.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "true_false",
+   "prompt": "True or false: the entropy of an object can never decrease.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "Only the total cannot decrease. The room that melts the ice loses entropy."
+  },
+  {
+   "id": "r7",
+   "kind": "explain",
+   "prompt": "Why does a broken egg never reassemble, even though no law of motion forbids it?",
+   "answer": "There are overwhelmingly more broken arrangements than whole ones, so a move back to a whole egg is possible in principle and never seen in practice.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "compare",
+   "prompt": "Which has higher entropy, 1 kg of ice at 0 degrees or 1 kg of water at 0 degrees? Why?",
+   "answer": "The water. Its molecules move about freely, so far more arrangements are possible than in the fixed sites of ice.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain why hot coffee cools down and never heats itself back up, using the idea of counting arrangements.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Entropy counts the arrangements of particles that match the outward state."
+   },
+   {
+    "id": "t2",
+    "point": "States with more arrangements are overwhelmingly more likely, so systems move toward them."
+   },
+   {
+    "id": "t3",
+    "point": "The second law: total entropy never decreases."
+   },
+   {
+    "id": "t4",
+    "point": "The reverse is not forbidden by the laws of motion, only so unlikely that it is never seen."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Says the entropy of any single object can never fall",
+   "Says particles are pushed toward disorder by a force"
+  ]
+ },
+ "challenge": {
+  "kind": "estimate",
+  "prompt": "A deck of 52 cards can be put in about 8 followed by 67 zeros different orders. Suppose you shuffled once a second for a billion years, which is about 3 followed by 16 zeros seconds. Roughly what fraction of all the orders would you have seen?",
+  "model_answer": [
+   "Divide the number of shuffles by the number of orders: 3 × 10^16 divided by 8 × 10^67.",
+   "That is about 4 × 10^-52, which is a decimal point followed by 51 zeros and then a 4.",
+   "So you would have seen practically none of them, and the chance of landing on the sorted order is as good as zero."
+  ],
+  "follow_up": "A cup of coffee contains far more molecules than a deck has cards. What does that tell you about the odds of it reheating itself?"
+ },
+ "connections": [
+  {
+   "to": "cmp08",
+   "body_md": "When Claude Shannon measured information in the 1940s, his formula had the same mathematical form as the one for entropy, and he used the same name. Both count possibilities: how many arrangements a system could be in, or how many messages could have been sent."
+  },
+  {
+   "to": "eng05",
+   "body_md": "An engine turns heat into motion by letting heat flow from hot to cold. The second law sets a ceiling on how much of that heat can become work. An engine that turned all of it into work would lower total entropy, which cannot happen."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**Two ways to meet entropy**\n\nEntropy was first defined through heat. When a quantity of heat flows into something at a steady temperature, its entropy rises by that heat divided by the temperature. That definition lets engineers calculate, but it does not tell you what entropy is.\n\nThe second way is to count. Any object you can see is made of an enormous number of particles, and the same outward appearance can be produced by many different hidden arrangements of them. Entropy tracks how many. A state that can be made in more ways has higher entropy. This is the view this lesson uses, because once you can count you can see why the second law holds.\n\n**Counting with four molecules**\n\nPut four molecules in a box and ask only how many are in the left half. Each molecule is either left or right, so there are 16 possible arrangements. One of them has all four on the left. Four have three on the left. Six have two on each side. An even split is the most likely result for no deeper reason than that it can happen in the most ways.\n\nNow scale up. With 100 molecules there are about 1.3 million million million million million arrangements, a 1 followed by 30 zeros, and exactly one has every molecule on the left. A real box of air holds vastly more than 100 molecules. The bunched-up arrangements are not forbidden. They are so heavily outnumbered that you will never see one.\n\nThe physicist Ludwig Boltzmann (1844 to 1906) turned this counting into a formula. The entropy of a state is a constant multiplied by the logarithm of the number of arrangements that produce it, written S = k ln W. More ways, more entropy.\n\n**Why gas spreads and heat flows**\n\nRemove a divider and a gas fills the whole box. It occupies a larger volume, a larger volume allows more arrangements, and so its entropy has gone up. The process is irreversible: the gas will not gather itself back.\n\nHeat flowing from hot to cold is the same story. The combined system has more arrangements available when the energy is shared out than when it is concentrated, so sharing is what you observe. Melting shows it too. In a solid the molecules sit at fixed sites. In a liquid they move about more freely, so the liquid has the higher entropy.\n\n**The second law, and what it allows**\n\nThe second law of thermodynamics says that the entropy of the universe never decreases in any process. Irreversible processes increase it.\n\nThe law is about the total, and that is where people go wrong. A freezer makes ice, which is more ordered than water. A growing plant builds ordered tissue. Neither breaks the law, because each one increases entropy somewhere else by more than it reduces it locally.\n\nA worked case makes this concrete. Put 50 grams of ice at 0 degrees Celsius in a room at 20 degrees and let it melt and warm up. The ice gains about 76.3 joules per kelvin of entropy. The room, which supplied the heat, loses about 71.7. The total goes up by about 4.6. One part lost entropy, and the whole still gained.\n\n**Absolute zero**\n\nAs something is cooled toward absolute zero its entropy falls toward a minimum and it approaches perfect order. The third law of thermodynamics says absolute zero can never actually be reached in a finite number of steps. Experiments have come within about one ten-billionth of a degree.\n\n**Time's arrow**\n\nThe laws that govern single collisions between molecules work the same forwards and backwards. Entropy is where a direction enters. Because there are overwhelmingly more high-entropy arrangements than low-entropy ones, systems move from the rare kind to the common kind and do not come back. Physicists call this the arrow of time. A film of an egg breaking looks wrong in reverse because the reverse runs from many arrangements to few.\n\n**A word about the word disorder**\n\nTextbooks often say entropy measures disorder, and you can use that as a first handle: a shuffled deck is more disordered than a new one. But messy is a judgement people make. Number of arrangements is something you can count. When the two disagree, trust the count.",
+  "est_minutes": 7
+ },
+ "go_further": [
+  {
+   "kind": "long",
+   "title": "Entropy on a Microscopic Scale",
+   "by": "OpenStax, University Physics Volume 2, section 4.7",
+   "url": "https://openstax.org/books/university-physics-volume-2/pages/4-7-entropy-on-a-microscopic-scale",
+   "note": "The free textbook section behind this lesson, including the ice calculation worked in full.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "long",
+   "title": "Statistical Interpretation of Entropy and the Second Law",
+   "by": "OpenStax, College Physics, section 15.7",
+   "url": "https://openstax.org/books/college-physics/pages/15-7-statistical-interpretation-of-entropy-and-the-second-law-of-thermodynamics-the-underlying-explanation",
+   "note": "The same counting argument done with coin tosses, with tables for 5 and 100 coins.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "OpenStax University Physics Volume 2, section 4.7: Entropy on a Microscopic Scale",
+   "url": "https://openstax.org/books/university-physics-volume-2/pages/4-7-entropy-on-a-microscopic-scale",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Entropy rises with the number of possible arrangements",
+    "Free expansion of a gas is irreversible and raises entropy",
+    "Melting raises entropy",
+    "The deck of cards illustration",
+    "The ice example: +76.3, −71.7 and +4.6 joules per kelvin",
+    "The entropy of the universe never decreases",
+    "Living order does not violate the second law",
+    "The third law and the lowest temperature reached",
+    "A fully efficient engine would violate the second law"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "OpenStax College Physics, section 15.7: Statistical Interpretation of Entropy and the Second Law of Thermodynamics",
+   "url": "https://openstax.org/books/college-physics/pages/15-7-statistical-interpretation-of-entropy-and-the-second-law-of-thermodynamics-the-underlying-explanation",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Many hidden arrangements can give the same outward state",
+    "With 100 two-way choices there are about 1.27 × 10^30 arrangements",
+    "Ordered states are possible but so unlikely they are never observed",
+    "Boltzmann (1844 to 1906) and S = k ln W"
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Encyclopaedia Britannica, Principles of physical science: Entropy and disorder",
+   "url": "https://britannica.com/science/principles-of-physical-science/Entropy-and-disorder",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The entropy of an isolated system never decreases",
+    "S = k ln W relates entropy to the number of arrangements",
+    "Living matter does not run counter to the second law"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "The four-molecule count and the card estimate are arithmetic by the writer. The figure for 100 molecules was computed by the writer and matches the 100-coin table in s2. s1 and s2 are different books from one publisher; s3 is the independent check on the central claims. The framing of entropy as the arrow of time and the statement that the laws of single collisions are time-symmetric are standard physics but are not in s1. The connection to Shannon comes from the skeleton and should be checked when the information theory lesson is written."
+ }
+}

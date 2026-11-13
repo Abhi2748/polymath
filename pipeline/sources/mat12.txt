@@ -1,0 +1,4 @@
+# mat12 Infinity: the sources the hand-written lesson used
+# one address per line, then its tier
+https://nku.edu/~longa/classes/mat115r/resources/Strogatz/TheHilbertHotel.pdf popular
+https://arxiv.org/pdf/2308.10825 textbook

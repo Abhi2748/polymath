@@ -1,0 +1,5 @@
+# lrn01 The forgetting curve: the sources the hand-written lesson used
+# one address per line, then its tier
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928 research
+https://digfir-published.macmillanusa.com/hockenbury7e/hockenbury7e_ch6_4.html textbook
+https://source.washu.edu/2014/04/science-of-learning-book-offers-tips-to-make-it-stick/ institution

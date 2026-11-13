@@ -1,0 +1,4 @@
+# bio09 Evolution by natural selection: the sources the hand-written lesson used
+# one address per line, then its tier
+https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution textbook
+https://evolution.berkeley.edu/evolibrary/article/misconcep_01 institution

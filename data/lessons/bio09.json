@@ -1,0 +1,407 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "bio09",
+ "title": "Evolution by natural selection",
+ "question": "How does design arise without a designer?",
+ "est_minutes": 14,
+ "objectives": [
+  "State the three facts that natural selection follows from",
+  "Explain an adaptation as the result of many generations of selection on inherited variation",
+  "Correct four common misreadings of evolution"
+ ],
+ "key_terms": [
+  {
+   "term": "Natural selection",
+   "definition": "Individuals with inherited traits that help in their surroundings leave more offspring, so those traits become more common."
+  },
+  {
+   "term": "Adaptation",
+   "definition": "An inherited trait that helps an organism survive and reproduce in its present surroundings."
+  },
+  {
+   "term": "Variation",
+   "definition": "The differences between individuals of the same species."
+  },
+  {
+   "term": "Mutation",
+   "definition": "A change in the genetic material, and the ultimate source of new variation."
+  }
+ ],
+ "when": {
+  "label": "1858 to 1859",
+  "start_year": 1858,
+  "end_year": 1859
+ },
+ "guess": {
+  "prompt": "A patient takes an antibiotic. Most of the bacteria die, but a few survive and the infection returns, now resistant. Where did the resistance come from?",
+  "options": [
+   {
+    "id": "a",
+    "text": "The antibiotic caused the bacteria to mutate"
+   },
+   {
+    "id": "b",
+    "text": "The bacteria adapted because they needed to"
+   },
+   {
+    "id": "c",
+    "text": "A few bacteria were already resistant by chance"
+   },
+   {
+    "id": "d",
+    "text": "The patient's body became resistant to the drug"
+   }
+  ],
+  "answer_id": "c",
+  "reveal": "A few were already resistant by chance. The antibiotic did not create the resistance. It removed everything else, and the survivors multiplied."
+ },
+ "hook": "An eye looks as if somebody designed it. Darwin's answer needs no designer, no plan and no intention: only differences, inheritance, and the fact that not everyone survives.",
+ "explanation": {
+  "body_md": "Natural selection follows from three plain facts.\n\n1. **Individuals vary.** No two members of a species are quite alike.\n2. **Variation is inherited.** Offspring tend to resemble their parents.\n3. **More are born than can survive.** Food, space and mates run out.\n\nNow combine them. Some differences help an individual survive and breed in its surroundings. Those individuals leave more offspring. Because the differences are inherited, the next generation holds more of the helpful ones. Repeat for many generations and the whole population shifts.\n\nThe result is an **adaptation**: a trait that fits the organism to its surroundings as if it had been designed. Nobody designed it. Variants that worked were kept and the rest were lost, over and over.\n\nTwo points are easy to miss. The new differences come from **mutation**, which is not aimed at what the organism needs. And it is the **population** that changes, not any single animal during its life.",
+  "analogy": "A sieve does not make the sand finer. It only lets some grains through. Run sand through the same sieve many times, adding a few new grains of random size each time, and what collects underneath fits the holes closely, although the sieve never shaped a single grain.",
+  "takeaways": [
+   "Variation, inheritance and limited survival together make selection unavoidable.",
+   "Selection keeps what already exists and works. It does not create what is needed.",
+   "Populations evolve over generations. Individuals do not evolve."
+  ],
+  "visual": {
+   "kind": "chart",
+   "alt": "A line chart. The share of resistant bacteria rises from 0.1 percent to about 9 percent, then 91 percent, then nearly 100 percent over three rounds of antibiotic",
+   "chart": {
+    "type": "line",
+    "x_label": "Rounds of antibiotic",
+    "y_label": "Resistant share (%)",
+    "series": [
+     {
+      "name": "Resistant bacteria",
+      "points": [
+       [
+        0,
+        0.1
+       ],
+       [
+        1,
+        9.1
+       ],
+       [
+        2,
+        90.9
+       ],
+       [
+        3,
+        99.9
+       ]
+      ]
+     }
+    ]
+   },
+   "caption": "Invented numbers from the worked example below"
+  }
+ },
+ "worked_example": {
+  "body_md": "The numbers here are invented to show the mechanism.\n\nAn infection holds 10,000 bacteria. By chance, 10 of them carry a change that makes them resistant. That is 0.1%.\n\n**Round 1.** The antibiotic kills 99% of the ordinary bacteria and none of the resistant ones. Of 9,990 ordinary bacteria about 100 survive, along with all 10 resistant ones. Resistant share: 10 out of 110, about 9%.\n\nThe survivors multiply back to 10,000. The share stays the same, so there are now about 909 resistant and 9,091 ordinary.\n\n**Round 2.** Again 99% of the ordinary ones die, leaving about 91. All 909 resistant ones live. Resistant share: 909 out of 1,000, about 91%.\n\n**Round 3.** After regrowth and another dose, about 9 ordinary bacteria remain among roughly 9,090 resistant ones. Resistant share: 99.9%.\n\nNo bacterium changed. The drug did not teach anything to anyone. The mix of the population changed because one kind kept dying and the other kept breeding."
+ },
+ "misconception": {
+  "claim": "Organisms evolve the traits they need, by trying or by responding to their surroundings.",
+  "correction_md": "Selection cannot supply a trait because it would be useful. It can only keep variants that are already present, and those arise by mutation without regard to need. Giraffes did not get long necks by stretching, and bacteria do not become resistant by wanting to survive.\n\nIt follows that an individual does not evolve. Its inherited traits are fixed for life. What changes is which traits are common in the population a generation later."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "An antibiotic kills almost all the bacteria in an infection. A few survive. Where did their resistance come from?",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three rows of bacteria drawn as circles, one of them filled in, with the question of where its resistance came from",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"28\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"52\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"76\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"100\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"124\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"148\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"172\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"196\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"220\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"244\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"268\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"292\" cy=\"50\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"28\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"52\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"76\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"100\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"124\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"148\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"172\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"196\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"220\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"244\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"268\" cy=\"80\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"292\" cy=\"80\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"28\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"52\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"76\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"100\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"124\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"148\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"172\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"196\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"220\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"244\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"268\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"292\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"160\" y=\"150\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">one of these survives the antibiotic</text><text x=\"160\" y=\"170\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">where did its resistance come from?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "Design without a designer",
+   "body_md": "Eyes, wings and beaks fit their jobs so well they look engineered. Darwin and Wallace showed how that fit can build up with no plan at all.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A drawing of an eye, an organ that looks designed",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M60 84C110 30 210 30 260 84C210 138 110 138 60 84Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"160\" cy=\"84\" r=\"28\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\"/><circle cx=\"160\" cy=\"84\" r=\"11\" fill=\"var(--accent, #3b82f6)\"/><text x=\"160\" y=\"160\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">it looks designed. nobody designed it.</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "idea",
+   "title": "Three plain facts",
+   "body_md": "Individuals vary. Much of that variation is inherited. More are born than can survive. Put together, these make **natural selection** unavoidable.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three boxes, individuals vary, traits are inherited and too many are born, feeding into one result: natural selection",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"24\" width=\"88\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"58\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">they</text><text x=\"58\" y=\"66\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">vary</text><path d=\"M58 80V104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"116\" y=\"24\" width=\"88\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">traits are</text><text x=\"160\" y=\"66\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">inherited</text><path d=\"M160 80V104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"218\" y=\"24\" width=\"88\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"262\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">too many</text><text x=\"262\" y=\"66\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">are born</text><path d=\"M262 80V104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M58 104H262\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 104L160 122M160 122l-5 -7M160 122l5 -7\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"70\" y=\"124\" width=\"180\" height=\"34\" rx=\"8\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><text x=\"160\" y=\"146\" font-size=\"14\" text-anchor=\"middle\" fill=\"#fff\" font-weight=\"700\">natural selection</text><text x=\"160\" y=\"175\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">three plain facts, one consequence</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "What selection does",
+   "body_md": "Individuals with a helpful variant leave more offspring. Each generation holds a larger share of that variant, until it is the normal form.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three rows of dots for three generations. The filled dots are one in the first row, four in the second and nine in the third",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"22\" y=\"34\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">1</text><circle cx=\"46\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"70\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"94\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"118\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"142\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"166\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"190\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"214\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"238\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"262\" cy=\"30\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"286\" cy=\"30\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><text x=\"22\" y=\"74\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">2</text><circle cx=\"46\" cy=\"70\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"70\" cy=\"70\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"94\" cy=\"70\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"118\" cy=\"70\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"142\" cy=\"70\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"166\" cy=\"70\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"190\" cy=\"70\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"214\" cy=\"70\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"238\" cy=\"70\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"262\" cy=\"70\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"286\" cy=\"70\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><text x=\"22\" y=\"114\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">3</text><circle cx=\"46\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"70\" cy=\"110\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"94\" cy=\"110\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"118\" cy=\"110\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"142\" cy=\"110\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"166\" cy=\"110\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"190\" cy=\"110\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"214\" cy=\"110\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"238\" cy=\"110\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"262\" cy=\"110\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"286\" cy=\"110\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M306 26L306 114M306 114l-5 -7M306 114l5 -7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"148\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">generation after generation,</text><text x=\"160\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the helpful variant becomes common</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "picture",
+   "title": "Watched in the wild",
+   "body_md": "On one Galápagos island, finches have been measured every year since 1976. After very wet years favoured small soft seeds, the average bill became smaller.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two finch heads, one with a large deep bill for large hard seeds and one with a small bill for small soft seeds",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"70\" cy=\"70\" r=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"78\" cy=\"62\" r=\"3\" fill=\"currentColor\"/><path d=\"M92 57L121 72L92 83Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"70\" r=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"218\" cy=\"62\" r=\"3\" fill=\"currentColor\"/><path d=\"M232 63L247 72L232 77Z\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"82\" y=\"118\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">deep bill</text><text x=\"82\" y=\"134\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">large hard seeds</text><text x=\"222\" y=\"118\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">small bill</text><text x=\"222\" y=\"134\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">small soft seeds</text><text x=\"160\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">wet years favoured the small bills</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "myth",
+   "title": "Animals do not evolve",
+   "body_md": "No animal evolves during its life, and none gets a trait because it needs one. The mix of inherited traits in a **population** shifts between generations.",
+   "visual": {
+    "kind": "svg",
+    "alt": "On the left a single animal crossed out. On the right a group of dots, some filled, standing for a population whose mix changes",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"70\" cy=\"70\" r=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44 44L96 96M96 44L44 96\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"70\" y=\"122\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">one animal</text><text x=\"70\" y=\"138\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">changing</text><circle cx=\"178\" cy=\"48\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"208\" cy=\"48\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"238\" cy=\"48\" r=\"9\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"268\" cy=\"48\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"178\" cy=\"78\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"208\" cy=\"78\" r=\"9\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"238\" cy=\"78\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"268\" cy=\"78\" r=\"9\" fill=\"var(--accent, #3b82f6)\"/><text x=\"224\" y=\"122\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">a population</text><text x=\"224\" y=\"138\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">shifting</text><text x=\"160\" y=\"170\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">individuals do not evolve. populations do.</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "takeaway",
+   "title": "The whole engine",
+   "body_md": "Random variation, non-random selection, inheritance, repeat. Each step only compares what exists now, and the result still fits like a design.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three boxes in a row, variation, selection and inheritance, with a dashed arrow looping back from the last to the first",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"16\" y=\"40\" width=\"84\" height=\"40\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"58\" y=\"65\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">variation</text><path d=\"M102 60L116 60M116 60l-7 -5M116 60l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"118\" y=\"40\" width=\"84\" height=\"40\" rx=\"8\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.9\"/><text x=\"160\" y=\"65\" font-size=\"12\" text-anchor=\"middle\" fill=\"#fff\" font-weight=\"700\">selection</text><path d=\"M204 60L218 60M218 60l-7 -5M218 60l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"220\" y=\"40\" width=\"84\" height=\"40\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"262\" y=\"65\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">inheritance</text><path d=\"M262 80V112H58V88\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 5\"/><path d=\"M58 84l-5 7M58 84l5 7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">repeat for many generations</text><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">no plan, no goal, and still a fit</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "What three facts about living things, taken together, produce natural selection?",
+   "answer": "Individuals vary; much of the variation is inherited; more offspring are born than can survive.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "cloze",
+   "prompt": "An inherited trait that helps an organism survive and reproduce in its surroundings is called an ___.",
+   "answer": "adaptation",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "adaptation",
+    "adaptations"
+   ]
+  },
+  {
+   "id": "r3",
+   "kind": "mcq",
+   "prompt": "Bacteria become resistant to an antibiotic. Which statement is correct?",
+   "answer": "b",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "The antibiotic caused the resistance mutation"
+    },
+    {
+     "id": "b",
+     "text": "Resistant cells were already present and were the ones that survived"
+    },
+    {
+     "id": "c",
+     "text": "Each bacterium slowly built up tolerance"
+    },
+    {
+     "id": "d",
+     "text": "The bacteria changed because they needed to"
+    }
+   ],
+   "explanation": "The drug selects. It does not create the variant."
+  },
+  {
+   "id": "r4",
+   "kind": "true_false",
+   "prompt": "True or false: an individual animal can evolve during its lifetime.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "Inherited traits are fixed for life. Populations evolve across generations."
+  },
+  {
+   "id": "r5",
+   "kind": "explain",
+   "prompt": "Mutation is random with respect to need. Why is evolution by natural selection still not a random process?",
+   "answer": "Because selection is not random: variants that help survival and reproduction in the current surroundings are consistently kept, and others are lost.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "apply",
+   "prompt": "After very wet years on Daphne Major, small soft seeds were abundant and large hard seeds scarce. What happened to the finches' average bill size, and why?",
+   "answer": "It became smaller. Small-billed birds survived and bred better, and bill size is inherited, so the next generations had smaller bills on average.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r7",
+   "kind": "explain",
+   "prompt": "In science, what does the word theory mean, and why is \"evolution is just a theory\" misleading?",
+   "answer": "A theory is a well-tested explanation supported by a large body of evidence, not a guess. The everyday meaning of the word is being swapped for the scientific one.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "compare",
+   "prompt": "What is the difference between what evolution explains and the question of how life began?",
+   "answer": "Evolution explains how populations of living things change over generations. The origin of the first life is a separate question that it does not address.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain to a friend how a population of bacteria becomes resistant to an antibiotic, without saying that the bacteria learned, tried or needed to.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Resistant variants existed before the drug, arising by chance mutation."
+   },
+   {
+    "id": "t2",
+    "point": "The drug kills the non-resistant ones, so resistant ones survive and reproduce."
+   },
+   {
+    "id": "t3",
+    "point": "Resistance is inherited, so the next generation is mostly resistant."
+   },
+   {
+    "id": "t4",
+    "point": "The population changed. No individual bacterium did."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Says the antibiotic causes the mutation",
+   "Says the bacteria adapt on purpose or because they need to"
+  ]
+ },
+ "challenge": {
+  "kind": "predict",
+  "prompt": "A farmer sprays the same insecticide on a field every year. In the first year it kills nearly every insect. Predict what the farmer sees over the next ten years, and name one thing that would slow it down.",
+  "model_answer": [
+   "A few insects that happen to carry resistance survive each spraying and are the ones that breed.",
+   "Each year a larger share of the insects is resistant, so the spray works less and less well, even at higher doses.",
+   "Anything that reduces steady selection in one direction slows it: spraying less often, rotating different chemicals, or leaving unsprayed areas where non-resistant insects keep breeding."
+  ],
+  "follow_up": "Why would switching to a second insecticide only when the first has failed be a poor plan?"
+ },
+ "connections": [
+  {
+   "to": "bio08",
+   "body_md": "Selection needs differences that are passed on. Inheritance supplies that: genes carry traits from parent to offspring, and mutation adds new versions. Darwin knew that traits were inherited but not how. The mechanism you met in the last topic is the piece he was missing."
+  },
+  {
+   "to": "phi16",
+   "body_md": "One classic argument for a god says that things as intricate as an eye must have had a designer, as a watch has a watchmaker. Natural selection is a rival explanation of the same evidence: a mechanism that produces the appearance of design without intention. The argument about God did not end, but this version of it had to change."
+  },
+  {
+   "to": "his02",
+   "body_md": "Humans are not an exception. Our species arose in Africa by the same process of variation, inheritance and selection, and then spread across the planet. Human origins are a chapter of this topic, told with fossils and DNA."
+  },
+  {
+   "to": "his03",
+   "body_md": "When farmers kept seed from the plants with the biggest grains and bred from the calmest animals, they were doing the selecting themselves. Wheat, maize, dogs and cattle are the results. Domestication is evolution with human choice in place of the environment."
+  },
+  {
+   "to": "med11",
+   "body_md": "Every antibiotic sets up a selection experiment. Resistant bacteria are the survivors, and the more a drug is used the faster they take over. This is why doctors limit antibiotic use and why new drugs keep being needed."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**The puzzle**\n\nAn eye focuses light. A wing generates lift. A finch's bill matches the seeds it eats. Living things are full of parts that fit their jobs so well that they look engineered, and for most of history the obvious explanation was an engineer. The puzzle Charles Darwin took on was how such a fit could arise by itself.\n\n**Two travellers, one idea**\n\nDarwin sailed around the world on the ship Beagle from 1831 to 1836, collecting and observing. Alfred Russel Wallace did the same kind of work in the Amazon from 1848 to 1852 and in the Malay Archipelago from 1854 to 1862. Working separately, both arrived at the same mechanism. Their papers were presented together in 1858 to the Linnean Society in London, and in 1859 Darwin published the full argument in his book On the Origin of Species.\n\n**Three facts and what follows**\n\nThe argument needs only three observations.\n\n1. Individuals of a species differ from one another.\n2. Many of those differences are passed from parents to offspring.\n3. More offspring are born than can survive, because food, space and mates are limited.\n\nPut them together. If individuals differ, and some differences help in the struggle to survive and breed, then the individuals with helpful differences will leave more offspring. If the differences are inherited, the next generation contains more of them. Repeat this over many generations and the population changes. A trait that fits an organism to its surroundings in this way is called an adaptation, and natural selection is the only known mechanism that produces adaptations.\n\nNothing in the process looks ahead. Each step only compares what already exists.\n\n**Caught in the act**\n\nSelection is not only inferred from the past. It has been watched. Peter and Rosemary Grant have measured the medium ground finches of Daphne Major, a small island in the Galápagos, every year since 1976. Bill size in these birds is inherited, and it matters: birds with deep bills can crack large hard seeds, and birds with smaller bills do better on small soft ones.\n\nAfter an El Niño brought unusually heavy rain, small soft seeds became abundant and large hard ones scarce. Small-billed birds survived and bred better. In the following years the Grants found that the average bill in the population had become smaller. When conditions changed again in 1987, the trend stopped. The population had evolved, measurably, in a few years.\n\n**Where the differences come from**\n\nSelection can only choose among differences that already exist. The ultimate source of new ones is mutation, a change in the genetic material. Mutations are not aimed at what the organism needs. Most do nothing or do harm, and a few happen to help. Selection is the part that is not random: it keeps what works in the current surroundings.\n\nThis is why the phrase \"survival of the fittest\" misleads. Fittest does not mean strongest or best in general. It means leaving the most offspring here and now, and what counts as fit changes when the surroundings do, as the finches show.\n\n**Four common misreadings**\n\n*\"It is just a theory.\"* In everyday speech a theory is a guess. In science the word means a well-tested explanation that ties together a large body of evidence.\n\n*\"Animals evolve during their lives.\"* An individual's inherited traits do not change in its lifetime. What changes is the mix of traits in a population from one generation to the next.\n\n*\"Evolution explains how life began.\"* It explains how living things change once there are living things. How life started is a separate question.\n\n*\"Organisms evolve what they need.\"* Selection does not hand a species what it needs, and trying has nothing to do with it. If a helpful variant is not there, it cannot be selected. Selection also has limits, which is why living things are full of compromises instead of perfect designs.\n\n**Why it matters in a hospital**\n\nAntibiotic resistance is this process running in real time. The antibiotic does not cause the mutation that protects a bacterium. In a large population, a few cells already carry such a change by chance. The drug kills the rest, the survivors multiply, and the next infection is harder to treat.",
+  "est_minutes": 7
+ },
+ "go_further": [
+  {
+   "kind": "long",
+   "title": "Understanding Evolution (Biology 2e, section 18.1)",
+   "by": "OpenStax",
+   "url": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution",
+   "note": "The free textbook section behind this lesson, with the finch study and the misconceptions in more detail.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "short",
+   "title": "Misconceptions about natural selection",
+   "by": "Understanding Evolution, University of California Museum of Paleontology",
+   "url": "https://evolution.berkeley.edu/evolibrary/article/misconcep_01",
+   "note": "A short page on why selection does not give organisms what they need.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "book",
+   "title": "The Beak of the Finch",
+   "by": "Jonathan Weiner",
+   "year": 1994,
+   "note": "The story of the Grants' decades of measuring finches on Daphne Major, written for general readers."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "OpenStax Biology 2e, section 18.1: Understanding Evolution",
+   "url": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Darwin's and Wallace's voyages and dates",
+    "The 1858 presentation and the 1859 book",
+    "The three principles behind natural selection",
+    "Natural selection as the only known mechanism of adaptive evolution",
+    "The Grants' finch study on Daphne Major since 1976",
+    "Mutation as the ultimate source of new variation",
+    "The four misconceptions",
+    "Antibiotics select for resistance and do not cause it"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Understanding Evolution, UC Museum of Paleontology: Misconceptions about natural selection",
+   "url": "https://evolution.berkeley.edu/evolibrary/article/misconcep_01",
+   "tier": "institution",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Natural selection does not give organisms what they need",
+    "Selection has limits and does not produce perfection"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "The worked example and its chart use invented numbers, labelled as such; the arithmetic was checked by running it. The sieve analogy, the insecticide challenge and the giraffe example are the writer's own illustrations. The watchmaker argument, domestication as selection by humans and human origins in Africa come from the skeleton's connections and are standard, but the two sources opened here do not cover them; check when those lessons are written. The remark that Darwin knew traits were inherited but not how is standard history, not from these sources. The book in Go further was not opened."
+ }
+}
