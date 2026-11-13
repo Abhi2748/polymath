@@ -9,6 +9,7 @@ build/
 dist/
 *.tsbuildinfo
 next-env.d.ts
+.vercel/
 
 # secrets — never commit
 .env
