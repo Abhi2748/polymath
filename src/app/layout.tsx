@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -15,6 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Polymath",
   description: "Short lessons, spaced review and practice.",
+  appleWebApp: { capable: true, title: "Polymath", statusBarStyle: "default" },
+};
+
+// Keep in step with --background in globals.css.
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fbfaf7" },
+    { media: "(prefers-color-scheme: dark)", color: "#141413" },
+  ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

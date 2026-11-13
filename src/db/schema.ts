@@ -31,7 +31,7 @@ export const fields = pgTable("fields", {
   season: integer(),
   lens: text().notNull(),
   level2: jsonb().$type<string[]>().notNull(),
-});
+}).enableRLS();
 
 export const topics = pgTable("topics", {
   id: text().primaryKey(),
@@ -43,7 +43,7 @@ export const topics = pgTable("topics", {
   seq: integer().notNull(),
   title: text().notNull(),
   question: text().notNull(),
-});
+}).enableRLS();
 
 export const topicPrereqs = pgTable(
   "topic_prereqs",
@@ -56,7 +56,7 @@ export const topicPrereqs = pgTable(
       .references(() => topics.id),
   },
   (t) => [primaryKey({ columns: [t.topicId, t.prereqId] })],
-);
+).enableRLS();
 
 export const edges = pgTable(
   "edges",
@@ -70,7 +70,7 @@ export const edges = pgTable(
     why: text().notNull(),
   },
   (t) => [primaryKey({ columns: [t.a, t.b] })],
-);
+).enableRLS();
 
 export const lessons = pgTable("lessons", {
   topicId: text("topic_id")
@@ -79,7 +79,7 @@ export const lessons = pgTable("lessons", {
   pack: jsonb().notNull(),
   status: text().notNull(),
   importedAt: timestamp("imported_at", { withTimezone: true }).notNull().defaultNow(),
-});
+}).enableRLS();
 
 export const userSettings = pgTable("user_settings", {
   userId: uuid("user_id").primaryKey(),
@@ -88,7 +88,7 @@ export const userSettings = pgTable("user_settings", {
   maxNewPerDay: integer("max_new_per_day").notNull().default(2),
   fieldsOff: jsonb("fields_off").$type<string[]>().notNull().default([]),
   plannedReturn: date("planned_return"),
-});
+}).enableRLS();
 
 export const topicProgress = pgTable(
   "topic_progress",
@@ -109,7 +109,7 @@ export const topicProgress = pgTable(
     parked: boolean().notNull().default(false),
   },
   (t) => [primaryKey({ columns: [t.userId, t.topicId] })],
-);
+).enableRLS();
 
 export const itemHistory = pgTable("item_history", {
   id: bigint({ mode: "number" }).primaryKey().generatedAlwaysAsIdentity(),
@@ -121,7 +121,7 @@ export const itemHistory = pgTable("item_history", {
   askedAt: timestamp("asked_at", { withTimezone: true }).notNull(),
   grade: text().notNull(),
   context: text().notNull(),
-});
+}).enableRLS();
 
 export const sessions = pgTable(
   "sessions",
@@ -136,7 +136,7 @@ export const sessions = pgTable(
     summary: jsonb(),
   },
   (t) => [unique().on(t.userId, t.sessionDay, t.kind)],
-);
+).enableRLS();
 
 export const flags = pgTable("flags", {
   id: bigint({ mode: "number" }).primaryKey().generatedAlwaysAsIdentity(),
@@ -148,4 +148,4 @@ export const flags = pgTable("flags", {
   note: text().notNull(),
   status: text().notNull().default("open"),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-});
+}).enableRLS();

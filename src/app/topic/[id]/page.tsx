@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { StateLabel } from "@/components/StateLabel";
-import { CURRENT_USER_ID } from "@/db/currentUser";
 import { getTopic } from "@/db/queries";
+import { requireUserId } from "@/lib/auth";
 import { startLesson } from "./lesson/actions";
 
 export default function TopicPage({ params }: PageProps<"/topic/[id]">) {
@@ -23,7 +23,7 @@ export default function TopicPage({ params }: PageProps<"/topic/[id]">) {
 async function Topic({ params }: { params: Promise<{ id: string }> }) {
   await connection();
   const { id } = await params;
-  const topic = await getTopic(CURRENT_USER_ID, id);
+  const topic = await getTopic(await requireUserId(), id);
   if (!topic) notFound();
 
   return (

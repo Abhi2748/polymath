@@ -13,7 +13,6 @@ import {
 } from "@/core/firstCheck";
 import { gradeResponse, type Response } from "@/core/grading";
 import { sessionDay } from "@/core/scheduler";
-import { CURRENT_USER_ID } from "@/db/currentUser";
 import {
   getLessonPack,
   getLessonProgress,
@@ -21,6 +20,8 @@ import {
   recordFirstCheck,
   saveLessonProgress,
 } from "@/db/lessonProgress";
+import { requireUserId } from "@/lib/auth";
+import { validTz } from "@/lib/timeZone";
 
 async function requirePack(topicId: string) {
   const pack = await getLessonPack(topicId);
@@ -28,30 +29,23 @@ async function requirePack(topicId: string) {
   return pack;
 }
 
-function validTz(tz: string): string | null {
-  try {
-    new Intl.DateTimeFormat("en", { timeZone: tz });
-    return tz;
-  } catch {
-    return null;
-  }
-}
-
 export async function startLesson(topicId: string) {
+  const userId = await requireUserId();
   await requirePack(topicId);
-  const current = await getLessonProgress(CURRENT_USER_ID, topicId);
+  const current = await getLessonProgress(userId, topicId);
   const next = progressOnOpen(current);
-  if (next !== current) await saveLessonProgress(CURRENT_USER_ID, topicId, next);
+  if (next !== current) await saveLessonProgress(userId, topicId, next);
   revalidatePath(`/topic/${topicId}`);
   redirect(`/topic/${topicId}/lesson`);
 }
 
 export async function saveCardIndex(topicId: string, index: number) {
+  const userId = await requireUserId();
   const pack = await requirePack(topicId);
-  const current = await getLessonProgress(CURRENT_USER_ID, topicId);
+  const current = await getLessonProgress(userId, topicId);
   if (!current) throw new Error(`${topicId} has not been opened`);
   const next = progressOnCard(current, index, pack.cards.length);
-  if (next !== current) await saveLessonProgress(CURRENT_USER_ID, topicId, next);
+  if (next !== current) await saveLessonProgress(userId, topicId, next);
 }
 
 export type FirstCheckAnswer = { itemId: string; response: Response };
@@ -62,8 +56,9 @@ export async function submitFirstCheck(
   answers: FirstCheckAnswer[],
   browserTz: string,
 ): Promise<{ outcome: FirstCheckOutcome; dueAt: string | null }> {
+  const userId = await requireUserId();
   const pack = await requirePack(topicId);
-  const current = await getLessonProgress(CURRENT_USER_ID, topicId);
+  const current = await getLessonProgress(userId, topicId);
   if (current?.state !== "in_progress") throw new Error(`${topicId} is not in progress`);
 
   const items = firstCheckItems(pack);
@@ -78,13 +73,13 @@ export async function submitFirstCheck(
   const outcome = firstCheckOutcome(attempt, grades.map((g) => g.grade));
 
   const now = new Date();
-  const tz = (await getUserTz(CURRENT_USER_ID)) ?? validTz(browserTz) ?? "UTC";
+  const tz = (await getUserTz(userId)) ?? validTz(browserTz) ?? "UTC";
   const next = progressAfterFirstCheck(current, outcome, {
     now,
     today: sessionDay(now, tz),
     cardCount: pack.cards.length,
   });
-  await recordFirstCheck(CURRENT_USER_ID, topicId, now, grades, next);
+  await recordFirstCheck(userId, topicId, now, grades, next);
 
   revalidatePath("/map");
   revalidatePath(`/topic/${topicId}`);

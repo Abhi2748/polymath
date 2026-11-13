@@ -3,8 +3,8 @@ import { notFound, redirect } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { LessonPlayer } from "@/components/lesson/LessonPlayer";
-import { CURRENT_USER_ID } from "@/db/currentUser";
 import { getLessonPack, getLessonProgress } from "@/db/lessonProgress";
+import { requireUserId } from "@/lib/auth";
 import { safeLessonPack } from "@/lib/safeLesson";
 
 export default function LessonPage({ params }: PageProps<"/topic/[id]/lesson">) {
@@ -20,7 +20,8 @@ export default function LessonPage({ params }: PageProps<"/topic/[id]/lesson">) 
 async function Lesson({ params }: { params: Promise<{ id: string }> }) {
   await connection();
   const { id } = await params;
-  const [pack, progress] = await Promise.all([getLessonPack(id), getLessonProgress(CURRENT_USER_ID, id)]);
+  const userId = await requireUserId();
+  const [pack, progress] = await Promise.all([getLessonPack(id), getLessonProgress(userId, id)]);
   if (!pack) notFound();
   if (progress?.state !== "in_progress") redirect(`/topic/${id}`);
 

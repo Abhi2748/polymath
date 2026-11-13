@@ -3,8 +3,8 @@ import Link from "next/link";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { StateLabel } from "@/components/StateLabel";
-import { CURRENT_USER_ID } from "@/db/currentUser";
 import { getMap } from "@/db/queries";
+import { requireUserId } from "@/lib/auth";
 
 export const metadata: Metadata = { title: "Map · Polymath" };
 
@@ -21,7 +21,7 @@ export default function MapPage() {
 
 async function Realms() {
   await connection();
-  const realms = await getMap(CURRENT_USER_ID);
+  const realms = await getMap(await requireUserId());
 
   return (
     <div className="mt-8 space-y-14">
