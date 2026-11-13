@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { StateLabel } from "@/components/StateLabel";
 import { CURRENT_USER_ID } from "@/db/currentUser";
 import { getTopic } from "@/db/queries";
+import { startLesson } from "./lesson/actions";
 
 export default function TopicPage({ params }: PageProps<"/topic/[id]">) {
   return (
@@ -33,6 +34,15 @@ async function Topic({ params }: { params: Promise<{ id: string }> }) {
       <p className="mt-6">
         <StateLabel state={topic.state} />
       </p>
+
+      {/* Temporary: the Today screen replaces this button in step 7. */}
+      {(topic.state === "ready" || topic.state === "in_progress") && (
+        <form action={startLesson.bind(null, topic.id)} className="mt-8">
+          <button type="submit" className="w-full rounded-xl bg-accent px-5 py-3 font-medium text-background">
+            {topic.state === "ready" ? "Start lesson" : "Resume lesson"}
+          </button>
+        </form>
+      )}
 
       {topic.prereqs.length > 0 && (
         <section className="mt-12" aria-labelledby="prereqs">
