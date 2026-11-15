@@ -8,7 +8,7 @@ export type FirstCheckOutcome = "passed" | "retry" | "failed";
 
 export type LessonProgress = {
   state: ProgressRow["state"];
-  // 0 to cards.length - 1 is a card; cards.length means the first check.
+  // 0 to steps - 1 is a step from lessonSteps (the cards, plus the excerpt if any); steps means the first check.
   cardIndex: number;
   learnedAt: Date | null;
   box: number | null;

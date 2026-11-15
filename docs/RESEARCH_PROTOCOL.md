@@ -12,7 +12,7 @@ A weaker model gets smaller steps, more steps and more retries. It never gets a 
 
 ## What the hand-written lessons had
 
-The nine model lessons in `data/lessons/` set the standard. Each was written with two or three sources open and read in full, at least one of them a textbook, a research paper or a reference work, and every fact in the lesson can be traced to one of them. Anything beyond the sources, such as an analogy or an invented example, is labelled in the text or in `verification.notes`.
+The thirteen model lessons in `data/lessons/` set the standard. Each was written with two or three sources open and read in full, at least one of them a textbook, a research paper or a reference work, and every fact in the lesson can be traced to one of them. Anything beyond the sources, such as an analogy or an invented example, is labelled in the text or in `verification.notes`.
 
 The protocol asks every generated lesson for the same, and proves it with a record.
 
@@ -62,7 +62,7 @@ This is the step that makes research depth independent of the model. A model can
 ### 3. Cross-check (model, then code)
 
 - The model groups facts from different sources that say the same thing. A fact found in two sources is marked `confirmed`.
-- Where two sources disagree on a number, date or name, the pair goes into `conflicts`. A conflict is never settled by the model. The pipeline either drops both facts or stops for you.
+- Where two sources disagree on a number, date or name, the pair goes into `conflicts`. A conflict is never settled by the model. The pipeline either drops both facts or stops for you. You may then tell it to report both values and say that sources differ, as the model lessons `rel06` and `art05` do with dates.
 - Rule checked later by code: every answer in `recall_items` and every line of `takeaways` must rest on a fact that is `confirmed` or comes from the top three tiers.
 
 ### 4. Plan (model, checked by code)
@@ -104,7 +104,7 @@ Run `scripts/validate_lessons.py`. Then render every drawing to one image sheet 
 
 ### 10. The research record
 
-Write `pipeline/records/<topic_id>.json`: every source with its address, tier, date, hash and word count; every fact with its quotation; the claims table with the checker's verdicts; the number table; the models and prompt versions used; and the counts for each row of the table at the top. Build `verification.notes` from this record, not from the model's own summary.
+Write `pipeline/records/<topic_id>.json`: the tokens used and the cost of the run; every source with its address, tier, date, hash and word count; every fact with its quotation; the claims table with the checker's verdicts; the number table; the models and prompt versions used; and the counts for each row of the table at the top. Build `verification.notes` from this record, not from the model's own summary.
 
 The record is what lets you, months later, answer "where did this sentence come from?" in under a minute.
 
@@ -135,13 +135,13 @@ Before any model writes lessons for the site, test it on topics where the right 
 python -m pipeline.qualify --model <name>
 ```
 
-The command runs the whole pipeline for the nine model-lesson topics, using the same sources the hand-written lessons used (`pipeline/sources/<topic_id>.txt` is provided for each). It reports:
+The command runs the whole pipeline for the thirteen model-lesson topics, using the same sources the hand-written lessons used (`pipeline/sources/<topic_id>.txt` is provided for each). It reports:
 
 | Measure | Pass mark | What it tells you |
 | --- | --- | --- |
 | Facts whose quotation matched the source | 95% | Whether the model copies accurately or makes quotations up |
 | Research recall: entries in the hand-written lesson's `sources[].supports` that the fact sheet covers | 85% | Whether it found what a careful reader found |
-| Lessons passing stages 6 to 9 within two redrafts | 8 of 9 | Whether it can write inside the rules |
+| Lessons passing stages 6 to 9 within two redrafts | 11 of 13 | Whether it can write inside the rules |
 | Claims marked unsupported in the final lessons | 0 | Whether anything slipped through |
 | Drawings a person accepts on the sheet | 9 of 10 | Whether it may draw freely or must use templates |
 

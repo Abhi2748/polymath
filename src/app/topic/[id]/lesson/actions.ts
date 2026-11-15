@@ -1,7 +1,6 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import {
   type FirstCheckAttempt,
   type FirstCheckOutcome,
@@ -9,9 +8,9 @@ import {
   firstCheckOutcome,
   progressAfterFirstCheck,
   progressOnCard,
-  progressOnOpen,
 } from "@/core/firstCheck";
 import { gradeResponse, type Response } from "@/core/grading";
+import { lessonSteps } from "@/core/lessonSteps";
 import { sessionDay } from "@/core/scheduler";
 import {
   getLessonPack,
@@ -21,6 +20,7 @@ import {
   saveLessonProgress,
 } from "@/db/lessonProgress";
 import { requireUserId } from "@/lib/auth";
+import { appNow } from "@/lib/dev";
 import { validTz } from "@/lib/timeZone";
 
 async function requirePack(topicId: string) {
@@ -29,22 +29,12 @@ async function requirePack(topicId: string) {
   return pack;
 }
 
-export async function startLesson(topicId: string) {
-  const userId = await requireUserId();
-  await requirePack(topicId);
-  const current = await getLessonProgress(userId, topicId);
-  const next = progressOnOpen(current);
-  if (next !== current) await saveLessonProgress(userId, topicId, next);
-  revalidatePath(`/topic/${topicId}`);
-  redirect(`/topic/${topicId}/lesson`);
-}
-
 export async function saveCardIndex(topicId: string, index: number) {
   const userId = await requireUserId();
   const pack = await requirePack(topicId);
   const current = await getLessonProgress(userId, topicId);
   if (!current) throw new Error(`${topicId} has not been opened`);
-  const next = progressOnCard(current, index, pack.cards.length);
+  const next = progressOnCard(current, index, lessonSteps(pack).length);
   if (next !== current) await saveLessonProgress(userId, topicId, next);
 }
 
@@ -72,12 +62,12 @@ export async function submitFirstCheck(
   }));
   const outcome = firstCheckOutcome(attempt, grades.map((g) => g.grade));
 
-  const now = new Date();
+  const now = appNow();
   const tz = (await getUserTz(userId)) ?? validTz(browserTz) ?? "UTC";
   const next = progressAfterFirstCheck(current, outcome, {
     now,
     today: sessionDay(now, tz),
-    cardCount: pack.cards.length,
+    cardCount: lessonSteps(pack).length,
   });
   await recordFirstCheck(userId, topicId, now, grades, next);
 

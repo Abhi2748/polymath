@@ -1,0 +1,7 @@
+# rel06 Buddhism: the sources the hand-written lesson used
+# one address per line, then its tier
+https://www.britannica.com/topic/Four-Noble-Truths reference
+https://britannica.com/topic/Eightfold-Path reference
+https://www.britannica.com/topic/Buddhism/The-Four-Noble-Truths reference
+https://openstax.org/books/world-history-volume-1/pages/5-4-vedic-india-to-the-fall-of-the-maurya-empire textbook
+https://openstax.org/books/introduction-sociology-3e/pages/15-2-world-religions textbook

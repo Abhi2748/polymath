@@ -77,4 +77,14 @@ describe("topicMapState", () => {
   it("stays learned while the topic itself is lapsed", () => {
     expect(stateOf({ progress: [row("lrn02", "learned", true)] })).toBe("learned");
   });
+
+  it("is off when its own field is switched off", () => {
+    expect(stateOf({ fieldsOff: ["LRN"] })).toBe("off");
+    expect(stateOf({ fieldsOff: ["LRN"], hasPack: false })).toBe("off");
+  });
+
+  it("is off when its field is switched off, whatever its progress", () => {
+    expect(stateOf({ fieldsOff: ["LRN"], progress: [row("lrn02", "learned")] })).toBe("off");
+    expect(stateOf({ fieldsOff: ["LRN"], progress: [row("lrn02", "in_progress")] })).toBe("off");
+  });
 });

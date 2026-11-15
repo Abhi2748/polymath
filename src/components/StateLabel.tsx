@@ -7,6 +7,7 @@ const tone: Record<MapState, string> = {
   recalled: "text-foreground",
   locked: "text-muted",
   not_written: "text-muted",
+  off: "text-muted",
 };
 
 export function StateLabel({ state }: { state: MapState }) {

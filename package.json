@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "db:migrate": "drizzle-kit migrate",
     "import:skeleton": "tsx --env-file=.env.local scripts/import-skeleton.ts",
-    "import:lessons": "tsx --env-file=.env.local scripts/import-lessons.ts"
+    "import:lessons": "python scripts/validate_lessons.py && tsx --env-file=.env.local scripts/import-lessons.ts",
+    "dev:reset": "tsx --env-file=.env.local scripts/dev-reset.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

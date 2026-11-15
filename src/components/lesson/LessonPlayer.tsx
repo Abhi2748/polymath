@@ -2,22 +2,35 @@
 
 import { useEffect, useRef, useState } from "react";
 import { saveCardIndex } from "@/app/topic/[id]/lesson/actions";
-import type { Card } from "@/core/lesson";
+import { Flag } from "@/components/Flag";
+import { EXCERPT_REF } from "@/core/flags";
+import { lessonSteps } from "@/core/lessonSteps";
 import type { SafeLessonPack } from "@/lib/safeLesson";
+import { Excerpt } from "./Excerpt";
 import { FirstCheck } from "./FirstCheck";
 import { Markdown } from "./Markdown";
 import { Visual } from "./Visual";
 
 const SWIPE_PX = 50;
 
-export function LessonPlayer({ pack, startIndex }: { pack: SafeLessonPack; startIndex: number }) {
-  const cardCount = pack.cards.length;
+export function LessonPlayer({
+  pack,
+  startIndex,
+  onFinished,
+}: {
+  pack: SafeLessonPack;
+  startIndex: number;
+  onFinished?: () => void;
+}) {
+  const steps = lessonSteps(pack);
+  const cardCount = steps.length;
   const [index, setIndex] = useState(Math.min(Math.max(startIndex, 0), cardCount));
   const [guessChoice, setGuessChoice] = useState<string | null>(null);
   const savedIndex = useRef(startIndex);
   const pointerStart = useRef<{ x: number; y: number } | null>(null);
 
-  const card: Card | undefined = pack.cards[index];
+  const step = steps[index];
+  const card = step?.kind === "card" ? step.card : undefined;
   const blockedByGuess = card?.kind === "guess" && guessChoice === null;
 
   useEffect(() => {
@@ -37,6 +50,7 @@ export function LessonPlayer({ pack, startIndex }: { pack: SafeLessonPack; start
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if (index >= cardCount) return;
+      if (e.target instanceof HTMLElement && e.target.closest("input, textarea, select")) return;
       if (e.key === "ArrowRight") go(1);
       if (e.key === "ArrowLeft") go(-1);
     }
@@ -51,7 +65,7 @@ export function LessonPlayer({ pack, startIndex }: { pack: SafeLessonPack; start
       </div>
 
       <div className="mt-8">
-        {card ? (
+        {step ? (
           <div
             className="touch-pan-y select-none"
             onPointerDown={(e) => (pointerStart.current = { x: e.clientX, y: e.clientY })}
@@ -64,17 +78,33 @@ export function LessonPlayer({ pack, startIndex }: { pack: SafeLessonPack; start
               if (Math.abs(dx) > SWIPE_PX && Math.abs(dx) > Math.abs(dy)) go(dx < 0 ? 1 : -1);
             }}
           >
-            <p className="text-sm text-muted">
-              {index + 1} of {cardCount}
-            </p>
-            <div className="mt-4">
-              <Visual visual={card.visual} />
+            <div className="flex items-baseline justify-between gap-4">
+              <p className="text-sm text-muted">
+                {index + 1} of {cardCount}
+              </p>
+              <Flag key={index} topicId={pack.topic_id} refId={card ? card.id : EXCERPT_REF} />
             </div>
-            <h2 className="mt-6 text-2xl font-semibold">{card.title}</h2>
-            <div className="mt-3 text-lg leading-relaxed">
-              <Markdown>{card.body_md}</Markdown>
-            </div>
-            {card.kind === "guess" && <Guess pack={pack} choice={guessChoice} onChoose={setGuessChoice} />}
+            {card ? (
+              <>
+                <div className="mt-4">
+                  <Visual visual={card.visual} />
+                </div>
+                <h2 className="mt-6 text-2xl font-semibold">{card.title}</h2>
+                <div className="mt-3 text-lg leading-relaxed">
+                  <Markdown>{card.body_md}</Markdown>
+                </div>
+                {card.kind === "guess" && <Guess pack={pack} choice={guessChoice} onChoose={setGuessChoice} />}
+              </>
+            ) : (
+              pack.excerpt && (
+                <>
+                  <h2 className="mt-4 text-2xl font-semibold">{pack.excerpt.work}</h2>
+                  <div className="mt-6">
+                    <Excerpt excerpt={pack.excerpt} />
+                  </div>
+                </>
+              )
+            )}
 
             <nav className="mt-10 flex gap-3">
               <button
@@ -96,7 +126,7 @@ export function LessonPlayer({ pack, startIndex }: { pack: SafeLessonPack; start
             </nav>
           </div>
         ) : (
-          <FirstCheck pack={pack} />
+          <FirstCheck pack={pack} onFinished={onFinished} />
         )}
       </div>
     </div>

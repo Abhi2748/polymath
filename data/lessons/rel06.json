@@ -1,0 +1,424 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "rel06",
+ "title": "Buddhism",
+ "question": "What did the Buddha teach about suffering and its end?",
+ "est_minutes": 14,
+ "objectives": [
+  "State the four truths in order and say what each claims",
+  "Group the eight parts of the path under wisdom, ethics and concentration",
+  "Explain how Ashoka's conversion helped Buddhism spread beyond India"
+ ],
+ "key_terms": [
+  {
+   "term": "Dukkha",
+   "definition": "Suffering, including pain and the lasting unease or dissatisfaction of ordinary life."
+  },
+  {
+   "term": "Nirvana",
+   "definition": "The state in which suffering and its causes are absent."
+  },
+  {
+   "term": "Middle way",
+   "definition": "The path between indulging the senses and punishing the body."
+  },
+  {
+   "term": "Eightfold path",
+   "definition": "The eight practices, covering wisdom, ethics and concentration, that lead to the end of suffering."
+  }
+ ],
+ "when": {
+  "label": "6th to 5th century BCE",
+  "start_year": -563,
+  "end_year": -400
+ },
+ "guess": {
+  "prompt": "In his first sermon, what did the Buddha name as the cause of human suffering?",
+  "options": [
+   {
+    "id": "a",
+    "text": "The anger of the gods"
+   },
+   {
+    "id": "b",
+    "text": "Craving and attachment"
+   },
+   {
+    "id": "c",
+    "text": "Fate fixed at birth"
+   },
+   {
+    "id": "d",
+    "text": "The cruelty of other people"
+   }
+  ],
+  "answer_id": "b",
+  "reveal": "Craving, or attachment. Because the cause lies in us and not in gods or fate, the teaching goes on to say it can be removed."
+ },
+ "hook": "A man raised in a palace decided that comfort was not the answer, and neither was starving himself. What he taught next is followed by hundreds of millions of people and fits on one hand: four statements.",
+ "explanation": {
+  "body_md": "The Buddha's teaching begins with four statements, called the four truths.\n\n1. **There is suffering** (*dukkha*). Not only pain and loss, but the unease of never being quite satisfied.\n2. **It has a cause.** The cause is craving, or attachment: clinging to what we want and pushing away what we dislike.\n3. **It can end.** The state where suffering and its causes are gone is called **nirvana**.\n4. **There is a path** that leads there: the **eightfold path**.\n\nThe path has eight parts, practised together, in three groups.\n\n| Training | Parts |\n| --- | --- |\n| Wisdom | correct view, correct intention |\n| Ethics | correct speech, correct action, correct livelihood |\n| Concentration | correct effort, correct mindfulness, correct concentration |\n\nThe Buddha called this a **middle way**, between a life of indulgence and a life of harsh self-denial. He had lived both and found that neither worked.\n\nEvery school of Buddhism accepts the four truths, however much they differ on the rest.",
+  "analogy": "The four truths are laid out like a visit to a doctor: here is the illness, here is what causes it, it can be cured, and here is the treatment. The comparison is this lesson's own, used as a memory aid.",
+  "takeaways": [
+   "Four truths: suffering, its cause (craving), its end (nirvana), and the path.",
+   "The eightfold path trains wisdom, ethics and concentration together.",
+   "It is a middle way between indulgence and self-denial."
+  ],
+  "visual": {
+   "kind": "svg",
+   "alt": "Four stacked boxes: there is suffering, it has a cause which is craving, it can end, there is a path to its end",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"8\" width=\"280\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"28\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">1</text><text x=\"62\" y=\"28\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">there is suffering</text><rect x=\"20\" y=\"44\" width=\"280\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"40\" y=\"64\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">2</text><text x=\"62\" y=\"64\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">it has a cause: craving</text><rect x=\"20\" y=\"80\" width=\"280\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"100\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">3</text><text x=\"62\" y=\"100\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">it can end</text><rect x=\"20\" y=\"116\" width=\"280\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"136\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">4</text><text x=\"62\" y=\"136\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">there is a path to its end</text><text x=\"160\" y=\"172\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">problem, cause, cure, treatment</text></svg>"
+  }
+ },
+ "worked_example": {
+  "body_md": "Here is how the four truths would read an ordinary experience. The example is an illustration written for this lesson.\n\nYou want a new phone for months. You get it. For a week it is a pleasure. A month later it is just your phone, and you have started looking at the next model.\n\n- **First truth.** Nothing terrible happened, yet the satisfaction did not last. That restless gap is part of what *dukkha* means.\n- **Second truth.** The cause was not the phone. It was the craving, which moved on to a new object as soon as it was fed.\n- **Third truth.** If the craving itself can stop, that particular unease stops with it. The claim is that this is possible, completely.\n- **Fourth truth.** It does not stop by wishing. It takes training: seeing clearly what is happening (wisdom), living in a way that does not feed it (ethics), and steadying attention so you notice craving as it arises (concentration).\n\nNotice what the teaching does not say. It does not say the phone is bad, or that pleasure is forbidden. It locates the problem in the clinging."
+ },
+ "misconception": {
+  "claim": "Buddhism teaches that life is nothing but misery.",
+  "correction_md": "The first truth is often quoted alone, as \"life is suffering\", and it sounds bleak. But *dukkha* covers more than misery: it includes the unease and dissatisfaction that run through even a comfortable life.\n\nAnd the first truth is one of four. The third says that suffering ends, and the fourth says how. A teaching whose central claim is that suffering can be brought to a complete stop is hard to call pessimistic."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "In his first sermon, what did the Buddha say causes human suffering?",
+   "visual": {
+    "kind": "svg",
+    "alt": "The question why do people suffer, with a large question mark",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"160\" y=\"44\" font-size=\"16\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">why do people suffer?</text><text x=\"160\" y=\"108\" font-size=\"56\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">?</text><text x=\"160\" y=\"160\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">what did the Buddha name as the cause?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "From a palace to a tree",
+   "body_md": "Born into a ruling family in northern India, he gave up comfort to search for an answer. At about 35, meditating under a fig tree, he found what he called enlightenment.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A palace on the left, an arrow, and a tree on the right",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"30\" y=\"62\" width=\"70\" height=\"52\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M24 62L65 34L106 62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"56\" y=\"86\" width=\"18\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M118 90L196 90M196 90l-7 -5M196 90l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M250 114V84\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"250\" cy=\"62\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M222 114H278\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"65\" y=\"136\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">a palace</text><text x=\"250\" y=\"136\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">a tree</text><text x=\"160\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">he gave up one to sit under the other</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "idea",
+   "title": "The middle way",
+   "body_md": "He had tried luxury and he had tried harsh self-denial. His path runs between the two: neither feeding every desire nor punishing the body.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A line with luxury at one end and self-denial at the other, and a highlighted point in the middle labelled the middle way",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M36 78H284\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"36\" cy=\"78\" r=\"7\" fill=\"currentColor\"/><circle cx=\"284\" cy=\"78\" r=\"7\" fill=\"currentColor\"/><circle cx=\"160\" cy=\"78\" r=\"12\" fill=\"var(--accent, #3b82f6)\"/><text x=\"46\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">luxury</text><text x=\"268\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">self-denial</text><text x=\"160\" y=\"112\" font-size=\"15\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">the middle way</text><text x=\"160\" y=\"160\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">he had tried both ends first</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "The four truths",
+   "body_md": "There is suffering. It has a cause: craving. It can end, and that end is called **nirvana**. There is a path that leads to the end.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Four stacked boxes: there is suffering, it has a cause which is craving, it can end, there is a path to its end",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"8\" width=\"280\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"28\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">1</text><text x=\"62\" y=\"28\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">there is suffering</text><rect x=\"20\" y=\"44\" width=\"280\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"40\" y=\"64\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">2</text><text x=\"62\" y=\"64\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">it has a cause: craving</text><rect x=\"20\" y=\"80\" width=\"280\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"100\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">3</text><text x=\"62\" y=\"100\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">it can end</text><rect x=\"20\" y=\"116\" width=\"280\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"136\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">4</text><text x=\"62\" y=\"136\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">there is a path to its end</text><text x=\"160\" y=\"172\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">problem, cause, cure, treatment</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "idea",
+   "title": "The eightfold path",
+   "body_md": "Eight practices done together, in three groups: wisdom, ethics and concentration. Clear seeing, harmless living, steady attention.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A wheel with eight spokes beside three groups: wisdom, ethics and focus",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"92\" cy=\"84\" r=\"54\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M92 84L146.0 84.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M92 84L130.2 122.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M92 84L92.0 138.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M92 84L53.8 122.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M92 84L38.0 84.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M92 84L53.8 45.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M92 84L92.0 30.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M92 84L130.2 45.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"92\" cy=\"84\" r=\"8\" fill=\"var(--accent, #3b82f6)\"/><text x=\"176\" y=\"46\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">wisdom</text><text x=\"176\" y=\"62\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">view, intention</text><text x=\"176\" y=\"86\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">ethics</text><text x=\"176\" y=\"102\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">speech, action, work</text><text x=\"176\" y=\"126\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">focus</text><text x=\"176\" y=\"142\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">effort, mindfulness,</text><text x=\"176\" y=\"156\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">concentration</text><text x=\"92\" y=\"168\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">eight spokes</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "myth",
+   "title": "Not \"life is misery\"",
+   "body_md": "*Dukkha* means more than pain. It includes the unease that remains when things go well. And the teaching's main claim is that it ends.",
+   "visual": {
+    "kind": "svg",
+    "alt": "The word dukkha in large type, with the note that it means not only pain but also a lasting unease",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"160\" y=\"66\" font-size=\"44\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"800\">dukkha</text><text x=\"160\" y=\"100\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">not only pain</text><text x=\"160\" y=\"134\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">also the unease that stays</text><text x=\"160\" y=\"152\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">even when things go well</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "picture",
+   "title": "How it travelled",
+   "body_md": "Around 268 BCE the emperor Ashoka, horrified by a war he had won, turned to Buddhism and supported missions to Sri Lanka and Burma.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A timeline with three points: the Buddha in the sixth to fifth century BCE, Ashoka from about 268 BCE, and the spread abroad to Sri Lanka and Burma",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M20 76H292\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M292 76l-8 -5M292 76l-8 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"62\" cy=\"76\" r=\"6\" fill=\"currentColor\"/><text x=\"62\" y=\"54\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">the Buddha</text><text x=\"62\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">6th to 5th c. BCE</text><circle cx=\"170\" cy=\"76\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><text x=\"170\" y=\"54\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">Ashoka</text><text x=\"170\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">from c. 268 BCE</text><circle cx=\"262\" cy=\"76\" r=\"6\" fill=\"currentColor\"/><text x=\"262\" y=\"54\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">abroad</text><text x=\"262\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Sri Lanka, Burma</text><text x=\"160\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">an emperor's conversion carried</text><text x=\"160\" y=\"158\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the teaching beyond India</text></svg>"
+   }
+  },
+  {
+   "id": "c8",
+   "kind": "takeaway",
+   "title": "The core in one line",
+   "body_md": "Suffering comes from craving. End the craving and the suffering ends. The eightfold path is the training that does it.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two boxes, craving leading to suffering, with the note that ending the first ends the second",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"24\" y=\"40\" width=\"110\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"79\" y=\"67\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">craving</text><path d=\"M140 62L180 62M180 62l-7 -5M180 62l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"186\" y=\"40\" width=\"110\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"241\" y=\"67\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">suffering</text><text x=\"160\" y=\"122\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">end the first and the second ends</text><text x=\"160\" y=\"158\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the path is how</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "State the four truths in order.",
+   "answer": "There is suffering (dukkha). It has a cause, craving or attachment. It can end (nirvana). There is a path to its end, the eightfold path.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "cloze",
+   "prompt": "The state in which suffering and its causes are absent is called ___.",
+   "answer": "nirvana",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "nirvana",
+    "nibbana",
+    "Nirvana",
+    "Nibbana"
+   ]
+  },
+  {
+   "id": "r3",
+   "kind": "mcq",
+   "prompt": "The middle way lies between which two extremes?",
+   "answer": "c",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "Faith and doubt"
+    },
+    {
+     "id": "b",
+     "text": "Wealth and power"
+    },
+    {
+     "id": "c",
+     "text": "Indulgence and harsh self-denial"
+    },
+    {
+     "id": "d",
+     "text": "Thought and action"
+    }
+   ],
+   "explanation": "The Buddha had lived in luxury and had practised severe self-denial, and rejected both."
+  },
+  {
+   "id": "r4",
+   "kind": "explain",
+   "prompt": "Into which three kinds of training are the eight parts of the path grouped?",
+   "answer": "Wisdom (view, intention), ethics (speech, action, livelihood) and concentration (effort, mindfulness, concentration).",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "explain",
+   "prompt": "Why is \"life is suffering\" a misleading summary of Buddhism?",
+   "answer": "Dukkha includes unease and dissatisfaction as well as pain, and it is only the first of four truths. The teaching goes on to say suffering has a cause and can end.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "apply",
+   "prompt": "Someone finally gets the job they wanted and within months feels restless again. Which truth explains the restlessness, and what does it name as the cause?",
+   "answer": "The second truth: the cause is craving, which moves to a new object once the old one is satisfied.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r7",
+   "kind": "explain",
+   "prompt": "Who was Ashoka, and why does he matter to the history of Buddhism?",
+   "answer": "A Mauryan emperor who took the throne around 268 BCE. After a very bloody war he turned to Buddhism, promoted it across India and supported missions that carried it to Sri Lanka and Burma.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "true_false",
+   "prompt": "True or false: the word noble in Four Noble Truths describes the truths themselves.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "In the original it describes the people who understand them: four truths for the spiritually noble."
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain the Buddha's core teaching to a friend who knows nothing about it. Describe it; do not argue for or against it.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Names all four truths in order."
+   },
+   {
+    "id": "t2",
+    "point": "Identifies craving or attachment as the cause of suffering."
+   },
+   {
+    "id": "t3",
+    "point": "Says the path trains wisdom, ethics and concentration, or lists several of its eight parts."
+   },
+   {
+    "id": "t4",
+    "point": "Mentions the middle way between indulgence and self-denial."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Says Buddhism teaches that life is only misery",
+   "Says the Buddha is worshipped as the creator of the world"
+  ]
+ },
+ "challenge": {
+  "kind": "argue_other_side",
+  "prompt": "A critic says: \"If you removed all craving you would stop caring about anything, including other people. That is not peace, it is numbness.\" Give the strongest reply a Buddhist could make, using only what this lesson covers.",
+  "model_answer": [
+   "The path does not only remove things. It includes ethics: harmless speech, action and work are part of the training, so concern for others is built in.",
+   "What is to be ended is craving in the sense of clinging, the grasping that turns every satisfaction into a new want. That is different from caring.",
+   "Correct intention is described as freedom from hatred and from the wish to harm, which points toward goodwill, not indifference."
+  ],
+  "follow_up": "Now state the critic's best answer to that reply."
+ },
+ "connections": [
+  {
+   "to": "his06",
+   "body_md": "A religion needs carriers. The Mauryan emperor Ashoka, ruling a united India from about 268 BCE, became the most important one Buddhism ever had: he carved its moral teaching on pillars across his empire and sent missions abroad. When you study the empires of antiquity, notice how often a ruler's choice decided which ideas spread."
+  },
+  {
+   "to": "phi05",
+   "body_md": "Buddhist thinkers pushed the teaching into philosophy. If a person is a bundle of changing parts, body, sensations, perceptions, mental habits and awareness, then where is the fixed self that does the craving? Their answer, that there is none, is one of the main positions you will meet in Indian philosophy."
+  },
+  {
+   "to": "art08",
+   "body_md": "Buddhism reached Japan by way of China and Korea, and one of its schools, Zen, prized simplicity and direct attention. That taste shaped Japanese ink painting, where a few strokes and a great deal of empty paper are meant to be enough."
+  },
+  {
+   "to": "rel05",
+   "body_md": "The Buddha grew up in the world of early Hinduism and kept some of its ideas, such as rebirth, while rejecting others. Buddhism's goal, release from the cycle of rebirth, is a cousin of the Hindu idea of moksha, reached by a different route."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**A prince who walked away**\n\nThe founder of Buddhism was born in northern India, near today's border with Nepal, into a ruling family. He is known by several names: Siddhartha, Gautama, and Sakyamuni. The sources used here do not agree on his dates. One places his life around 563 BCE and another places the founding of Buddhism around 500 BCE, so \"the sixth or fifth century BCE\" is the careful way to say it.\n\nHe grew up in comfort and gave it up for a life of poverty and spiritual search. At about thirty-five, the tradition says, he sat down to meditate under a fig tree and resolved not to rise until he understood. What he reached there is called enlightenment, and from then on he was called the Buddha, a title meaning \"enlightened one\". He spent the rest of his life teaching, and founded an order of monks.\n\n**The first sermon**\n\nHis first teaching after that experience set out a \"middle way\" between two extremes: indulging the senses and punishing the body. He had tried both. In the same sermon he gave the four truths and the eightfold path, which all schools of Buddhism accept.\n\n**The four truths**\n\nThe first truth is dukkha, usually translated as suffering. It includes the obvious pains of birth, ageing, sickness and death, and also being stuck with what you dislike, being parted from what you like, and not getting what you want. The word carries a sense of unease or dissatisfaction as well as pain.\n\nThe second truth is the origin of suffering. In the first sermon the Buddha tied it to craving, or attachment. Other texts add hatred and ignorance.\n\nThe third truth is cessation: suffering can stop. The state in which suffering and its causes are absent is called nirvana (nibbana in the Pali language).\n\nThe fourth truth is the path that leads there.\n\nThe English name \"Four Noble Truths\" is a slightly misleading translation. In the original, \"noble\" describes the people who understand the truths, not the truths. A closer rendering is \"four truths for the spiritually noble\".\n\n**The eightfold path**\n\nThe path has eight parts, practised together. They are often grouped into three kinds of training.\n\n- Wisdom: correct view (understanding the four truths) and correct intention (letting go of attachment, hatred and the wish to harm).\n- Ethics: correct speech (no lying, divisive, harsh or idle talk), correct action (no killing, stealing or sexual misconduct) and correct livelihood (no work that harms others).\n- Concentration: correct effort (dropping harmful states of mind and sustaining good ones), correct mindfulness (awareness of body, feelings and thoughts) and correct concentration (single-minded focus).\n\nNotice the shape of the whole teaching. It names a problem, gives its cause, says it can be cured and lays out a treatment. It reads like a diagnosis. That comparison is this lesson's, but it is why the teaching is easy to remember.\n\n**How it spread**\n\nThe teaching might have stayed a local movement in northern India. What carried it further was the Mauryan Empire, which united much of India. Its emperor Ashoka took the throne around 268 BCE. As a general he won a war against the kingdom of Kalinga that is estimated to have killed 100,000 people. The slaughter changed him. He turned to Buddhism, tried to rule with compassion, had his moral teachings carved on stone pillars across India, and supported missions that took Buddhism to Sri Lanka and Burma. Later, merchants carried it along the Silk Roads into China, and from Korea it reached Japan in the sixth century CE.\n\n**What this lesson does not do**\n\nIt describes what Buddhists teach. It does not say whether the teaching is true. Later schools of Buddhism differ on a great deal, and each has its own texts and practices. The four truths are what they share.",
+  "est_minutes": 7
+ },
+ "go_further": [
+  {
+   "kind": "short",
+   "title": "Four Noble Truths",
+   "by": "Donald S. Lopez, Encyclopaedia Britannica",
+   "url": "https://www.britannica.com/topic/Four-Noble-Truths",
+   "note": "A scholar's short article on what each truth says and why the usual English name misleads.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "short",
+   "title": "Eightfold Path",
+   "by": "Encyclopaedia Britannica",
+   "url": "https://britannica.com/topic/Eightfold-Path",
+   "note": "Each of the eight parts explained in a sentence.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "long",
+   "title": "Vedic India to the Fall of the Maurya Empire",
+   "by": "OpenStax, World History Volume 1, section 5.4",
+   "url": "https://openstax.org/books/world-history-volume-1/pages/5-4-vedic-india-to-the-fall-of-the-maurya-empire",
+   "note": "The historical setting: early India, the Buddha's life and Ashoka's empire.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Encyclopaedia Britannica: Four Noble Truths (Donald S. Lopez)",
+   "url": "https://www.britannica.com/topic/Four-Noble-Truths",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The four truths and their Pali names",
+    "What dukkha includes",
+    "Craving as the cause, with hatred and ignorance added in other texts",
+    "Nirvana as the absence of suffering and its causes",
+    "Why noble is a misleading translation",
+    "All schools accept the four truths"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Encyclopaedia Britannica: Eightfold Path",
+   "url": "https://britannica.com/topic/Eightfold-Path",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The eight parts and what each means",
+    "The middle way between asceticism and sensual indulgence",
+    "The threefold training: ethics, concentration, wisdom"
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Encyclopaedia Britannica: Buddhism, The Four Noble Truths",
+   "url": "https://www.britannica.com/topic/Buddhism/The-Four-Noble-Truths",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Dukkha connotes uneasiness or dissatisfaction as well as suffering"
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "OpenStax World History Volume 1, section 5.4: Vedic India to the Fall of the Maurya Empire",
+   "url": "https://openstax.org/books/world-history-volume-1/pages/5-4-vedic-india-to-the-fall-of-the-maurya-empire",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The Buddha's birth around 563 BCE into a royal family near Nepal",
+    "The Mauryan Empire and Ashoka's accession about 268 BCE",
+    "The Kalinga war and its estimated 100,000 deaths",
+    "Ashoka's pillars and his missions to Burma and Sri Lanka"
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "OpenStax Introduction to Sociology 3e, section 15.2: World Religions",
+   "url": "https://openstax.org/books/introduction-sociology-3e/pages/15-2-world-religions",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Buddhism founded around 500 BCE",
+    "Enlightenment at thirty-five under a fig tree",
+    "Buddha means enlightened one",
+    "He founded a monastic order"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "The sources disagree on the Buddha's dates (around 563 BCE in s4, around 500 BCE in s5); the lesson reports the range and says so. The doctor comparison, the phone example and the reply in the challenge are the writer's own. The connections to no-self, Zen painting and Hindu ideas of rebirth and moksha come from the skeleton and are standard, but the sources opened here cover only the five aggregates; check each when its lesson is written. The spread along the Silk Roads and to Japan in the sixth century CE is from other sections of the same OpenStax book seen in search results, not opened in full. The hook's phrase hundreds of millions of followers is a standard figure with no source here. A practising Buddhist or a scholar of religion should read this lesson for fairness."
+ }
+}

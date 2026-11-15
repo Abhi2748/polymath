@@ -111,6 +111,22 @@ Read docs/BUILD_SPEC.md section 3.
 
 **Check:** follow `DEPLOY.md` yourself. Sign in on your phone, add the site to your home screen, and read the lesson there. A different email address is refused. Commit.
 
+## Step 5b. The re-reading view
+
+**Goal:** a learned lesson can be read again in full, including a quoted text or rival views.
+
+```
+Read docs/BUILD_SPEC.md section 11 (Lesson, Map) and docs/LESSON_FORMAT.md.
+
+On /topic/[id], once the topic is learned or recalled, show the lesson for re-reading below the state: the excerpt if the pack has one (keep its line breaks, show work, author and year), the explanation with its visual, analogy and takeaways, the positions if present as one block per view, the worked example, the misconception, the connections (each linking to its topic), the deep dive collapsed by default, and the go-further list.
+
+In the lesson player, if the pack has an excerpt, show it as its own card straight after the guess card.
+
+Add tests using lit04.json (excerpt) and pol06.json (positions). Change only the files this needs.
+```
+
+**Check:** with a topic marked learned, its page shows the whole lesson. Commit.
+
 ## Step 6. Review scheduler
 
 **Goal:** the memory engine, proven by tests before it has a screen.
@@ -123,6 +139,8 @@ In src/core/scheduler.ts write pure functions, no database and no Date.now():
 - pickReviewItems(pack, history) returning two recall items per section 7
 - applyReview(progress, results, today) returning the new progress per the outcome table, the long-gap bonus, the lapse rule, the due date rule and the state rule
 - initialSchedule(topicId, today) for a newly learned topic
+
+If scheduler.ts already has sessionDay or initialSchedule from an earlier step, extend them and keep their tests passing.
 
 Write the tests listed under Scheduler and Session day in section 13 first, then make them pass. Use a table of cases so each row of the outcome table is one test.
 ```
@@ -141,9 +159,10 @@ Read docs/BUILD_SPEC.md sections 8, 9, 11 (Today) and 13.
 3. Record a sessions row when the deck is finished. After that, Today shows "Done for today" until the next session day.
 4. Add the 15-minute short day.
 5. Remove the temporary "Start lesson" button from the topic page.
+6. Add three development-only helpers that refuse to run in production: a way to shift the clock, a setting DEV_IGNORE_PREREQS=1 that treats prerequisites as met so every model lesson can be opened, and a command pnpm dev:reset that deletes my own progress, history and sessions.
 ```
 
-**Check:** Today offers the starter lesson if you have not done it, or a review the day after. To test tomorrow without waiting, ask the agent for a dev-only way to shift the clock, and confirm it cannot run in production. The end screen has no link to more content. Commit.
+**Check:** Today offers the starter lesson if you have not done it, or a review the day after. To test tomorrow without waiting, use the clock shift, and confirm it cannot run in production. With DEV_IGNORE_PREREQS=1 the deck should offer other model lessons, never two from one field in a day. Run `pnpm dev:reset` when you finish testing. The end screen has no link to more content. Commit.
 
 ## Step 8. Settings and the error flag
 
@@ -211,7 +230,7 @@ Build the rest of `python -m pipeline.write <topic_id>`:
 - Stage 6 claim check with the checker model, with at most two redrafts per part.
 - Stage 7 number check and stage 8 link check in code only.
 - Stage 9: run scripts/validate_lessons.py on the result and write one PNG sheet of the drawings.
-- Stage 10: pipeline/records/<topic_id>.json, and verification.notes built from it.
+- Stage 10: pipeline/records/<topic_id>.json, including tokens used and cost for the run, and verification.notes built from it.
 - A pack that fails any stage goes to pipeline/rejected/ with the reasons, never to data/lessons/.
 - `python -m pipeline.audit <topic_id>` prints five random claims with their quotations and addresses.
 ```
@@ -223,7 +242,7 @@ Build the rest of `python -m pipeline.write <topic_id>`:
 ```
 Read the section "Qualifying a model" in docs/RESEARCH_PROTOCOL.md.
 
-Build `python -m pipeline.qualify --model <name>`. It runs the pipeline for the nine topics that have hand-written lessons, writing to pipeline/qualify/<model>/ and never to data/lessons/. It then prints the report table from the protocol. For research recall, compare each entry of the hand-written lesson's sources[].supports with the new fact sheet using the checker model, and list the entries that were not covered so I can read them.
+Build `python -m pipeline.qualify --model <name>`. It runs the pipeline for the thirteen topics that have hand-written lessons, writing to pipeline/qualify/<model>/ and never to data/lessons/. It then prints the report table from the protocol. For research recall, compare each entry of the hand-written lesson's sources[].supports with the new fact sheet using the checker model, and list the entries that were not covered so I can read them.
 ```
 
 **Check:** run it for the model you plan to use. If it misses a pass mark, try the changes in the protocol's table for weaker models (smaller pieces, more calls, templates only) and run it again. Do not generate lessons for the site with a model that has not passed. Put two of its lessons next to the hand-written ones and read both.

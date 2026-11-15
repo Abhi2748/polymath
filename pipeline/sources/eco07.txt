@@ -1,0 +1,6 @@
+# eco07 Money and banks: the sources the hand-written lesson used
+# one address per line, then its tier
+https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy research
+https://www.bankofengland.co.uk/explainers/how-is-money-created institution
+https://openstax.org/books/principles-economics-3e/pages/27-1-defining-money-by-its-functions textbook
+https://openstax.org/books/principles-macroeconomics-3e/pages/14-key-concepts-and-summary textbook

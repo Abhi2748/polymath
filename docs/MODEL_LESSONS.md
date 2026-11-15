@@ -12,9 +12,11 @@ These lessons were written by hand, with sources open, to show the pipeline what
 | `mat12.json` | Infinity | A proof, with nothing to measure | Each card is one step of an argument, a worked example the learner can repeat with their own digits, a challenge that asks what is wrong with a tempting objection |
 | `bio09.json` | Evolution by natural selection | A process that is widely misread | The mechanism reduced to three facts and one consequence, a worked example with invented numbers and a chart of them, four named misreadings, wording that never says organisms try or need |
 | `pol06.json` | Political ideologies | Living political disagreement | `positions` with the best argument and main objection for each of four views, one event reasoned through four ways, a teach-back that fails caricature, a challenge to argue the side you like least |
+| `rel06.json` | Buddhism | A living religion | Description without judgement, sources that disagree on a date reported as a range, a teach-back that asks the learner to describe and not to argue, a note asking for a reader from the tradition |
+| `eco07.json` | Money and banks | A topic where the usual textbook story is disputed | The textbook account and the central bank's account set side by side, a real-data chart, a worked example that follows one loan through a balance sheet |
+| `art05.json` | Perspective | A technique with a dated invention | A worked example the learner does on paper, drawings that are themselves the subject, a `when` range, a misconception answered by other traditions |
+| `mus05.json` | Harmony | A topic about sound, with no sound in the format | Arithmetic the learner can check, the learner sent to a keyboard to hear it, an explanation presented as the best current account of an open question, a source that could only be partly read and says so |
 | `lit04.json` | How a poem works | A skill taught on one text | The `excerpt` part with a poem from 1609 quoted in full, a guess-first question answered by reading aloud, the writer's close reading labelled as a reading, a challenge that changes the text and asks what is lost |
-
-Three more are planned (a religion, money and banking, and a topic in art or music), which will make twelve.
 
 The addresses each lesson was written from are in `pipeline/sources/<topic_id>.txt`, so the pipeline can be tested on the same topics with the same sources. See "Qualifying a model" in `docs/RESEARCH_PROTOCOL.md`.
 
@@ -29,6 +31,10 @@ The addresses each lesson was written from are in `pipeline/sources/<topic_id>.t
 - A natural process or mechanism: use `bio09`, with `phy07` if it needs counting.
 - Anything people vote about: use `pol06`, and `phi12` for the structure of `positions`.
 - A poem, a painting, a piece of music or any single work to be read closely: use `lit04`.
+- A religion or any belief people hold dear: use `rel06`, with `pol06` if there are rival camps.
+- An institution or system people misunderstand (money, courts, vaccines): use `eco07`.
+- A craft or technique the learner can try with their hands: use `art05`.
+- Anything about sound, taste, touch or movement, where the page cannot carry the experience: use `mus05`.
 
 ## What writing the first five taught
 
@@ -47,3 +53,11 @@ The addresses each lesson was written from are in `pipeline/sources/<topic_id>.t
 - **Political topics need the same care on every side.** For each view the lesson gives the argument its supporters would recognise and the objection its critics would press, in the same number of words and the same tone. The notes ask for a reader from each side.
 - **A close reading is the writer's, and says so.** No source supports "this line slows down here". The lesson presents such points as observations the learner can test by reading aloud, and the notes list them.
 - **Research depth must not depend on who is writing.** That is now `docs/RESEARCH_PROTOCOL.md`.
+
+## What the third batch changed
+
+- **Sources disagree more often than you expect.** Two textbooks date the Buddha about sixty years apart. Two reference works date Brunelleschi's experiment five years apart. A textbook teaches a model of banking that the central bank says is misleading. The lesson reports the disagreement and says so in the notes. It never quietly picks one.
+- **A source that cannot be read must say so.** One research paper blocked automated reading. The lesson uses only the passage that was seen, names what was not confirmed, and asks for the link to be opened by a person.
+- **Describe a religion; do not grade it.** The lesson states what is taught and by whom, and keeps the writer's comparisons labelled as the writer's. The notes ask for a reader from inside the tradition.
+- **Some subjects need the learner's hands or ears.** The perspective lesson's worked example is a drawing exercise. The harmony lesson sends the learner to a keyboard. Neither needed a new part in the format, which matters once an app is built on that format.
+- **Narrow questions make research cheap.** Asking each source a short list of specific questions, and drawing with a handful of reusable shapes, cut the effort for this batch to a fraction of the earlier ones. The pipeline's fact extraction and visual templates rest on the same idea.

@@ -2,10 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense } from "react";
+import { LessonReread } from "@/components/lesson/LessonReread";
 import { StateLabel } from "@/components/StateLabel";
-import { getTopic } from "@/db/queries";
+import { getLessonPack } from "@/db/lessonProgress";
+import { getTopic, getTopicTitles } from "@/db/queries";
 import { requireUserId } from "@/lib/auth";
-import { startLesson } from "./lesson/actions";
+import { safeLessonPack } from "@/lib/safeLesson";
 
 export default function TopicPage({ params }: PageProps<"/topic/[id]">) {
   return (
@@ -26,6 +28,10 @@ async function Topic({ params }: { params: Promise<{ id: string }> }) {
   const topic = await getTopic(await requireUserId(), id);
   if (!topic) notFound();
 
+  const learned = topic.state === "learned" || topic.state === "recalled";
+  const pack = learned ? await getLessonPack(topic.id) : null;
+  const connectionTitles = pack ? await getTopicTitles(pack.connections.map((c) => c.to)) : {};
+
   return (
     <article className="mt-8">
       <p className="text-sm text-muted">{topic.fieldName}</p>
@@ -35,14 +41,7 @@ async function Topic({ params }: { params: Promise<{ id: string }> }) {
         <StateLabel state={topic.state} />
       </p>
 
-      {/* Temporary: the Today screen replaces this button in step 7. */}
-      {(topic.state === "ready" || topic.state === "in_progress") && (
-        <form action={startLesson.bind(null, topic.id)} className="mt-8">
-          <button type="submit" className="w-full rounded-xl bg-accent px-5 py-3 font-medium text-background">
-            {topic.state === "ready" ? "Start lesson" : "Resume lesson"}
-          </button>
-        </form>
-      )}
+      {pack && <LessonReread pack={safeLessonPack(pack)} connectionTitles={connectionTitles} />}
 
       {topic.prereqs.length > 0 && (
         <section className="mt-12" aria-labelledby="prereqs">

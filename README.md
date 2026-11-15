@@ -12,7 +12,7 @@ Everything needed to start building release 1 with Cursor or any coding agent.
 | `AGENTS.md` | Standing instructions the coding agent reads automatically |
 | `data/skeleton.json` | The curriculum: 24 fields, 391 topics, 337 connections |
 | `data/lesson.schema.json` | The exact lesson format |
-| `data/lessons/` | Nine hand-written model lessons, starting with The forgetting curve |
+| `data/lessons/` | Thirteen hand-written model lessons, starting with The forgetting curve |
 | `docs/MODEL_LESSONS.md` | What each model lesson demonstrates and which to imitate |
 | `scripts/validate_lessons.py` | Checks every lesson against the format and the curriculum |
 | `pipeline/source_map.json` | Approved places to look for sources, by field |

@@ -1,0 +1,401 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "mus05",
+ "title": "Harmony",
+ "question": "Why do some notes sound good together?",
+ "est_minutes": 14,
+ "objectives": [
+  "Give the frequency ratios of the octave, the fifth and the fourth",
+  "Explain how shared harmonics and beats account for smooth and rough pairs of notes",
+  "Say why physics alone does not settle what sounds good"
+ ],
+ "key_terms": [
+  {
+   "term": "Consonance",
+   "definition": "The agreeable, settled quality of notes sounded together. Its opposite is dissonance."
+  },
+  {
+   "term": "Harmonics",
+   "definition": "The frequencies present in a single note: the fundamental and its whole-number multiples."
+  },
+  {
+   "term": "Beats",
+   "definition": "The regular swelling and fading heard when two close frequencies sound together."
+  },
+  {
+   "term": "Interval",
+   "definition": "The distance in pitch between two notes, described by the ratio of their frequencies."
+  }
+ ],
+ "when": null,
+ "guess": {
+  "prompt": "Two notes are sounded together. Which pair of frequencies sounds roughest?",
+  "options": [
+   {
+    "id": "a",
+    "text": "200 and 400 hertz"
+   },
+   {
+    "id": "b",
+    "text": "200 and 300 hertz"
+   },
+   {
+    "id": "c",
+    "text": "200 and 250 hertz"
+   },
+   {
+    "id": "d",
+    "text": "200 and 212 hertz"
+   }
+  ],
+  "answer_id": "d",
+  "reveal": "200 and 212. Frequencies that are close but not equal drift in and out of step, and the ear hears a rough throbbing. The pairs with simple ratios, 2 to 1 and 3 to 2, are the smoothest."
+ },
+ "hook": "Press two neighbouring keys on a piano and you wince. Press two keys an octave apart and they melt together. The reason has been argued over since ancient Greece, and part of it is arithmetic.",
+ "explanation": {
+  "body_md": "Notes that sound settled together are called **consonant**. The ancient Greeks noticed that the most consonant pairs have frequencies in simple whole-number ratios.\n\n| Interval | Ratio | Example |\n| --- | --- | --- |\n| Octave | 2 : 1 | 400 and 200 Hz |\n| Fifth | 3 : 2 | 300 and 200 Hz |\n| Fourth | 4 : 3 | 400 and 300 Hz |\n\nWhy would simple ratios matter? Two facts about sound give most of the answer.\n\n**A note is a stack.** A single note contains its lowest frequency, the fundamental, plus whole-number multiples of it, called **harmonics**. A 200 Hz note also contains 400, 600, 800 and so on.\n\n**Close frequencies beat.** Two frequencies that are near each other but not equal drift in and out of step, making a throb called **beats**. Fast beats sound rough.\n\nPut the two together. When notes are in a simple ratio, many of their harmonics land on exactly the same frequencies, so nothing beats. When the ratio is not simple, harmonics fall close without meeting, and the sound is rough.\n\nThat is the best physical account, and it is not the whole story. Which pairs count as pleasant has changed over time and differs between cultures, and researchers still disagree about why we like what we like.",
+  "analogy": "Two people walking side by side. If one takes exactly two steps for every one of the other's, their feet land together again and again, and the rhythm feels locked. If one takes thirty steps while the other takes thirty-one, they are almost in step, and the near miss is what you notice.",
+  "takeaways": [
+   "Octave 2 : 1, fifth 3 : 2, fourth 4 : 3: simple ratios sound smoothest.",
+   "Simple ratios make harmonics coincide; near misses make beats, heard as roughness.",
+   "Culture and history also shape what sounds good, and the full explanation is still open."
+  ],
+  "visual": {
+   "kind": "svg",
+   "alt": "Two rows of lines for the harmonics of a 200 hertz note and a 300 hertz note. The lines coincide at 600 and 1200 hertz",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"147.6\" y=\"26\" width=\"14\" height=\"90\" rx=\"4\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.25\"/><text x=\"154.6\" y=\"132\" font-size=\"11\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">600</text><rect x=\"272.2\" y=\"26\" width=\"14\" height=\"90\" rx=\"4\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.25\"/><text x=\"279.2\" y=\"132\" font-size=\"11\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">1200</text><path d=\"M71.5 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113.1 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.6 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M196.2 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M237.7 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M279.2 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M92.3 82V108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.6 82V108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M216.9 82V108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M279.2 82V108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"22\" y=\"22\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">note at 200 Hz</text><text x=\"22\" y=\"76\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">note at 300 Hz</text><text x=\"160\" y=\"154\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">a fifth, 3 : 2</text><text x=\"160\" y=\"172\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">their harmonics meet at 600 and 1200</text></svg>"
+  }
+ },
+ "worked_example": {
+  "body_md": "Compare two pairs by listing harmonics. The lower note is 200 Hz in both.\n\n**Pair A: 200 and 300 Hz (a fifth, 3 : 2)**\n\n| Note | Harmonics (Hz) |\n| --- | --- |\n| 200 | 200, 400, **600**, 800, 1000, **1200** |\n| 300 | 300, **600**, 900, **1200** |\n\nThe two stacks meet at 600 and 1,200. The other harmonics are at least 100 Hz from their nearest neighbour, too far apart to beat slowly. The pair sounds smooth.\n\n**Pair B: 200 and 212 Hz**\n\n| Note | Harmonics (Hz) |\n| --- | --- |\n| 200 | 200, 400, 600 |\n| 212 | 212, 424, 636 |\n\nNothing coincides. Instead each harmonic has a near neighbour, and each near pair beats at a rate equal to the difference:\n\n- 212 − 200 = 12 beats per second\n- 424 − 400 = 24 beats per second\n- 636 − 600 = 36 beats per second\n\nSeveral rapid throbs at once: the pair sounds rough.\n\nThe frequencies were chosen for easy arithmetic. Real instruments do not sit on such round numbers, but the reasoning is the same."
+ },
+ "misconception": {
+  "claim": "Which notes sound good together is fixed by physics, so it is the same for everyone, everywhere.",
+  "correction_md": "Physics explains a lot: shared harmonics and beats are real and measurable. But the list of intervals treated as consonant has changed through history, and it differs between cultures. In Western music, intervals with less simple ratios were accepted only gradually.\n\nScientists have not agreed on a single explanation either. The pleasure of harmony seems to come from the sound, the ear and the listener's musical upbringing together."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "Two notes sound together. Which of these pairs is the roughest on the ear?",
+   "visual": {
+    "kind": "svg",
+    "alt": "Four pairs of frequencies: 200 with 400, 200 with 300, 200 with 250, and 200 with 212 hertz",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"20\" y=\"26\" width=\"134\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"87\" y=\"51\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">200 + 400 Hz</text><rect x=\"166\" y=\"26\" width=\"134\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"233\" y=\"51\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">200 + 300 Hz</text><rect x=\"20\" y=\"76\" width=\"134\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"87\" y=\"101\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">200 + 250 Hz</text><rect x=\"166\" y=\"76\" width=\"134\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"233\" y=\"101\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">200 + 212 Hz</text><text x=\"160\" y=\"146\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">two notes sounded together</text><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">which pair sounds roughest?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "A very old argument",
+   "body_md": "Why some notes fit together has been debated for over two thousand years, since the followers of Pythagoras. It is still not fully settled.",
+   "visual": {
+    "kind": "svg",
+    "alt": "The figure two thousand plus, for the number of years the question has been argued over",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"160\" y=\"78\" font-size=\"52\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">2,000+</text><text x=\"160\" y=\"112\" font-size=\"16\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">years of argument</text><text x=\"160\" y=\"152\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">about why some notes fit together</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "idea",
+   "title": "Simple ratios",
+   "body_md": "The Greeks allowed three pairings: the **octave** (2 : 1), the **fifth** (3 : 2) and the **fourth** (4 : 3). Small whole numbers, smooth sound.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three rows of dots showing the ratios two to one for the octave, three to two for the fifth and four to three for the fourth",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"24\" y=\"39\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">octave</text><circle cx=\"170\" cy=\"34\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"190\" cy=\"34\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><text x=\"204\" y=\"39\" font-size=\"16\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">:</text><circle cx=\"222\" cy=\"34\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"79\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">fifth</text><circle cx=\"150\" cy=\"74\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"170\" cy=\"74\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"190\" cy=\"74\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><text x=\"204\" y=\"79\" font-size=\"16\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">:</text><circle cx=\"222\" cy=\"74\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"242\" cy=\"74\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"119\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"700\">fourth</text><circle cx=\"130\" cy=\"114\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"150\" cy=\"114\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"170\" cy=\"114\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><circle cx=\"190\" cy=\"114\" r=\"7\" fill=\"var(--accent, #3b82f6)\"/><text x=\"204\" y=\"119\" font-size=\"16\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">:</text><circle cx=\"222\" cy=\"114\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"242\" cy=\"114\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"262\" cy=\"114\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"150\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">small whole numbers</text><text x=\"160\" y=\"168\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the ratios the ancient Greeks allowed</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "One note is many",
+   "body_md": "A single note holds a lowest frequency, the fundamental, plus whole-number multiples of it called **harmonics**.",
+   "visual": {
+    "kind": "svg",
+    "alt": "One note shown as a row of lines at 200, 400, 600, 800, 1000 and 1200 hertz. The first, the fundamental, is tallest; the rest are harmonics",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M24 110H306\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M71.5 54V110\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"71.5\" y=\"128\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">200</text><path d=\"M113.1 76V110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"113.1\" y=\"128\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">400</text><path d=\"M154.6 76V110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"154.6\" y=\"128\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">600</text><path d=\"M196.2 76V110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"196.2\" y=\"128\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">800</text><path d=\"M237.7 76V110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"237.7\" y=\"128\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">1000</text><path d=\"M279.2 76V110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"279.2\" y=\"128\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">1200</text><text x=\"79.5\" y=\"44\" font-size=\"11\" text-anchor=\"start\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">fundamental</text><text x=\"196.2\" y=\"62\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">harmonics</text><text x=\"160\" y=\"150\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">frequency in hertz</text><text x=\"160\" y=\"172\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">one note is a stack of frequencies</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "idea",
+   "title": "When harmonics meet",
+   "body_md": "Notes at 200 and 300 Hz share harmonics at 600 and 1,200. Where they coincide nothing clashes, so the pair sounds smooth.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two rows of lines for the harmonics of a 200 hertz note and a 300 hertz note. The lines coincide at 600 and 1200 hertz",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"147.6\" y=\"26\" width=\"14\" height=\"90\" rx=\"4\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.25\"/><text x=\"154.6\" y=\"132\" font-size=\"11\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">600</text><rect x=\"272.2\" y=\"26\" width=\"14\" height=\"90\" rx=\"4\" fill=\"var(--accent, #3b82f6)\" opacity=\"0.25\"/><text x=\"279.2\" y=\"132\" font-size=\"11\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">1200</text><path d=\"M71.5 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113.1 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.6 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M196.2 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M237.7 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M279.2 34V60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M92.3 82V108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.6 82V108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M216.9 82V108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M279.2 82V108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"22\" y=\"22\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">note at 200 Hz</text><text x=\"22\" y=\"76\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">note at 300 Hz</text><text x=\"160\" y=\"154\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">a fifth, 3 : 2</text><text x=\"160\" y=\"172\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">their harmonics meet at 600 and 1200</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "idea",
+   "title": "When they nearly meet",
+   "body_md": "Two close frequencies drift in and out of step: loud, soft, loud. These **beats** come at a rate equal to the difference, and fast beats sound rough.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A wave whose height swells and shrinks three times, the pattern called beats",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M20 70L21 50L22 34L23 27L24 29L25 41L26 59L27 80L28 98L29 109L30 111L31 104L32 89L33 70L34 52L35 39L36 33L37 35L38 46L39 61L40 78L41 92L42 100L43 101L44 95L45 84L46 71L47 58L48 49L49 46L50 48L51 55L52 64L53 74L54 82L55 86L56 85L57 82L58 76L59 70L60 66L61 63L62 63L63 65L64 67L65 69L66 70L67 70L68 68L69 67L70 66L71 67L72 70L73 74L74 79L75 82L76 83L77 80L78 75L79 67L80 58L81 51L82 48L83 50L84 58L85 69L86 81L87 92L88 98L89 99L90 92L91 80L92 64L93 49L94 38L95 34L96 38L97 50L98 67L99 86L100 101L101 110L102 109L103 100L104 83L105 63L106 44L107 31L108 27L109 32L110 47L111 67L112 87L113 104L114 113L115 112L116 102L117 84L118 63L119 44L120 31L121 27L122 33L123 47L124 66L125 86L126 101L127 109L128 107L129 98L130 82L131 65L132 49L133 39L134 36L135 41L136 52L137 67L138 81L139 92L140 97L141 95L142 88L143 78L144 67L145 58L146 52L147 51L148 55L149 61L150 68L151 75L152 79L153 80L154 79L155 75L156 72L157 69L158 68L159 69L160 70L161 71L162 72L163 71L164 68L165 65L166 61L167 60L168 61L169 65L170 72L171 79L172 85L173 89L174 88L175 82L176 73L177 62L178 52L179 45L180 43L181 48L182 59L183 73L184 88L185 99L186 104L187 101L188 91L189 75L190 58L191 42L192 33L193 31L194 39L195 54L196 74L197 93L198 107L199 113L200 109L201 96L202 77L203 56L204 38L205 28L206 27L207 36L208 53L209 73L210 93L211 108L212 113L213 109L214 96L215 77L216 57L217 40L218 31L219 30L220 39L221 54L222 73L223 90L224 102L225 106L226 102L227 91L228 76L229 60L230 48L231 41L232 42L233 48L234 59L235 71L236 82L237 90L238 92L239 89L240 82L241 73L242 65L243 60L244 57L245 58L246 61L247 66L248 70L249 73L250 74L251 73L252 72L253 70L254 70L255 71L256 73L257 75L258 77L259 77L260 74L261 70L262 64L263 58L264 55L265 54L266 58L267 66L268 76L269 85L270 92L271 94L272 91L273 82L274 69L275 56L276 45L277 39L278 40L279 48L280 62L281 79L282 94L283 105L284 107L285 101L286 88L287 70L288 51L289 36L290 29L291 31L292 42L293 60L294 81L295 99L296 111L297 113L298 106L299 90L300 70\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"67\" y=\"136\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">soft</text><text x=\"113\" y=\"136\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">loud</text><text x=\"160\" y=\"136\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">soft</text><text x=\"207\" y=\"136\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">loud</text><text x=\"253\" y=\"136\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">soft</text><text x=\"160\" y=\"164\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">close frequencies drift in and out of step</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "myth",
+   "title": "Not physics alone",
+   "body_md": "What counts as consonant has changed over centuries and differs between cultures. Sound, ear and upbringing all play a part.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two boxes joined by a plus sign: physics, meaning shared harmonics and beats, and culture, meaning that what counts as pleasant changes",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"24\" width=\"138\" height=\"76\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"83\" y=\"50\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">physics</text><text x=\"83\" y=\"72\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">shared harmonics,</text><text x=\"83\" y=\"88\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">beats</text><text x=\"160\" y=\"68\" font-size=\"20\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">+</text><rect x=\"168\" y=\"24\" width=\"138\" height=\"76\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"237\" y=\"50\" font-size=\"15\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">culture</text><text x=\"237\" y=\"72\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">what counts as</text><text x=\"237\" y=\"88\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">pleasant changes</text><text x=\"160\" y=\"132\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">neither one explains it alone</text><text x=\"160\" y=\"158\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">and the why is still argued over</text></svg>"
+   }
+  },
+  {
+   "id": "c8",
+   "kind": "takeaway",
+   "title": "From numbers to feeling",
+   "body_md": "Simple ratio, shared harmonics, smooth. Near miss, beats, rough. That is most of the answer, and the rest is still being worked out.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two rows of boxes. Simple ratio leads to harmonics meeting, which sounds smooth. Close but unequal frequencies lead to beats, which sound rough",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"10\" y=\"24\" width=\"92\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\"/><text x=\"56\" y=\"48\" font-size=\"10\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"400\">simple ratio</text><path d=\"M104 43L112 43M112 43l-7 -5M112 43l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"114\" y=\"24\" width=\"92\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\"/><text x=\"160\" y=\"48\" font-size=\"10\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"400\">harmonics meet</text><path d=\"M208 43L216 43M216 43l-7 -5M216 43l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"218\" y=\"24\" width=\"92\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\"/><text x=\"264\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">smooth</text><rect x=\"10\" y=\"86\" width=\"92\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"56\" y=\"110\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">close, unequal</text><path d=\"M104 105L112 105M112 105l-7 -5M112 105l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"114\" y=\"86\" width=\"92\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"110\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">beats</text><path d=\"M208 105L216 105M216 105l-7 -5M216 105l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"218\" y=\"86\" width=\"92\" height=\"38\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"264\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">rough</text><text x=\"160\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">two routes from numbers to feeling</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "Why do two notes in a simple frequency ratio, such as 3 to 2, sound smooth together?",
+   "answer": "Each note contains harmonics, and in a simple ratio many harmonics of the two notes fall on exactly the same frequencies. Coinciding harmonics do not beat, so there is no roughness.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "mcq",
+   "prompt": "What is the frequency ratio of an octave?",
+   "answer": "a",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "2 : 1"
+    },
+    {
+     "id": "b",
+     "text": "3 : 2"
+    },
+    {
+     "id": "c",
+     "text": "4 : 3"
+    },
+    {
+     "id": "d",
+     "text": "9 : 8"
+    }
+   ],
+   "explanation": "The upper note of an octave vibrates twice as fast as the lower. 3 : 2 is the fifth and 4 : 3 the fourth."
+  },
+  {
+   "id": "r3",
+   "kind": "cloze",
+   "prompt": "The regular swelling and fading heard when two close frequencies sound together is called ___.",
+   "answer": "beats",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "beats",
+    "beating",
+    "beat"
+   ]
+  },
+  {
+   "id": "r4",
+   "kind": "apply",
+   "prompt": "Two tuning forks at 440 and 446 hertz sound together. How many beats per second do you hear?",
+   "answer": "Six. The beat rate is the difference between the two frequencies.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "explain",
+   "prompt": "What are harmonics?",
+   "answer": "The frequencies contained in a single note: the fundamental, which is the lowest, and whole-number multiples of it.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "apply",
+   "prompt": "A note at 100 hertz and a note at 150 hertz are played together. Name one frequency where their harmonics coincide.",
+   "answer": "300 hertz (3 times 100 and 2 times 150). Also 600, 900 and so on.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r7",
+   "kind": "explain",
+   "prompt": "Give one piece of evidence that harmony is not explained by physics alone.",
+   "answer": "The intervals treated as consonant have changed over history and differ between cultures, and researchers still disagree about why listeners prefer what they do.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "true_false",
+   "prompt": "True or false: scientists have settled why some combinations of notes sound more pleasant than others.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "Shared harmonics and beats explain much, but a 2015 review described the question as still open after more than two thousand years."
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain to a friend why two notes an octave apart blend smoothly while two neighbouring piano keys clash.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "An octave is a 2 to 1 frequency ratio, a simple ratio."
+   },
+   {
+    "id": "t2",
+    "point": "Each note contains harmonics, multiples of its fundamental."
+   },
+   {
+    "id": "t3",
+    "point": "In a simple ratio the harmonics coincide; with neighbouring keys they fall close without meeting."
+   },
+   {
+    "id": "t4",
+    "point": "Close frequencies produce beats, heard as roughness."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Says the explanation is purely physical and the same in all cultures",
+   "Says beats happen when two frequencies are exactly equal"
+  ]
+ },
+ "challenge": {
+  "kind": "predict",
+  "prompt": "A synthesiser can produce pure tones: a single frequency with no harmonics at all. Using Helmholtz's roughness idea, predict whether 200 and 300 hertz as pure tones would sound much smoother than 200 and 283 hertz as pure tones. Then say what your answer suggests about where consonance comes from.",
+  "model_answer": [
+   "With no harmonics, there is nothing to coincide or to nearly coincide. Both pairs are far apart in frequency, well beyond the small gap where two tones beat roughly.",
+   "So roughness predicts little difference between the two pairs when the tones are pure. The advantage of the simple ratio should shrink.",
+   "That suggests the smoothness of simple ratios depends heavily on harmonics, and so on the kind of sound, not on the numbers alone. If listeners still prefer 3 to 2 with pure tones, something beyond roughness is at work, which is one reason the question remains open."
+  ],
+  "follow_up": "How would you test this on yourself with a tone-generator app?"
+ },
+ "connections": [
+  {
+   "to": "phy08",
+   "body_md": "Everything in this lesson rests on wave behaviour you met in physics. Two waves add: where their peaks line up they reinforce, and where they are out of step they cancel. Beats are that adding and cancelling stretched out in time, and harmonics are the standing waves a string or a pipe can hold. Consonant intervals are the cases where the waves keep lining up."
+  },
+  {
+   "to": "mus03",
+   "body_md": "A scale is a small set of notes chosen from all possible pitches. Now you can see one reason for the choice: scales are built so that many pairs of their notes stand in simple ratios, or close to them. The octave, where the scale starts again, is the simplest ratio of all."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**An old question**\n\nPlay two notes together. Some pairs sound settled and sweet. Others sound tense or harsh. The settled kind is called consonance and the tense kind dissonance, and people have been asking what makes the difference for more than two thousand years. It has never been fully answered.\n\n**The Greeks and their ratios**\n\nThe followers of Pythagoras, in ancient Greece, noticed that the pairs they found most pleasing matched simple whole-number ratios. They allowed three: the octave, with a ratio of 2 to 1; the fifth, 3 to 2; and the fourth, 4 to 3. For them the numbers themselves were the explanation. These ratios had a spiritual and cosmic meaning, and music was an audible sign of the order of the universe.\n\nToday we say the ratios are between frequencies, the number of vibrations per second, measured in hertz. A note at 400 hertz is an octave above a note at 200.\n\n**What a single note contains**\n\nThe modern story starts with a fact about one note. When a string or a column of air sounds, it does not vibrate at one frequency only. It vibrates at a lowest frequency, called the fundamental, and at the same time at multiples of it, called harmonics or overtones. A note with a fundamental of 200 hertz also contains 400, 600, 800 and so on. The mix of harmonics is why a trumpet and a clarinet playing the same note sound different.\n\nSo two notes played together are really two stacks of frequencies laid on top of each other.\n\n**Beats**\n\nWhen two frequencies are close but not equal, they drift in and out of step. For a moment they reinforce each other and the sound is loud. A moment later they cancel and it is quiet. The result is a throbbing called beats, and the number of beats per second is simply the difference between the two frequencies. Sound 200 and 210 hertz together and you hear ten beats a second.\n\nPiano tuners use this. They sound a string against a reference and adjust it until the beats slow and vanish. And if you press two neighbouring keys on a piano at once, you get a warbling sound that most people find unpleasant.\n\n**Helmholtz: roughness**\n\nIn the 1800s the physicist Hermann von Helmholtz put these facts together. If two notes are in a simple ratio, many of their harmonics land on exactly the same frequencies. Take 200 and 300 hertz, a fifth. The first note's harmonics include 600 and 1,200, and so do the second's. Where harmonics coincide, there are no beats. If the ratio is not simple, harmonics from the two notes fall close together without coinciding, they beat against each other, and the ear hears roughness. On this account consonance is the absence of roughness.\n\nLater experiments refined the picture. Two pure tones sound roughest when they are separated by a particular small gap, about a quarter of what researchers call the critical bandwidth of the ear, and smooth again once they are far enough apart. When the same test is run with notes that have harmonics, the smoothest points come out at the unison, the octave, the fifth and the fourth, the same intervals the Greeks picked.\n\n**Why the question is still open**\n\nRoughness explains a great deal, but researchers do not agree that it is the whole answer. A 2015 review set out three candidate explanations: that simple ratios are pleasing in themselves, that consonance is the absence of interference between harmonics, and a third that looks to biology. Listeners in studies broadly agree on which pairs sound more consonant, the review notes, yet why they do has never been settled.\n\n**And it is not only physics**\n\nWhich intervals count as consonant has changed over the centuries and differs between cultures. In Western music, intervals with less simple ratios were accepted as consonant only gradually. So what you hear as pleasant is partly the physics of vibrating strings, partly the workings of the ear, and partly what you grew up listening to.\n\n**Hear it yourself**\n\nThis lesson has no sound, so find a piano or a keyboard app. Press two keys next to each other: rough. Press two keys seven steps apart, counting black and white keys: a fifth, smooth. Twelve steps apart: an octave, so smooth that the two notes almost merge into one.",
+  "est_minutes": 8
+ },
+ "go_further": [
+  {
+   "kind": "short",
+   "title": "Consonance",
+   "by": "Handbook for Acoustic Ecology, Simon Fraser University",
+   "url": "https://www.sfu.ca/sonic-studio-webdav/handbook/Consonance.html",
+   "note": "A one-page reference entry with the classic curves of consonance against frequency difference.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "long",
+   "title": "Sound Interference and Resonance",
+   "by": "OpenStax, Physics, section 14.4",
+   "url": "https://openstax.org/books/physics/pages/14-4-sound-interference-and-resonance",
+   "note": "The physics of beats and harmonics, with the piano tuner example worked through.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "long",
+   "title": "A biological rationale for musical consonance",
+   "by": "Daniel Bowling and Dale Purves, PNAS",
+   "year": 2015,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4568680",
+   "note": "A review of the three main explanations and the case for the third. Written for scientists, but readable.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Handbook for Acoustic Ecology (Simon Fraser University): Consonance",
+   "url": "https://www.sfu.ca/sonic-studio-webdav/handbook/Consonance.html",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Definition of consonance",
+    "Simple ratios traditionally consonant: octave 2:1, fifth 3:2, fourth 4:3",
+    "Less simple ratios accepted gradually; variation over time and between cultures",
+    "Helmholtz: beats between upper partials cause roughness, coinciding partials consonance",
+    "Least consonance at a quarter of the critical bandwidth",
+    "For tones with harmonics, consonance peaks at unison, octave, fifth and fourth"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Bowling and Purves (2015), A biological rationale for musical consonance, PNAS, PubMed Central PMC4568680",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4568680",
+   "tier": "research",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The question has been debated for over 2,000 years",
+    "The Pythagoreans allowed the octave, fifth and fourth, ratios with spiritual and cosmological meaning",
+    "Three candidate explanations",
+    "Listeners broadly agree on rankings, but the reason has never been settled"
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "OpenStax Physics, section 14.4: Sound Interference and Resonance",
+   "url": "https://openstax.org/books/physics/pages/14-4-sound-interference-and-resonance",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Beats come from two waves of slightly different frequency",
+    "Beat frequency is the difference of the two frequencies",
+    "Fundamental, overtones and harmonics as multiples of the fundamental",
+    "The same note differs between instruments because of its overtones",
+    "Piano tuners listen for beats"
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "OpenStax College Physics 2e, section 16.10: Superposition and Interference",
+   "url": "https://openstax.org/books/college-physics-2e/pages/16-10-superposition-and-interference",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Two adjacent piano keys give a warbling sound usually considered unpleasant"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "s2 could not be opened in full: the site blocked automated reading, so only its opening passage, as shown in search results, was read. Its title and authors are given from the writer's knowledge and must be confirmed by opening the link; its third explanation is described only as biological for that reason. The harmonic lists and beat rates in the worked example are the writer's arithmetic on chosen frequencies and were checked by running them. The walking analogy, the pure-tone challenge, the statement that Helmholtz worked in the 1800s, the remark about how scales are built, and the keyboard instructions (seven and twelve keys apart) are standard knowledge with no source here. The lesson has no audio; the format has no audio part yet."
+ }
+}

@@ -1,0 +1,456 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "eco07",
+ "title": "Money and banks",
+ "question": "What is money, and who creates it?",
+ "est_minutes": 15,
+ "objectives": [
+  "Name the three main jobs of money and explain why barter fails without it",
+  "Describe what happens on a bank's balance sheet when it makes a loan",
+  "List the limits on how much money banks can create"
+ ],
+ "key_terms": [
+  {
+   "term": "Medium of exchange",
+   "definition": "Something widely accepted in payment, so that it stands between buyer and seller."
+  },
+  {
+   "term": "Fiat money",
+   "definition": "Money with no value in itself, declared legal tender by a government."
+  },
+  {
+   "term": "Bank deposit",
+   "definition": "The balance in a bank account: a sum the bank owes its customer. Most money takes this form."
+  },
+  {
+   "term": "Central bank",
+   "definition": "The public bank that sets the interest rate and holds the reserves of commercial banks."
+  }
+ ],
+ "when": null,
+ "guess": {
+  "prompt": "A bank approves a loan of 10,000 and the money appears in your account. Where did it come from?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Other customers' savings were moved to you"
+   },
+   {
+    "id": "b",
+    "text": "Cash from the bank's vault"
+   },
+   {
+    "id": "c",
+    "text": "The central bank printed it for the bank"
+   },
+   {
+    "id": "d",
+    "text": "The bank created it by typing a new deposit"
+   }
+  ],
+  "answer_id": "d",
+  "reveal": "The bank created it. It recorded a loan you owe and, at the same moment, a deposit it owes you. Nobody else's account went down."
+ },
+ "hook": "Most money has never been printed. It was typed into existence by a bank making a loan, and it disappears when the loan is repaid.",
+ "explanation": {
+  "body_md": "**What money is.** Without money you must barter, and barter needs a lucky match: you have to find someone who has what you want *and* wants what you have. Money removes that problem by doing three jobs.\n\n| Job | What it means |\n| --- | --- |\n| Medium of exchange | Everyone accepts it in payment |\n| Store of value | You can hold it and spend it later |\n| Unit of account | Prices are measured in it |\n\nToday's money is **fiat money**. It is not backed by gold. A government declares it legal tender, and it works because people accept it.\n\n**Who creates it.** Notes and coins are only about 3% of the money in the United Kingdom. About 79% is **deposits** in commercial banks: numbers in accounts.\n\nThose numbers are created when banks lend. A bank that approves a loan adds two entries to its books at once: the loan (which you owe the bank) and a deposit of the same size (which the bank owes you). The deposit is new money. When you repay, it is deleted.\n\n**What limits it.** Banks must stay profitable and safe, regulators require them to hold capital, and the central bank sets the interest rate, which decides how much people want to borrow.",
+  "analogy": "A bank deposit is an IOU from the bank that everyone agrees to accept as payment. Making a loan is the bank swapping IOUs with you: yours says you will repay over years, and the bank's can be spent today.",
+  "takeaways": [
+   "Money is whatever does three jobs: paying, saving and pricing.",
+   "Most money is bank deposits, and banks create deposits when they lend.",
+   "Profit, risk, regulation and above all the interest rate limit how much is created."
+  ],
+  "visual": {
+   "kind": "chart",
+   "alt": "A bar chart of the forms of money in the United Kingdom: bank deposits 79 percent, central bank reserves 18 percent, notes and coins 3 percent",
+   "chart": {
+    "type": "bar",
+    "x_label": "Form of money",
+    "y_label": "Share of UK money (%)",
+    "series": [
+     {
+      "name": "Share",
+      "points": [
+       [
+        "Bank deposits",
+        79
+       ],
+       [
+        "Central bank reserves",
+        18
+       ],
+       [
+        "Notes and coins",
+        3
+       ]
+      ]
+     }
+    ]
+   },
+   "caption": "Source: Bank of England, How is money created?"
+  }
+ },
+ "worked_example": {
+  "body_md": "Follow one loan through a bank's books. The amounts are invented.\n\n**Before.** Mia has 0 in her account at Northbank.\n\n**The loan.** Northbank lends Mia 100. It writes two entries.\n\n| Northbank owns | Northbank owes |\n| --- | --- |\n| Loan to Mia: +100 | Mia's deposit: +100 |\n\nNo other customer's balance changed. The total of deposits in the economy is 100 higher than a moment ago. That is 100 of new money.\n\n**Spending.** Mia pays 100 to a builder who banks elsewhere. The deposit moves to the builder's bank. The money still exists; it has changed accounts. Northbank must settle with the other bank, which is one reason it cannot lend without limit.\n\n**Repaying.** Over a year Mia earns 100 and pays off the loan. Northbank cancels both entries: the loan is gone and so is 100 of deposits. The money has been destroyed.\n\n**The interest.** Mia also paid interest. That was not new money. It came out of deposits that already existed and became the bank's income.\n\nSo the amount of money in an economy rises when banks lend faster than loans are repaid, and falls when repayment runs ahead."
+ },
+ "misconception": {
+  "claim": "Banks take in savings and lend those same savings out.",
+  "correction_md": "It sounds obvious, and many textbooks still describe banks as go-betweens. The Bank of England says the order is reversed. A bank does not wait for a saver's deposit before lending. The act of lending creates a new deposit.\n\nA related textbook idea, the money multiplier, says the central bank fixes an amount of reserves which banks multiply into loans by a formula. The Bank's own account is that it sets the interest rate and does not fix the quantity of reserves. You will meet both versions, so it helps to know that the people who run the system describe it the second way."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "A bank approves your loan and 10,000 appears in your account. Where did the money come from?",
+   "visual": {
+    "kind": "svg",
+    "alt": "A bank building with an arrow to a box showing 10,000, and a question mark over the arrow",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M36 60L70 38L104 60Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M46 64V94\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 64V94\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M78 64V94\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M94 64V94\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M32 98H108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120 78L178 78M178 78l-7 -5M178 78l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"190\" y=\"56\" width=\"100\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"240\" y=\"84\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"800\">10,000</text><text x=\"149\" y=\"64\" font-size=\"26\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">?</text><text x=\"160\" y=\"150\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">the bank gives you a loan.</text><text x=\"160\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">where does that money come from?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "Why money exists",
+   "body_md": "Without money, a trade needs a lucky match: each side must want exactly what the other has. Economists call it the double coincidence of wants.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two boxes: one person has fish and wants shoes, the other has shoes and wants bread. The link between them is crossed out",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"30\" width=\"124\" height=\"60\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"76\" y=\"54\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">has fish</text><text x=\"76\" y=\"74\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">wants shoes</text><rect x=\"182\" y=\"30\" width=\"124\" height=\"60\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"244\" y=\"54\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">has shoes</text><text x=\"244\" y=\"74\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">wants bread</text><path d=\"M144 60H176\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 48L170 72M170 48L150 72\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"160\" y=\"126\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">no deal: each must want</text><text x=\"160\" y=\"144\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">what the other has</text><text x=\"160\" y=\"170\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">money removes that problem</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "idea",
+   "title": "Three jobs",
+   "body_md": "Money is a **medium of exchange** (you pay with it), a **store of value** (you can keep it) and a **unit of account** (prices are measured in it).",
+   "visual": {
+    "kind": "svg",
+    "alt": "Three boxes labelled pay, save and price, standing for medium of exchange, store of value and unit of account",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"12\" y=\"34\" width=\"92\" height=\"70\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"58\" y=\"68\" font-size=\"20\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">pay</text><text x=\"58\" y=\"90\" font-size=\"8\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">medium of exchange</text><rect x=\"114\" y=\"34\" width=\"92\" height=\"70\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"68\" font-size=\"20\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">save</text><text x=\"160\" y=\"90\" font-size=\"8\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">store of value</text><rect x=\"216\" y=\"34\" width=\"92\" height=\"70\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"262\" y=\"68\" font-size=\"20\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">price</text><text x=\"262\" y=\"90\" font-size=\"8\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">unit of account</text><text x=\"160\" y=\"140\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">anything that does these three jobs</text><text x=\"160\" y=\"158\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">is working as money</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "Fiat money",
+   "body_md": "Modern money is not backed by gold. A government declares it legal tender, and it has value because people accept it.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A banknote with the number ten, and the note that there is no gold behind it",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"70\" y=\"26\" width=\"180\" height=\"84\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"160\" cy=\"68\" r=\"26\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"160\" y=\"76\" font-size=\"22\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"800\">10</text><text x=\"160\" y=\"136\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">no gold behind it</text><text x=\"160\" y=\"160\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">it is money because it is accepted</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "idea",
+   "title": "A loan creates a deposit",
+   "body_md": "When a bank lends, it types two entries at once: a loan you owe, and a deposit it owes you. That deposit is brand new money.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A bank balance sheet with two new entries: a loan of 100 on the side of what the bank owns, and a deposit of 100 on the side of what it owes",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M20 40H300\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 20V120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"90\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">the bank owns</text><text x=\"230\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">the bank owes</text><rect x=\"34\" y=\"56\" width=\"112\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"90\" y=\"81\" font-size=\"14\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">+ loan 100</text><rect x=\"174\" y=\"56\" width=\"112\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"230\" y=\"81\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">+ deposit 100</text><text x=\"160\" y=\"144\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">two entries, typed at the same moment</text><text x=\"160\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">the deposit is new money</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "numbers",
+   "title": "Most money is not cash",
+   "body_md": "In the United Kingdom, notes and coins are about 3% of money. About 79% is deposits in commercial banks.",
+   "visual": {
+    "kind": "chart",
+    "alt": "A bar chart of the forms of money in the United Kingdom: bank deposits 79 percent, central bank reserves 18 percent, notes and coins 3 percent",
+    "chart": {
+     "type": "bar",
+     "x_label": "Form of money",
+     "y_label": "Share of UK money (%)",
+     "series": [
+      {
+       "name": "Share",
+       "points": [
+        [
+         "Bank deposits",
+         79
+        ],
+        [
+         "Central bank reserves",
+         18
+        ],
+        [
+         "Notes and coins",
+         3
+        ]
+       ]
+      }
+     ]
+    },
+    "caption": "Source: Bank of England, How is money created?"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "myth",
+   "title": "Banks do not lend out savings",
+   "body_md": "The usual story says savings come first and loans follow. The Bank of England says it is the other way round: lending creates deposits.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two rows. The top row, savings leading to loans, is crossed out. The bottom row, loans leading to deposits, is highlighted",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"160\" y=\"26\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"600\">which comes first?</text><rect x=\"20\" y=\"42\" width=\"110\" height=\"36\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"75\" y=\"65\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">savings</text><path d=\"M136 60L180 60M180 60l-7 -5M180 60l-7 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"186\" y=\"42\" width=\"110\" height=\"36\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"241\" y=\"65\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">loans</text><path d=\"M24 46L292 74\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"20\" y=\"98\" width=\"110\" height=\"36\" rx=\"6\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"75\" y=\"121\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">loans</text><path d=\"M136 116L180 116M180 116l-7 -5M180 116l-7 5\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"186\" y=\"98\" width=\"110\" height=\"36\" rx=\"6\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"241\" y=\"121\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">deposits</text><text x=\"160\" y=\"166\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">lending creates deposits, not the reverse</text></svg>"
+   }
+  },
+  {
+   "id": "c8",
+   "kind": "takeaway",
+   "title": "Created, but not freely",
+   "body_md": "Banks create most money, within limits: they must stay profitable and safe, obey regulators, and work with the interest rate the central bank sets.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Four boxes naming the limits on money creation: profit and risk, regulation, borrowers repaying, and the interest rate",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"14\" y=\"16\" width=\"140\" height=\"46\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"84\" y=\"44\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">profit and risk</text><rect x=\"166\" y=\"16\" width=\"140\" height=\"46\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"236\" y=\"44\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">regulation</text><rect x=\"14\" y=\"74\" width=\"140\" height=\"46\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"84\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">borrowers repaying</text><rect x=\"166\" y=\"74\" width=\"140\" height=\"46\" rx=\"8\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2.5\"/><text x=\"236\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">the interest rate</text><text x=\"160\" y=\"152\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">banks create money,</text><text x=\"160\" y=\"170\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">but not as much as they like</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "Who creates most of the money in a modern economy, and how?",
+   "answer": "Commercial banks, when they make loans. The bank records a loan and at the same time a new deposit of the same size, and that deposit is new money.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "mcq",
+   "prompt": "Which of these is not one of the three main jobs of money?",
+   "answer": "d",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "Medium of exchange"
+    },
+    {
+     "id": "b",
+     "text": "Store of value"
+    },
+    {
+     "id": "c",
+     "text": "Unit of account"
+    },
+    {
+     "id": "d",
+     "text": "Source of wealth"
+    }
+   ],
+   "explanation": "Money lets you pay, save and price. Creating money does not create wealth, because each new deposit comes with an equal debt."
+  },
+  {
+   "id": "r3",
+   "kind": "cloze",
+   "prompt": "Money with no value in itself, declared legal tender by a government, is called ___ money.",
+   "answer": "fiat",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "fiat",
+    "Fiat"
+   ]
+  },
+  {
+   "id": "r4",
+   "kind": "explain",
+   "prompt": "What is the double coincidence of wants, and why does it make barter hard?",
+   "answer": "For a barter trade, each person must want what the other has. Finding such a match for every trade is slow and often impossible.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "explain",
+   "prompt": "What happens to money when a bank loan is repaid?",
+   "answer": "It is destroyed. The deposit used for repayment is cancelled along with the loan.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "apply",
+   "prompt": "The central bank raises the interest rate sharply. What happens to the creation of money, and why?",
+   "answer": "It slows. Loans become more expensive, fewer are taken out, and since lending is what creates deposits, less new money is created.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r7",
+   "kind": "explain",
+   "prompt": "Roughly what share of money in the United Kingdom is notes and coins, and what makes up most of the rest?",
+   "answer": "About 3 per cent. Most of the rest, about 79 per cent, is deposits in commercial banks.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "true_false",
+   "prompt": "True or false: a bank can lend only money that savers have already deposited with it.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "Lending creates the deposit. The limits on lending are profit, risk, regulation and the interest rate, not the stock of savings."
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain to a friend where the money comes from when a bank gives someone a loan, and why banks still cannot create as much as they like.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "The bank creates a new deposit when it lends; it does not hand over other people's savings."
+   },
+   {
+    "id": "t2",
+    "point": "The loan and the deposit appear together, as something owned and something owed."
+   },
+   {
+    "id": "t3",
+    "point": "Repaying the loan destroys the money."
+   },
+   {
+    "id": "t4",
+    "point": "Names at least two limits: profit and risk, regulation, borrowers repaying, or the central bank's interest rate."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Says banks lend out savers' deposits",
+   "Says banks can create unlimited money"
+  ]
+ },
+ "challenge": {
+  "kind": "predict",
+  "prompt": "In a deep recession, households and companies become frightened and use every spare pound to pay off loans, while banks become cautious about new lending. Predict what happens to the amount of money in the economy, and what the central bank might do about it.",
+  "model_answer": [
+   "Repayments destroy deposits and little new lending replaces them, so the amount of money shrinks.",
+   "Less money and less borrowing mean less spending, which deepens the recession.",
+   "The central bank cuts the interest rate to make borrowing attractive again. If the rate is already near zero, it can buy assets with newly created money, which is called quantitative easing."
+  ],
+  "follow_up": "Why might cutting the interest rate fail to work if people are frightened enough?"
+ },
+ "connections": [
+  {
+   "to": "bus08",
+   "body_md": "You have seen that a loan creates money. From the bank's side that is a business: it earns interest on what it creates and loses if borrowers default. The topic on banking and credit looks at how this power lets an economy grow faster, and why the same power makes banks fragile."
+  },
+  {
+   "to": "his09",
+   "body_md": "Paper money needs a state that people trust. Song China, about a thousand years ago, was the first to issue it officially. The shift from coins you can weigh to paper you must believe in is the same step this lesson describes from commodity money to fiat money."
+  },
+  {
+   "to": "eco01",
+   "body_md": "Economics starts from scarcity: you cannot have everything, so you trade. Money is the tool that makes trading cheap. It creates no goods of its own, which is why printing more of it cannot end scarcity."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**Life without money**\n\nImagine an accountant who wants a pair of shoes in a world with no money. She has to find a shoemaker who happens to want some accounting done, in the right amount, today. Economists call this the double coincidence of wants, and it is the reason barter works badly for anything beyond the simplest trades.\n\nMoney removes the problem. The accountant sells her work to anyone for money and buys shoes from anyone with it.\n\n**Three jobs**\n\nEconomists define money by what it does.\n\n- It is a **medium of exchange**: people accept it in payment, so it stands between buyer and seller.\n- It is a **store of value**: you can hold it and spend it later. A warehouse of shoes goes out of fashion; money keeps better.\n- It is a **unit of account**: a common ruler for prices, so that everything can be compared with everything else.\n\nSome lists add a fourth job, a standard for payments promised in the future. Anything that does these jobs is working as money, whatever it is made of.\n\n**From gold to trust**\n\nFor much of history money was a commodity, such as gold or silver, or paper that could be swapped for one. That is commodity money, and it has a use apart from being money. Modern money is fiat money. It has no value in itself. A government declares it legal tender, and it works because everyone expects everyone else to accept it. That last step is this lesson's inference from the definition: fiat money runs on trust.\n\n**Most money is not cash**\n\nHere is the fact that surprises people. Notes and coins are a small part of the money supply. The Bank of England puts them at about 3 per cent of money in the United Kingdom, with deposits in commercial banks at about 79 per cent and the reserves that banks hold at the central bank making up the rest. Looking only at the money held by the public, the Bank found in 2013 that 97 per cent of it was bank deposits. Money is, overwhelmingly, numbers in bank accounts.\n\n**Who creates those numbers**\n\nBanks do, when they lend. Three Bank of England economists set this out in a widely read 2014 article. When a bank approves a loan, it does not go and fetch someone else's savings. It credits the borrower's account with a new deposit of the same size. The bank now has a new asset, the loan it is owed, and a new liability, the deposit it owes. Both appeared at once, and the deposit is new money that did not exist before. Some economists call it fountain pen money, created at the stroke of a banker's pen.\n\nThe process runs backwards too. When a loan is repaid, the deposit used to repay it is deleted. Repaying debt destroys money.\n\n**Two stories the Bank says are wrong**\n\nThe first is that banks are simply go-betweens, lending out what savers deposit. The Bank says this has the order reversed: lending creates deposits.\n\nThe second is the money multiplier taught in many textbooks, in which the central bank sets an amount of reserves and banks multiply it into loans by a fixed formula. One of the textbooks used for this lesson still defines the multiplier in that way. The Bank's account is that it does not fix the quantity of reserves at all. It sets the interest rate, and reserves follow.\n\n**The brakes**\n\nNone of this means banks can create money without limit.\n\n- A loan must be profitable, and a bank that lends recklessly risks losses and running short of funds.\n- Regulators require banks to hold capital against possible defaults.\n- Households and companies may use new money to repay old debts, which destroys it again.\n- Above all, the central bank sets the interest rate. A higher rate makes borrowing dearer, so fewer loans are taken out and less money is created. The Bank calls monetary policy the ultimate limit.\n\nWhen rates were already close to zero, central banks used another tool, quantitative easing: buying assets, mainly government bonds, with newly created money.\n\n**Money is not wealth**\n\nA bank that creates a deposit also creates a debt of the same size. As the Bank of England puts it, banks create money, not wealth.",
+  "est_minutes": 8
+ },
+ "go_further": [
+  {
+   "kind": "short",
+   "title": "How is money created?",
+   "by": "Bank of England",
+   "url": "https://www.bankofengland.co.uk/explainers/how-is-money-created",
+   "note": "A two-minute explainer from the central bank itself, with the 79, 18 and 3 per cent figures.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "long",
+   "title": "Money creation in the modern economy",
+   "by": "Michael McLeay, Amar Radia and Ryland Thomas, Bank of England Quarterly Bulletin",
+   "year": 2014,
+   "url": "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy",
+   "note": "The fourteen-page article behind this lesson. Clear, and written for non-specialists.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "long",
+   "title": "Defining Money by Its Functions",
+   "by": "OpenStax, Principles of Economics 3e, section 27.1",
+   "url": "https://openstax.org/books/principles-economics-3e/pages/27-1-defining-money-by-its-functions",
+   "note": "The textbook account of barter, the jobs of money, and commodity versus fiat money.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "McLeay, Radia and Thomas (2014), Money creation in the modern economy, Bank of England Quarterly Bulletin 2014 Q1",
+   "url": "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy",
+   "tier": "research",
+   "accessed": "2026-11-13",
+   "supports": [
+    "97 per cent of broad money held by the public was bank deposits in December 2013",
+    "A loan creates a matching deposit: both sides of the balance sheet rise",
+    "Banks are not simply intermediaries; lending creates deposits",
+    "The money multiplier account is rejected; the Bank sets interest rates, not the quantity of reserves",
+    "Repaying loans destroys money",
+    "Limits: profitability, risk, regulation, the behaviour of households and companies",
+    "Monetary policy as the ultimate limit",
+    "Quantitative easing",
+    "The phrase fountain pen money"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Bank of England explainer: How is money created?",
+   "url": "https://www.bankofengland.co.uk/explainers/how-is-money-created",
+   "tier": "institution",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Bank deposits 79 per cent, reserves 18 per cent, notes and coins 3 per cent",
+    "A loan credited to an account is new money",
+    "Repayment deletes the money",
+    "Banks must hold capital and enough reserves to settle payments",
+    "Banks create money, not wealth"
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "OpenStax Principles of Economics 3e, section 27.1: Defining Money by Its Functions",
+   "url": "https://openstax.org/books/principles-economics-3e/pages/27-1-defining-money-by-its-functions",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Barter and the double coincidence of wants, with the accountant and shoes example",
+    "Medium of exchange, store of value, unit of account, standard of deferred payment",
+    "Commodity money and commodity-backed money",
+    "Fiat money has no intrinsic value and is declared legal tender"
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "OpenStax Principles of Macroeconomics 3e, chapter 14 summary",
+   "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-key-concepts-and-summary",
+   "tier": "textbook",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The textbook definition of the money multiplier as one divided by the reserve ratio",
+    "Banks described as financial intermediaries"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "The sources disagree: the textbook (s4) presents banks as intermediaries and teaches the money multiplier, and the central bank's article (s1) says both descriptions are misleading. The lesson follows s1 and tells the learner that both versions exist. The 97 per cent figure (s1, money held by the public, 2013) and the 79, 18 and 3 per cent figures (s2, which also counts reserves) measure different things and are reported separately. All figures are for the United Kingdom. The Mia example uses invented amounts; the point about interest coming from existing deposits, the IOU analogy and the remark that fiat money runs on trust are the writer's reasoning. Song China's paper money comes from the skeleton connection and has no source here; check it when that lesson is written."
+ }
+}

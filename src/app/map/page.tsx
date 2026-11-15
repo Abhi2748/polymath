@@ -11,7 +11,17 @@ export const metadata: Metadata = { title: "Map · Polymath" };
 export default function MapPage() {
   return (
     <main className="mx-auto w-full max-w-xl px-5 py-10">
-      <h1 className="text-3xl font-semibold">Map</h1>
+      <div className="flex items-baseline justify-between gap-4">
+        <h1 className="text-3xl font-semibold">Map</h1>
+        <nav className="flex gap-4 text-sm text-muted">
+          <Link href="/settings" className="underline underline-offset-4">
+            Settings
+          </Link>
+          <Link href="/flags" className="underline underline-offset-4">
+            Flags
+          </Link>
+        </nav>
+      </div>
       <Suspense fallback={<p className="mt-8 text-muted">Loading…</p>}>
         <Realms />
       </Suspense>

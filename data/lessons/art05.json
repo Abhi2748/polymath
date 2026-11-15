@@ -1,0 +1,410 @@
+{
+ "format": "polymath.lesson/1",
+ "topic_id": "art05",
+ "title": "Perspective",
+ "question": "How did painters learn to create depth on a flat surface?",
+ "est_minutes": 14,
+ "objectives": [
+  "Name the three parts of linear perspective and say what each does",
+  "Describe Brunelleschi's experiment and what it showed",
+  "Draw a simple tiled floor in one-point perspective"
+ ],
+ "key_terms": [
+  {
+   "term": "Linear perspective",
+   "definition": "A system for creating the illusion of depth on a flat surface, in which receding parallel lines meet at a point."
+  },
+  {
+   "term": "Vanishing point",
+   "definition": "The point on the horizon line where receding parallel lines meet."
+  },
+  {
+   "term": "Horizon line",
+   "definition": "The horizontal line across a picture at the viewer's eye level."
+  },
+  {
+   "term": "Orthogonals",
+   "definition": "Lines that run straight away from the viewer in the scene and are drawn converging on the vanishing point."
+  }
+ ],
+ "when": {
+  "label": "about 1415 to 1435",
+  "start_year": 1415,
+  "end_year": 1435
+ },
+ "guess": {
+  "prompt": "In a perspective drawing, where does the vanishing point sit?",
+  "options": [
+   {
+    "id": "a",
+    "text": "On the bottom edge of the picture"
+   },
+   {
+    "id": "b",
+    "text": "On the horizon line, at the viewer's eye level"
+   },
+   {
+    "id": "c",
+    "text": "At the exact centre of the picture, always"
+   },
+   {
+    "id": "d",
+    "text": "Wherever the main figure is standing"
+   }
+  ],
+  "answer_id": "b",
+  "reveal": "On the horizon line, which is drawn at the height of the viewer's eye. Raise or lower your eye and the horizon and vanishing point move with it."
+ },
+ "hook": "Around 1420 an architect in Florence drilled a hole in his own painting to prove a point. The method he was testing shaped almost every Western picture for the next four hundred years.",
+ "explanation": {
+  "body_md": "**Linear perspective** is a system for making a flat picture look deep. It has three parts.\n\n1. The **horizon line**: a horizontal line at the height of the viewer's eye.\n2. The **vanishing point**: a point on that line.\n3. The **orthogonals**: every line that runs straight away from the viewer in the real scene, such as the edges of a road. In the picture they are drawn as diagonals that meet at the vanishing point.\n\nFrom these, sizes follow automatically. The nearer a thing is to the vanishing point, the smaller it is drawn.\n\nThe system was worked out in Florence by the architect **Filippo Brunelleschi** around 1415 to 1420. He tested it by painting the city's Baptistery, drilling a hole in the panel, and comparing the painting's reflection in a mirror with the real building seen through the same hole. They matched.\n\nIn 1435 **Leon Battista Alberti** wrote the method down in *On Painting*, and it spread across Europe.\n\nThe key idea is the single fixed eye. A perspective picture shows the scene exactly as it looks from one spot. That is its power, and it is also a choice: other traditions of painting chose differently.",
+  "analogy": "Stand at a window, close one eye, and trace on the glass the outline of everything you see. The drawing on the glass is in perfect perspective. Alberti described a painting in just this way: as an open window.",
+  "takeaways": [
+   "Horizon line at eye level, a vanishing point on it, and orthogonals that meet there.",
+   "Brunelleschi devised it around 1415 to 1420; Alberti wrote it down in 1435.",
+   "It shows the world from one fixed spot, which is a choice and not a law of pictures."
+  ],
+  "visual": {
+   "kind": "svg",
+   "alt": "A diagram with a dashed horizon line, a vanishing point on it, and four orthogonal lines rising from the bottom edge to meet at that point",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M4 70H316\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M0 180L160 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M80 180L160 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 180L160 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M320 180L160 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"160\" cy=\"70\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><text x=\"160\" y=\"50\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">vanishing point</text><text x=\"312\" y=\"62\" font-size=\"11\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"400\">horizon line</text><text x=\"8\" y=\"62\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">eye level</text><text x=\"160\" y=\"152\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">orthogonals</text><text x=\"160\" y=\"22\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">three parts, one system</text></svg>"
+  }
+ },
+ "worked_example": {
+  "body_md": "Draw a tiled floor. You need paper, a pencil and a ruler.\n\n1. **Horizon.** Draw a light horizontal line about a third of the way down the page. This is your eye level.\n2. **Vanishing point.** Mark a dot on it, near the middle.\n3. **Near edge.** Along the bottom of the page, mark dots at equal spacing, say every 2 cm. These are the near corners of the tiles.\n4. **Orthogonals.** With the ruler, join every bottom dot to the vanishing point. The floor already seems to recede.\n5. **Cross lines.** Now draw horizontal lines across the fan for the far edges of each row of tiles. Put the first one a little above the bottom edge, and make each gap smaller than the one before.\n\nLook at the result. Every tile is the same size in the imagined room, and no two are the same size on the page. Tiles near the vanishing point are narrower, because the orthogonals have closed in, and shorter, because you squeezed the rows.\n\nStep 5 was done by eye here. Alberti's book gave painters a geometric construction that fixes the spacing of the rows exactly; this lesson does not cover it."
+ },
+ "misconception": {
+  "claim": "Perspective is simply the correct way to draw, and painters who did not use it lacked the skill.",
+  "correction_md": "Linear perspective is one system, invented or rediscovered at a known time and place. It shows a scene from a single fixed eye, and it is right for that purpose.\n\nOther traditions wanted other things. Traditional Chinese painting uses parallel perspective, in which receding lines stay parallel, often with a view from above, so the eye can travel through a landscape. And from the late 1800s Western painters themselves began to drop the system: Cézanne flattened the picture, and the Cubists abandoned the single viewpoint. These were choices, made by people who knew the rules."
+ },
+ "cards": [
+  {
+   "id": "c1",
+   "kind": "guess",
+   "title": "Guess first",
+   "body_md": "Two rails run away from you and seem to draw together. In a drawing, where is the point they aim at?",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two rails running away from the viewer and drawing closer together, with a question mark where they would meet",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M40 176L146 78\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M280 176L174 78\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M58 160H262\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.6\"/><path d=\"M88 132H232\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.6\"/><path d=\"M110 112H210\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.6\"/><path d=\"M125 98H195\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.6\"/><text x=\"160\" y=\"62\" font-size=\"34\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">?</text><text x=\"160\" y=\"22\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">where would the two rails meet?</text></svg>"
+   }
+  },
+  {
+   "id": "c2",
+   "kind": "hook",
+   "title": "From stacking to shrinking",
+   "body_md": "Earlier painters showed distance by placing things higher up, and judged sizes by eye. Perspective gave one rule that sets the size of everything.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two panels. Before: three figures of equal size placed higher up to show distance. After: three figures that shrink along converging lines",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><text x=\"80\" y=\"22\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">before</text><circle cx=\"40\" cy=\"84\" r=\"9.68\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M40 93.68V114.8M30.32 101.6H49.68M40 114.8l-7.92 13.2M40 114.8l7.92 13.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"80\" cy=\"56\" r=\"9.68\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M80 65.68V86.8M70.32 73.6H89.68M80 86.8l-7.92 13.2M80 86.8l7.92 13.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"120\" cy=\"28\" r=\"9.68\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M120 37.68V58.8M110.32 45.6H129.68M120 58.8l-7.92 13.2M120 58.8l7.92 13.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"80\" y=\"150\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">far = higher up</text><path d=\"M160 14V156\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\"/><text x=\"240\" y=\"22\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">after</text><path d=\"M176 132L300 96\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.5\"/><path d=\"M176 60L300 82\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.5\"/><circle cx=\"196\" cy=\"68\" r=\"12.76\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\"/><path d=\"M196 80.75999999999999V108.6M183.24 91.2H208.76M196 108.6l-10.44 17.4M196 108.6l10.44 17.4\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"244\" cy=\"76\" r=\"7.92\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\"/><path d=\"M244 83.92V101.2M236.08 90.4H251.92M244 101.2l-6.4799999999999995 10.799999999999999M244 101.2l6.4799999999999995 10.799999999999999\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"280\" cy=\"82\" r=\"4.4\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\"/><path d=\"M280 86.4V96.0M275.6 90.0H284.4M280 96.0l-3.5999999999999996 6.0M280 96.0l3.5999999999999996 6.0\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"240\" y=\"150\" font-size=\"11\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"400\">far = smaller</text><text x=\"160\" y=\"174\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">one rule fixes the size of everything</text></svg>"
+   }
+  },
+  {
+   "id": "c3",
+   "kind": "method",
+   "title": "The mirror test",
+   "body_md": "Brunelleschi painted Florence's Baptistery, drilled a hole in the panel, and looked through the back at a mirror. Mirror up: his painting. Mirror down: the real building. They matched.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A side view of the experiment: an eye looks through a hole in the back of a painting at a mirror, with the real building beyond",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><circle cx=\"26\" cy=\"86\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"29\" cy=\"86\" r=\"3\" fill=\"currentColor\"/><path d=\"M84 52V80M84 92V120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M168 46V126\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"254\" y=\"64\" width=\"44\" height=\"46\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M250 64L276 40L302 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M38 86H164\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"4 4\"/><path d=\"M172 86H250\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"2 5\" opacity=\"0.5\"/><text x=\"26\" y=\"114\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">eye</text><text x=\"84\" y=\"142\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">painting,</text><text x=\"84\" y=\"156\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">with a hole</text><text x=\"168\" y=\"142\" font-size=\"11\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">mirror</text><text x=\"276\" y=\"130\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">building</text><text x=\"160\" y=\"24\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">lower the mirror: is the view the same?</text></svg>"
+   }
+  },
+  {
+   "id": "c4",
+   "kind": "idea",
+   "title": "Three parts",
+   "body_md": "A **horizon line** at eye level. A **vanishing point** on it. **Orthogonals**: lines running away from you, drawn so they all meet at that point.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A diagram with a dashed horizon line, a vanishing point on it, and four orthogonal lines rising from the bottom edge to meet at that point",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M4 70H316\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M0 180L160 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M80 180L160 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 180L160 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M320 180L160 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"160\" cy=\"70\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><text x=\"160\" y=\"50\" font-size=\"13\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">vanishing point</text><text x=\"312\" y=\"62\" font-size=\"11\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"400\">horizon line</text><text x=\"8\" y=\"62\" font-size=\"11\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"400\">eye level</text><text x=\"160\" y=\"152\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">orthogonals</text><text x=\"160\" y=\"22\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">three parts, one system</text></svg>"
+   }
+  },
+  {
+   "id": "c5",
+   "kind": "method",
+   "title": "Try it: a tiled floor",
+   "body_md": "Join equally spaced dots on the bottom edge to one point on the horizon. Add cross lines that get closer together. Equal tiles now shrink with distance.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A tiled floor in perspective: lines from the bottom edge converge on a vanishing point, and the cross lines get closer together toward it",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M0 180L160 60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M64 180L160 60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M128 180L160 60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M192 180L160 60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M256 180L160 60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M320 180L160 60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M0.0 180H320.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M53.3 140H266.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M90.7 112H229.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M116.0 93H204.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M133.3 80H186.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"160\" cy=\"60\" r=\"5\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M4 60H316\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\" opacity=\"0.5\"/><text x=\"160\" y=\"24\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">equal tiles, drawn smaller with distance</text><text x=\"160\" y=\"44\" font-size=\"11\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"600\">try it on paper</text></svg>"
+   }
+  },
+  {
+   "id": "c6",
+   "kind": "picture",
+   "title": "Twenty years in Florence",
+   "body_md": "Brunelleschi's test, Donatello's relief, Masaccio's Holy Trinity, then Alberti's book *On Painting* in 1435, which turned a discovery into a method anyone could learn.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A timeline of four names in Florence: Brunelleschi around 1415 to 1420, Donatello, Masaccio, and Alberti in 1435",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><path d=\"M16 84H304\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"48\" cy=\"84\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M48 84V58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"48\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">Brunelleschi</text><text x=\"48\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">c. 1415 to 1420</text><circle cx=\"122\" cy=\"84\" r=\"6\" fill=\"currentColor\"/><path d=\"M122 84V110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"122\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">Donatello</text><text x=\"122\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">c. 1416 to 1417</text><circle cx=\"200\" cy=\"84\" r=\"6\" fill=\"currentColor\"/><path d=\"M200 84V58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"200\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">Masaccio</text><text x=\"200\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">1425 to 1427</text><circle cx=\"272\" cy=\"84\" r=\"6\" fill=\"var(--accent, #3b82f6)\"/><path d=\"M272 84V110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"272\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">Alberti</text><text x=\"272\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">1435</text><text x=\"160\" y=\"172\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">from experiment to manual in about 20 years</text></svg>"
+   }
+  },
+  {
+   "id": "c7",
+   "kind": "myth",
+   "title": "Not the only right way",
+   "body_md": "Traditional Chinese painting keeps receding lines parallel and lets the eye roam. Linear perspective fixes the eye in one spot. Each is a choice.",
+   "visual": {
+    "kind": "svg",
+    "alt": "Two boxes drawn in different systems: on the left with parallel receding lines, on the right with receding lines that converge",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"30\" y=\"76\" width=\"50\" height=\"50\" rx=\"0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"60\" y=\"51\" width=\"50\" height=\"50\" rx=\"0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M30 76l30 -25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M80 76l30 -25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 126l30 -25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M80 126l30 -25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"190\" y=\"76\" width=\"50\" height=\"50\" rx=\"0\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"2\"/><rect x=\"230\" y=\"58\" width=\"30\" height=\"30\" rx=\"0\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\"/><path d=\"M190 76L230 58\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 76L260 58\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M190 126L230 88\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 126L260 88\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"72\" y=\"150\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">lines stay parallel</text><text x=\"232\" y=\"150\" font-size=\"11\" text-anchor=\"middle\" fill=\"var(--accent, #3b82f6)\" font-weight=\"700\">lines converge</text><text x=\"72\" y=\"28\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Chinese painting</text><text x=\"232\" y=\"28\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">Renaissance Italy</text><text x=\"160\" y=\"174\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">two systems, each a choice</text></svg>"
+   }
+  },
+  {
+   "id": "c8",
+   "kind": "takeaway",
+   "title": "The picture as a window",
+   "body_md": "Perspective shows a scene exactly as one eye sees it from one place. Everything in the picture is sized by its distance from that eye.",
+   "visual": {
+    "kind": "svg",
+    "alt": "A window frame with lines inside it converging on a single point, standing for a picture treated as an open window",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" role=\"img\" font-family=\"inherit\"><rect x=\"60\" y=\"20\" width=\"200\" height=\"110\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><path d=\"M160 20V130M60 75H260\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.35\"/><path d=\"M60 130L160 62\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M110 130L160 62\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 130L160 62\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M260 130L160 62\" fill=\"none\" stroke=\"var(--accent, #3b82f6)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"160\" cy=\"62\" r=\"4\" fill=\"var(--accent, #3b82f6)\"/><text x=\"160\" y=\"152\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"700\">a picture as an open window</text><text x=\"160\" y=\"172\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"400\">seen from one fixed spot</text></svg>"
+   }
+  }
+ ],
+ "recall_items": [
+  {
+   "id": "r1",
+   "kind": "free_recall",
+   "prompt": "Name the three parts of linear perspective and say what each is.",
+   "answer": "The horizon line, at the viewer's eye level. The vanishing point, a point on that line. The orthogonals, lines running away from the viewer, drawn so that they meet at the vanishing point.",
+   "grading": "self",
+   "first_check": true,
+   "probe": true
+  },
+  {
+   "id": "r2",
+   "kind": "cloze",
+   "prompt": "The lines that recede from the viewer and meet at the vanishing point are called ___.",
+   "answer": "orthogonals",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "accept": [
+    "orthogonals",
+    "orthogonal lines",
+    "orthogonal"
+   ]
+  },
+  {
+   "id": "r3",
+   "kind": "mcq",
+   "prompt": "Who wrote the method of perspective down in the book On Painting in 1435?",
+   "answer": "b",
+   "grading": "auto",
+   "first_check": true,
+   "probe": false,
+   "options": [
+    {
+     "id": "a",
+     "text": "Filippo Brunelleschi"
+    },
+    {
+     "id": "b",
+     "text": "Leon Battista Alberti"
+    },
+    {
+     "id": "c",
+     "text": "Masaccio"
+    },
+    {
+     "id": "d",
+     "text": "Giotto"
+    }
+   ],
+   "explanation": "Brunelleschi devised and tested the system. Alberti wrote the manual."
+  },
+  {
+   "id": "r4",
+   "kind": "explain",
+   "prompt": "How did Brunelleschi test whether his system matched reality?",
+   "answer": "He painted the Baptistery, made a hole in the panel, and looked through it from behind at a mirror reflecting the painting. Lowering the mirror showed the real building through the same hole, and the two views matched.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r5",
+   "kind": "apply",
+   "prompt": "You are drawing a corridor and want the viewer to feel they are sitting on the floor. What do you change?",
+   "answer": "Lower the horizon line, and the vanishing point with it, because the horizon is at the viewer's eye level.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r6",
+   "kind": "explain",
+   "prompt": "In a perspective drawing, why are distant tiles drawn smaller even though all the tiles are the same size?",
+   "answer": "The orthogonals converge toward the vanishing point, so the space between them narrows with distance, and the rows are drawn closer together. Size on the page shows distance from the eye.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r7",
+   "kind": "compare",
+   "prompt": "How does traditional Chinese parallel perspective differ from linear perspective?",
+   "answer": "In parallel perspective receding lines stay parallel and the view is often from above, so there is no single fixed viewpoint. In linear perspective receding lines converge on a vanishing point and the scene is shown from one fixed eye.",
+   "grading": "self",
+   "first_check": false,
+   "probe": false
+  },
+  {
+   "id": "r8",
+   "kind": "true_false",
+   "prompt": "True or false: painters before Brunelleschi made no attempt to show depth.",
+   "answer": "false",
+   "grading": "auto",
+   "first_check": false,
+   "probe": false,
+   "explanation": "Painters such as Giotto and Duccio set figures in believable spaces in the 1300s. Their spaces were approximate, not built on a consistent system."
+  }
+ ],
+ "teach_back": {
+  "prompt": "Explain to a friend how to make a flat drawing of a road look as if it runs into the distance, and who worked the method out.",
+  "rubric": [
+   {
+    "id": "t1",
+    "point": "Draws or describes a horizon line at eye level with a vanishing point on it."
+   },
+   {
+    "id": "t2",
+    "point": "Says the edges of the road are drawn converging on the vanishing point."
+   },
+   {
+    "id": "t3",
+    "point": "Says objects are drawn smaller the closer they are to the vanishing point."
+   },
+   {
+    "id": "t4",
+    "point": "Credits Brunelleschi with the system and Alberti with writing it down, in fifteenth-century Florence."
+   }
+  ],
+  "min_points": 3,
+  "false_claims": [
+   "Says the vanishing point must be in the centre of the picture",
+   "Says perspective is the only correct way to show depth"
+  ]
+ },
+ "challenge": {
+  "kind": "predict",
+  "prompt": "A painter makes a huge perspective picture of a hall, calculated for a viewer standing three metres in front of its centre. Predict what a visitor sees when standing far off to one side, and say what this reveals about the system.",
+  "model_answer": [
+   "From the side the illusion weakens: the hall appears stretched or skewed, and the floor no longer seems to continue the real floor.",
+   "The picture was constructed for one eye in one position. Only from there do the drawn angles match what the real scene would send to the eye.",
+   "So perspective does not show how things are. It shows how they look from a single chosen spot, and the painter chooses that spot for you."
+  ],
+  "follow_up": "Why do we usually not notice this when looking at photographs from the wrong distance?"
+ },
+ "connections": [
+  {
+   "to": "mat06",
+   "body_md": "Perspective is geometry put to work. Alberti explained it with straight lines of sight running from the eye to the scene, forming triangles, and with the picture as a flat slice across them. Everything he needed was in Euclid: straight lines, similar triangles, parallels. Painters became some of the best practical geometers of their century."
+  },
+  {
+   "to": "mnd03",
+   "body_md": "A perspective picture works because your visual system already uses converging lines and shrinking sizes as clues to distance. The painter supplies those clues on a flat surface, and your brain does the rest. When you study perception you will see that seeing depth is always an inference, which is why it can be fooled."
+  },
+  {
+   "to": "art03",
+   "body_md": "Composition is about directing the eye, and a vanishing point is a powerful way to do it. All the orthogonals point there, so the viewer's gaze is pulled along them. Painters learned to put what matters most at or near that point."
+  }
+ ],
+ "deep_dive": {
+  "body_md": "**The problem**\n\nA wall is flat. The world is deep. Every painter who wants to show a room, a street or a crowd has to decide how to put depth on a surface that has none.\n\nFor centuries European painters solved it by eye. In the 1300s artists such as Giotto and Duccio gave their figures weight and set them in believable places, but the spaces do not quite add up. Floors tilt, and buildings recede at angles that disagree with each other. The effect is an approximation.\n\n**An experiment in Florence**\n\nAround 1415 to 1420, the architect Filippo Brunelleschi found a method that was exact, and he proved it with a demonstration.\n\nHe painted the Baptistery of Florence, the building that faces the cathedral, using his new system. He drilled a small hole through the centre of the panel. Then he stood just inside the cathedral doors, facing the real Baptistery, and held the panel up with its painted side facing away from him. He looked through the hole from the back, at a mirror held at arm's length, so that he saw his painting reflected. When he lowered the mirror, he saw the real building through the same hole. Mirror up, painting. Mirror down, building. The two matched.\n\nIt is one of the few moments in art history that looks like a laboratory test.\n\nWhy Florence, and why then? Historians point to a city of merchants and bankers, used to measuring and calculating, where accuracy was admired. Brunelleschi had also been studying ancient Roman buildings and may have wanted a reliable way to draw them. Whether the ancient Greeks and Romans had the method themselves is argued over. If they did, no record survived, which is why Brunelleschi is often said to have rediscovered it.\n\n**The three parts**\n\nThe system needs very little.\n\n- The **horizon line** is a horizontal line across the picture at the height of the viewer's eye.\n- The **vanishing point** is a point on that line.\n- The **orthogonals** are the lines that, in the real scene, run straight away from the viewer: the edges of a road, the joints between floor tiles, the tops of walls. In the picture they are drawn as diagonals that all meet at the vanishing point.\n\nEverything else follows. Objects are drawn smaller as they near the vanishing point, and by exactly the right amount.\n\n**From trick to textbook**\n\nOther artists took it up at once. Donatello used it in a carved relief of Saint George around 1416 to 1417. Masaccio's fresco of the Holy Trinity, painted in Florence between 1425 and 1427, is the earliest surviving painting to use the system throughout: a chapel that seems to open in a flat wall.\n\nIn 1435 Leon Battista Alberti wrote the method down in a book, On Painting. He explained it with geometry: lines of sight run from the eye to each point of the scene, forming a triangle, and the picture is a slice across them. He told painters to think of the frame as an open window through which the scene is viewed. With a manual available, the method spread through Europe.\n\n**A choice, not a law**\n\nPerspective is so familiar from paintings, photographs and screens that it can seem to be simply how pictures work. It is one system among several. Traditional Chinese painting uses parallel perspective, often seen from above: the lines of a building stay parallel instead of converging, and the eye is free to wander through the scene instead of standing in one spot.\n\nLinear perspective ruled Western painting until the late 1800s. Then Paul Cézanne began to flatten the picture, and the Cubists who followed gave up the single viewpoint altogether. Since Brunelleschi, nearly every Western painter has either used his system or pushed against it on purpose.",
+  "est_minutes": 7
+ },
+ "go_further": [
+  {
+   "kind": "video",
+   "title": "Linear Perspective: Brunelleschi's Experiment",
+   "by": "Beth Harris and Steven Zucker, Smarthistory",
+   "year": 2015,
+   "url": "https://smarthistory.org/linear-perspective",
+   "note": "Four minutes, filmed in front of the Baptistery, with a diagram of the mirror test.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "short",
+   "title": "Linear perspective",
+   "by": "Encyclopaedia Britannica",
+   "url": "https://www.britannica.com/art/linear-perspective",
+   "note": "A short definition with the key dates and the first works to use the system.",
+   "verified_on": "2026-11-13"
+  },
+  {
+   "kind": "short",
+   "title": "Perspective",
+   "by": "Encyclopaedia Britannica",
+   "url": "https://www.britannica.com/art/perspective-art",
+   "note": "The wider picture, including parallel perspective in Chinese painting and the move away from perspective after Cézanne.",
+   "verified_on": "2026-11-13"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "title": "Smarthistory: Linear Perspective: Brunelleschi's Experiment (Harris and Zucker)",
+   "url": "https://smarthistory.org/linear-perspective",
+   "tier": "institution",
+   "accessed": "2026-11-13",
+   "supports": [
+    "The experiment around 1420 and how it was done",
+    "Vanishing point, horizon line and orthogonals",
+    "Giotto and Duccio approximated space in the 1300s",
+    "Florence's mathematical, trade-based culture",
+    "The debate over whether the ancients had the method",
+    "Alberti's On Painting as a manual",
+    "Later Western painting adopts or rejects the system"
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Encyclopaedia Britannica: Linear perspective",
+   "url": "https://www.britannica.com/art/linear-perspective",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Definition of linear perspective",
+    "Devised about 1415 by Brunelleschi; documented by Alberti in 1435",
+    "The three components",
+    "Objects drawn smaller toward the vanishing point",
+    "Donatello's St George relief, about 1416 to 1417, and Masaccio's Holy Trinity, 1425 to 1427"
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Encyclopaedia Britannica: Perspective",
+   "url": "https://www.britannica.com/art/perspective-art",
+   "tier": "reference",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Alberti's idea that vision makes a triangle",
+    "Parallel perspective and the view from above in Chinese painting",
+    "Cézanne and the Cubists moved away from linear perspective"
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "The Metropolitan Museum of Art: The Art of Renaissance Europe, a resource for educators",
+   "url": "https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/renaissance.pdf",
+   "tier": "institution",
+   "accessed": "2026-11-13",
+   "supports": [
+    "Alberti's description of the picture as an open window",
+    "Linear perspective rests on a fixed viewpoint"
+   ]
+  }
+ ],
+ "verification": {
+  "status": "verified",
+  "checked_on": "2026-11-13",
+  "notes": "The sources give slightly different dates for Brunelleschi's work (about 1415 in s2, around 1420 in s1); the lesson gives the range. Britannica's own articles date Alberti's book 1435 or 1436; the lesson uses 1435. The tiled-floor exercise, the window-glass analogy and the side-view challenge are the writer's own; the lesson says that its spacing of the rows is done by eye. Only short passages of s3 and s4 were read, in search results. The statement that Masaccio's Holy Trinity is the earliest surviving painting to use the system throughout comes from a separate short Britannica answer page, not from s2 or s3. The connection to depth cues in perception comes from the skeleton and has no source here. The remark that painters put important things near the vanishing point is standard but not from these sources."
+ }
+}

@@ -1,6 +1,7 @@
-import { eq } from "drizzle-orm";
+import { eq, inArray } from "drizzle-orm";
 import skeleton from "../../data/skeleton.json";
 import { type MapState, type ProgressRow, type TopicRef, topicMapState } from "@/core/state";
+import { ignorePrereqs } from "@/lib/dev";
 import { db } from "./client";
 import { fields, lessons, topicPrereqs, topicProgress, topics, userSettings } from "./schema";
 
@@ -49,6 +50,7 @@ async function loadCurriculum(userId: string) {
       progress,
       fieldsOff,
       hasPack: withPack.has(id),
+      ignorePrereqs: ignorePrereqs(),
     });
 
   return { fieldRows, topicRows, byId, prereqIds, stateOf };
@@ -74,6 +76,12 @@ export async function getMap(userId: string): Promise<MapRealm[]> {
           .map((t) => ({ id: t.id, title: t.title, state: stateOf(t.id) })),
       })),
   }));
+}
+
+export async function getTopicTitles(ids: string[]): Promise<Record<string, string>> {
+  if (ids.length === 0) return {};
+  const rows = await db.select({ id: topics.id, title: topics.title }).from(topics).where(inArray(topics.id, ids));
+  return Object.fromEntries(rows.map((r) => [r.id, r.title]));
 }
 
 export async function getTopic(userId: string, id: string): Promise<TopicDetail | null> {

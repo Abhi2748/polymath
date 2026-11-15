@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import { type FirstCheckAnswer, submitFirstCheck } from "@/app/topic/[id]/lesson/actions";
+import { Flag } from "@/components/Flag";
 import { type FirstCheckAttempt, firstCheckItems, firstCheckOrder } from "@/core/firstCheck";
 import type { Response } from "@/core/grading";
+import { formatDay } from "@/lib/formatDay";
 import type { SafeLessonPack } from "@/lib/safeLesson";
 import { Markdown } from "./Markdown";
 import { Question } from "./Question";
@@ -14,7 +16,8 @@ type Phase = "asking" | "explanation" | "passed" | "failed";
 
 const primary = "block w-full rounded-xl bg-accent px-4 py-3 text-center font-medium text-background disabled:opacity-40";
 
-export function FirstCheck({ pack }: { pack: SafeLessonPack }) {
+// Without onFinished, the closing button links back to the topic page.
+export function FirstCheck({ pack, onFinished }: { pack: SafeLessonPack; onFinished?: () => void }) {
   const [attempt, setAttempt] = useState<FirstCheckAttempt>(1);
   const [phase, setPhase] = useState<Phase>("asking");
   const [answers, setAnswers] = useState<FirstCheckAnswer[]>([]);
@@ -23,7 +26,15 @@ export function FirstCheck({ pack }: { pack: SafeLessonPack }) {
   const [pending, startTransition] = useTransition();
 
   const items = firstCheckOrder(firstCheckItems(pack), attempt);
-  const topicHref = `/topic/${pack.topic_id}`;
+  const finish = onFinished ? (
+    <button type="button" className={`${primary} mt-10`} onClick={onFinished}>
+      Continue
+    </button>
+  ) : (
+    <Link href={`/topic/${pack.topic_id}`} className={`${primary} mt-10`}>
+      Done
+    </Link>
+  );
 
   function submit(all: FirstCheckAnswer[]) {
     setError(null);
@@ -52,9 +63,7 @@ export function FirstCheck({ pack }: { pack: SafeLessonPack }) {
         <p className="mt-4 text-lg leading-relaxed">
           You passed the check. The first review is due {dueAt ? formatDay(dueAt) : "tomorrow"}.
         </p>
-        <Link href={topicHref} className={`${primary} mt-10`}>
-          Done
-        </Link>
+        {finish}
       </div>
     );
   }
@@ -66,9 +75,7 @@ export function FirstCheck({ pack }: { pack: SafeLessonPack }) {
         <p className="mt-4 text-lg leading-relaxed">
           This one needs another look. The lesson stays in progress and opens at these questions next session.
         </p>
-        <Link href={topicHref} className={`${primary} mt-10`}>
-          Done
-        </Link>
+        {finish}
       </div>
     );
   }
@@ -118,17 +125,15 @@ export function FirstCheck({ pack }: { pack: SafeLessonPack }) {
   const current = items[answers.length];
   return (
     <div>
-      <p className="text-sm text-muted">
-        Check {attempt === 2 ? "again " : ""}· question {answers.length + 1} of {items.length}
-      </p>
+      <div className="flex items-baseline justify-between gap-4">
+        <p className="text-sm text-muted">
+          Check {attempt === 2 ? "again " : ""}· question {answers.length + 1} of {items.length}
+        </p>
+        <Flag key={`${attempt}-${current.id}`} topicId={pack.topic_id} refId={current.id} />
+      </div>
       <div className="mt-6">
         <Question key={`${attempt}-${current.id}`} item={current} onDone={answer} />
       </div>
     </div>
   );
-}
-
-function formatDay(day: string) {
-  const [y, m, d] = day.split("-").map(Number);
-  return new Date(y, m - 1, d).toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" });
 }

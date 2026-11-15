@@ -1,0 +1,6 @@
+# art05 Perspective: the sources the hand-written lesson used
+# one address per line, then its tier
+https://smarthistory.org/linear-perspective institution
+https://www.britannica.com/art/linear-perspective reference
+https://www.britannica.com/art/perspective-art reference
+https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/renaissance.pdf institution
