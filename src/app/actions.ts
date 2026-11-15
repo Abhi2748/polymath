@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { currentStep, type SessionKind } from "@/core/deck";
 import { progressOnOpen } from "@/core/firstCheck";
 import { gradeResponse, isCorrect, type Response } from "@/core/grading";
-import { applyReview, pickReviewItems, sessionDay } from "@/core/scheduler";
+import { applyProbe, applyReview, pickReviewItems, probeItem, sessionDay } from "@/core/scheduler";
 import { getLessonPack, getLessonProgress, saveLessonProgress } from "@/db/lessonProgress";
 import {
   advanceLessonStep,
@@ -13,7 +13,9 @@ import {
   getTopicHistory,
   insertSession,
   loadToday,
+  recordProbe,
   recordReview,
+  scheduledReviewCounts,
 } from "@/db/session";
 import { requireUserId } from "@/lib/auth";
 import { appNow } from "@/lib/dev";
@@ -25,7 +27,7 @@ async function today(userId: string) {
   return { now, ...(await loadToday(userId, now, (tz) => sessionDay(now, tz))) };
 }
 
-async function requireCurrentStep(userId: string, kind: "review" | "lesson", topicId: string) {
+async function requireCurrentStep(userId: string, kind: "review" | "probe" | "lesson", topicId: string) {
   const t = await today(userId);
   const step = t.active ? currentStep(t.active.summary) : null;
   if (!step || step.kind === "end" || step.kind !== kind || step.topicId !== topicId) {
@@ -76,6 +78,37 @@ export async function finishDeckLesson(topicId: string) {
 }
 
 export type ReviewAnswer = { itemId: string; response: Response };
+
+export async function submitProbe(topicId: string, answer: ReviewAnswer) {
+  const userId = await requireUserId();
+  const t = await requireCurrentStep(userId, "probe", topicId);
+  const [pack, row] = await Promise.all([getLessonPack(topicId), getReviewProgress(userId, topicId)]);
+  if (!pack) throw new Error(`no lesson pack for ${topicId}`);
+  if (!row || (row.state !== "learned" && row.state !== "recalled") || row.box === null || row.dueAt === null) {
+    throw new Error(`${topicId} is not scheduled for a probe`);
+  }
+  const item = probeItem(pack);
+  if (answer.itemId !== item.id) throw new Error("answer the probe item");
+  const grade = gradeResponse(item, answer.response);
+  const next = applyProbe(
+    {
+      topicId,
+      state: row.state,
+      box: row.box,
+      dueAt: row.dueAt,
+      lastReviewedDay: row.lastReviewedAt ? sessionDay(row.lastReviewedAt, t.tz) : null,
+      successStreak: row.successStreak,
+      failStreak: row.failStreak,
+      lapsed: row.lapsed,
+    },
+    isCorrect(grade),
+    t.day,
+    await scheduledReviewCounts(userId, topicId),
+  );
+  await recordProbe(userId, t.day, t.now, { itemId: item.id, grade }, next, isCorrect(grade));
+  revalidatePath("/");
+  revalidatePath("/map");
+}
 
 export async function submitReview(topicId: string, answers: ReviewAnswer[]) {
   const userId = await requireUserId();

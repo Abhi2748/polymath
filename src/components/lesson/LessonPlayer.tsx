@@ -17,10 +17,13 @@ export function LessonPlayer({
   pack,
   startIndex,
   onFinished,
+  cardsOnly = false,
 }: {
   pack: SafeLessonPack;
   startIndex: number;
   onFinished?: () => void;
+  // A refresher rereads the cards and does not sit the first check again.
+  cardsOnly?: boolean;
 }) {
   const steps = lessonSteps(pack);
   const cardCount = steps.length;
@@ -43,6 +46,10 @@ export function LessonPlayer({
     if (delta === 1 && blockedByGuess) return;
     const next = index + delta;
     if (next < 0 || next > cardCount) return;
+    if (cardsOnly && next === cardCount) {
+      onFinished?.();
+      return;
+    }
     setIndex(next);
     window.scrollTo(0, 0);
   }
@@ -61,7 +68,10 @@ export function LessonPlayer({
   return (
     <div>
       <div className="h-1 w-full overflow-hidden rounded-full bg-line" aria-hidden>
-        <div className="h-full bg-accent transition-[width]" style={{ width: `${((index + 1) / (cardCount + 1)) * 100}%` }} />
+        <div
+          className="h-full bg-accent transition-[width]"
+          style={{ width: `${((index + 1) / (cardsOnly ? cardCount : cardCount + 1)) * 100}%` }}
+        />
       </div>
 
       <div className="mt-8">
@@ -121,7 +131,7 @@ export function LessonPlayer({
                 disabled={blockedByGuess}
                 onClick={() => go(1)}
               >
-                {index === cardCount - 1 ? "Check what stuck" : "Next"}
+                {index === cardCount - 1 ? (cardsOnly ? "Done" : "Check what stuck") : "Next"}
               </button>
             </nav>
           </div>

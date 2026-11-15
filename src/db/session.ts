@@ -12,10 +12,11 @@ import {
   type SessionRecord,
   type SessionSummary,
   sessionComplete,
+  showWelcomeBack,
   type StepResult,
 } from "@/core/deck";
 import type { Grade } from "@/core/grading";
-import type { ReviewProgress } from "@/core/scheduler";
+import { sessionDay, type ReviewProgress } from "@/core/scheduler";
 import { ignorePrereqs } from "@/lib/dev";
 import { db } from "./client";
 import { itemHistory, lessons, sessions, topicProgress, userSettings } from "./schema";
@@ -29,12 +30,18 @@ const skeleton: DeckSkeleton = {
 
 export type SessionRow = SessionRecord & { id: number; startedAt: Date };
 
-async function loadSettings(userId: string): Promise<DeckSettings> {
+async function loadSettings(userId: string): Promise<DeckSettings & { plannedReturn: string | null }> {
   const [row] = await db.select().from(userSettings).where(eq(userSettings.userId, userId));
-  return { tz: row?.tz ?? "UTC", maxNewPerDay: row?.maxNewPerDay ?? 2, fieldsOff: row?.fieldsOff ?? [] };
+  return {
+    tz: row?.tz ?? "UTC",
+    maxNewPerDay: row?.maxNewPerDay ?? 2,
+    fieldsOff: row?.fieldsOff ?? [],
+    sessionMinutes: row?.sessionMinutes ?? 30,
+    plannedReturn: row?.plannedReturn ?? null,
+  };
 }
 
-async function loadProgress(userId: string): Promise<DeckProgress[]> {
+async function loadProgress(userId: string): Promise<(DeckProgress & { lastReviewedAt: Date | null })[]> {
   const rows = await db
     .select({
       topicId: topicProgress.topicId,
@@ -42,6 +49,7 @@ async function loadProgress(userId: string): Promise<DeckProgress[]> {
       dueAt: topicProgress.dueAt,
       lapsed: topicProgress.lapsed,
       parked: topicProgress.parked,
+      lastReviewedAt: topicProgress.lastReviewedAt,
     })
     .from(topicProgress)
     .where(eq(topicProgress.userId, userId));
@@ -68,12 +76,16 @@ async function loadLessons(): Promise<DeckLesson[]> {
 }
 
 export async function loadToday(userId: string, now: Date, today: (tz: string) => string) {
-  const [settings, progress, history, lessonRows] = await Promise.all([
+  const [settings, rows, history, lessonRows] = await Promise.all([
     loadSettings(userId),
     loadProgress(userId),
     loadSessions(userId),
     loadLessons(),
   ]);
+  const progress = rows.map(({ lastReviewedAt, ...row }) => ({
+    ...row,
+    lastReviewedDay: lastReviewedAt ? sessionDay(lastReviewedAt, settings.tz) : null,
+  }));
   const day = today(settings.tz);
   const todays = history.filter((r) => r.sessionDay === day);
   const deck = (kind: SessionKind): Deck =>
@@ -82,6 +94,7 @@ export async function loadToday(userId: string, now: Date, today: (tz: string) =
     day,
     tz: settings.tz,
     progress,
+    welcomeBack: showWelcomeBack(day, settings.plannedReturn, history),
     completed: todays.find((r) => r.completed) ?? null,
     active: todays.find((r) => !r.completed) ?? null,
     deck,
@@ -89,7 +102,7 @@ export async function loadToday(userId: string, now: Date, today: (tz: string) =
 }
 
 export async function insertSession(userId: string, deck: Deck, startedAt: Date) {
-  const summary: SessionSummary = { steps: deck.steps, done: 0, reviews: [], lessons: [] };
+  const summary: SessionSummary = { steps: deck.steps, done: 0, reviews: [], lessons: [], probes: [] };
   await db
     .insert(sessions)
     .values({ userId, sessionDay: deck.sessionDay, kind: deck.kind, mode: deck.mode, startedAt, summary })
@@ -126,6 +139,58 @@ export async function getTopicHistory(userId: string, topicId: string) {
     .from(itemHistory)
     .where(and(eq(itemHistory.userId, userId), eq(itemHistory.topicId, topicId)))
     .then((rows) => rows.map((r) => ({ ...r, context: r.context as "first_check" | "review" | "probe" })));
+}
+
+export async function scheduledReviewCounts(userId: string, exceptTopicId: string): Promise<Map<string, number>> {
+  const rows = await db
+    .select({
+      topicId: topicProgress.topicId,
+      dueAt: topicProgress.dueAt,
+      state: topicProgress.state,
+      parked: topicProgress.parked,
+    })
+    .from(topicProgress)
+    .where(eq(topicProgress.userId, userId));
+  const counts = new Map<string, number>();
+  for (const row of rows) {
+    if (row.topicId === exceptTopicId || row.parked || row.dueAt === null) continue;
+    if (row.state !== "learned" && row.state !== "recalled") continue;
+    counts.set(row.dueAt, (counts.get(row.dueAt) ?? 0) + 1);
+  }
+  return counts;
+}
+
+export async function recordProbe(
+  userId: string,
+  today: string,
+  askedAt: Date,
+  grade: { itemId: string; grade: Grade },
+  next: ReviewProgress,
+  passed: boolean,
+) {
+  await db.transaction(async (tx) => {
+    await tx.insert(itemHistory).values({
+      userId,
+      topicId: next.topicId,
+      itemId: grade.itemId,
+      askedAt,
+      grade: grade.grade,
+      context: "probe",
+    });
+    await tx
+      .update(topicProgress)
+      .set({
+        state: next.state,
+        box: next.box,
+        dueAt: next.dueAt,
+        lastReviewedAt: askedAt,
+        successStreak: next.successStreak,
+        failStreak: next.failStreak,
+        lapsed: next.lapsed,
+      })
+      .where(and(eq(topicProgress.userId, userId), eq(topicProgress.topicId, next.topicId)));
+    await advanceOpenSession(tx, userId, today, { kind: "probe", topicId: next.topicId, passed }, askedAt);
+  });
 }
 
 export async function recordReview(

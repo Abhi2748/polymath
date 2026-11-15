@@ -96,6 +96,43 @@ export function applyReview(progress: ReviewProgress, results: Grade[], today: s
   };
 }
 
+// 10 minutes of reviews at 40 seconds each. A day stops taking new passed probes once it is full.
+const REVIEWS_PER_DAY = Math.floor((10 * 60) / 40);
+
+function dayWithRoom(start: string, dueCounts: ReadonlyMap<string, number>): string {
+  let day = start;
+  for (let i = 0; i < 2000; i++) {
+    if ((dueCounts.get(day) ?? 0) < REVIEWS_PER_DAY) return day;
+    day = addDays(day, 1);
+  }
+  return day;
+}
+
+// A probe is one question. A pass is a review with both correct, then moved if its day is already full.
+// A fail goes to box 1, due tomorrow, and learned: it never goes back to new.
+export function applyProbe(
+  progress: ReviewProgress,
+  passed: boolean,
+  today: string,
+  dueCounts: ReadonlyMap<string, number>,
+): ReviewProgress {
+  if (!passed) {
+    const failStreak = progress.failStreak + 1;
+    return {
+      ...progress,
+      state: "learned",
+      box: 1,
+      dueAt: addDays(today, 1),
+      lastReviewedDay: today,
+      successStreak: 0,
+      failStreak,
+      lapsed: failStreak >= 2,
+    };
+  }
+  const reviewed = applyReview(progress, ["correct", "correct"], today);
+  return { ...reviewed, dueAt: dayWithRoom(reviewed.dueAt, dueCounts) };
+}
+
 export type HistoryRow = {
   topicId: string;
   itemId: string;
@@ -130,4 +167,10 @@ export function pickReviewItems(pack: LessonPack, history: HistoryRow[]): [Recal
   const [first, second, third] = ranked;
   if (samePair([first.id, second.id], previous)) return [first, third];
   return [first, second];
+}
+
+export function probeItem(pack: LessonPack): RecallItem {
+  const item = pack.recall_items.find((i) => i.probe);
+  if (!item) throw new Error(`${pack.topic_id} has no probe item`);
+  return item;
 }

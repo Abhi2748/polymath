@@ -5,7 +5,15 @@ import { finishDeckLesson } from "@/app/actions";
 import { LessonPlayer } from "@/components/lesson/LessonPlayer";
 import type { SafeLessonPack } from "@/lib/safeLesson";
 
-export function DeckLesson({ pack, startIndex }: { pack: SafeLessonPack; startIndex: number }) {
+export function DeckLesson({
+  pack,
+  startIndex,
+  cardsOnly = false,
+}: {
+  pack: SafeLessonPack;
+  startIndex: number;
+  cardsOnly?: boolean;
+}) {
   const [error, setError] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
 
@@ -23,7 +31,7 @@ export function DeckLesson({ pack, startIndex }: { pack: SafeLessonPack; startIn
 
   return (
     <>
-      <LessonPlayer pack={pack} startIndex={startIndex} onFinished={finish} />
+      <LessonPlayer pack={pack} startIndex={startIndex} onFinished={finish} cardsOnly={cardsOnly} />
       {error && (
         <p className="mt-4" aria-live="polite">
           {error}

@@ -5,12 +5,14 @@ import type { Grade } from "./grading";
 import { type LessonPack, lessonPackSchema } from "./lesson";
 import {
   addDays,
+  applyProbe,
   applyReview,
   dueInterval,
   type HistoryRow,
   initialSchedule,
   INTERVALS,
   pickReviewItems,
+  probeItem,
   type ReviewProgress,
   sessionDay,
 } from "./scheduler";
@@ -189,6 +191,60 @@ describe("due date", () => {
   });
 });
 
+describe("probe", () => {
+  const counts = new Map<string, number>();
+
+  it("a pass keeps the state", () => {
+    const recalled = applyProbe(progress({ state: "recalled", successStreak: 4 }), true, today, counts);
+    expect(recalled.state).toBe("recalled");
+    const learned = applyProbe(progress({ state: "learned", successStreak: 0 }), true, today, counts);
+    expect(learned.state).toBe("learned");
+  });
+
+  it("a pass follows a review with both correct, including the long-gap bonus", () => {
+    const before = progress({ box: 2, successStreak: 1, lastReviewedDay: addDays(today, -2 * INTERVALS[2]) });
+    const after = applyProbe(before, true, today, counts);
+    expect(after.box).toBe(4);
+    expect(after.successStreak).toBe(2);
+    expect(after.failStreak).toBe(0);
+    expect(after.lapsed).toBe(false);
+    expect(after.lastReviewedDay).toBe(today);
+  });
+
+  it("a fail drops recalled to learned and never to new", () => {
+    const after = applyProbe(progress({ state: "recalled", successStreak: 5, box: 6 }), false, today, counts);
+    expect(after.state).toBe("learned");
+    expect(after.state).not.toBe("new");
+    expect(after.box).toBe(1);
+    expect(after.dueAt).toBe(addDays(today, 1));
+    expect(after.successStreak).toBe(0);
+  });
+
+  it("a fail of a learned topic stays learned", () => {
+    const after = applyProbe(progress({ state: "learned" }), false, today, counts);
+    expect(after.state).toBe("learned");
+    expect(after.box).toBe(1);
+  });
+
+  it("spreads passed due dates so no day has more than 10 minutes of reviews", () => {
+    const natural = applyReview(progress({ box: 4 }), ["correct", "correct"], today).dueAt;
+    const crowded = new Map<string, number>([
+      [natural, 15],
+      [addDays(natural, 1), 15],
+      [addDays(natural, 2), 14],
+    ]);
+    expect(applyProbe(progress({ box: 4 }), true, today, crowded).dueAt).toBe(addDays(natural, 2));
+
+    const room = new Map<string, number>([[natural, 14]]);
+    expect(applyProbe(progress({ box: 4 }), true, today, room).dueAt).toBe(natural);
+  });
+
+  it("still dues a fail tomorrow when that day is full", () => {
+    const full = new Map<string, number>([[addDays(today, 1), 15]]);
+    expect(applyProbe(progress({ state: "recalled" }), false, today, full).dueAt).toBe(addDays(today, 1));
+  });
+});
+
 describe("picking review items", () => {
   const pack: LessonPack = lessonPackSchema.parse(
     JSON.parse(readFileSync(join(process.cwd(), "data", "lessons", "lrn01.json"), "utf8")),
@@ -198,6 +254,12 @@ describe("picking review items", () => {
   function asked(itemId: string, at: string, context: HistoryRow["context"] = "review"): HistoryRow {
     return { topicId: pack.topic_id, itemId, askedAt: new Date(at), context };
   }
+
+  it("returns the recall item marked as the probe", () => {
+    const item = probeItem(pack);
+    expect(item.probe).toBe(true);
+    expect(pack.recall_items.filter((i) => i.probe)).toEqual([item]);
+  });
 
   it("returns two distinct items from the pack", () => {
     const picked = pickReviewItems(pack, []);

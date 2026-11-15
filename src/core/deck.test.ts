@@ -13,12 +13,13 @@ import {
   type SessionRecord,
   type SessionSummary,
   sessionComplete,
+  showWelcomeBack,
 } from "./deck";
 import { addDays } from "./scheduler";
 
 const now = new Date("2026-03-10T12:00:00Z");
 const today = "2026-03-10";
-const settings: DeckSettings = { tz: "UTC", maxNewPerDay: 2, fieldsOff: [] };
+const settings: DeckSettings = { tz: "UTC", maxNewPerDay: 2, fieldsOff: [], sessionMinutes: 30 };
 
 function topic(id: string, field: string, season: number, seq: number, prereqs: string[] = []) {
   return { id, field, season, seq, prereqs };
@@ -62,8 +63,13 @@ function row(topicId: string, over: Partial<DeckProgress> = {}): DeckProgress {
 
 const starterDone = ["lrn01", "lrn02", "lrn03"].map((id) => row(id));
 
-function summary(steps: DeckStep[] = [], reviews: SessionSummary["reviews"] = []): SessionSummary {
-  return { steps: [...steps, { kind: "end" }], done: steps.length, reviews, lessons: [] };
+function summary(
+  steps: DeckStep[] = [],
+  reviews: SessionSummary["reviews"] = [],
+  probes: NonNullable<SessionSummary["probes"]> = [],
+  lessonOutcomes: SessionSummary["lessons"] = [],
+): SessionSummary {
+  return { steps: [...steps, { kind: "end" }], done: steps.length, reviews, lessons: lessonOutcomes, probes };
 }
 
 function session(daysAgo: number, over: Partial<SessionRecord> = {}): SessionRecord {
@@ -97,6 +103,7 @@ function build(
 
 const newIds = (deck: Deck) => deck.steps.flatMap((s) => (s.kind === "lesson" && s.isNew ? [s.topicId] : []));
 const reviewIds = (deck: Deck) => deck.steps.flatMap((s) => (s.kind === "review" ? [s.topicId] : []));
+const probeIds = (deck: Deck) => deck.steps.flatMap((s) => (s.kind === "probe" ? [s.topicId] : []));
 const fieldOf = (id: string) => skeleton.topics.find((t) => t.id === id)!.field;
 
 // Twenty-five extra season 1 topics, all learned, for tests that need many reviews.
@@ -256,8 +263,8 @@ describe("current season", () => {
     expect(newIds(build({ progress: starterDone, settings: { maxNewPerDay: 3 } }))).not.toContain("bio01");
   });
 
-  it("opens the next season once every written topic of the current one is learned", () => {
-    expect(newIds(build({ progress: season1Written.map((id) => row(id)) }))).toEqual(["bio01"]);
+  it("holds the next season for the consolidation sessions after this one is finished", () => {
+    expect(newIds(build({ progress: season1Written.map((id) => row(id)) }))).toEqual([]);
   });
 
   it("offers nothing rather than skipping ahead when the current season's topics are locked", () => {
@@ -385,6 +392,269 @@ describe("session progress", () => {
   it("ignores a result that is not for the current step", () => {
     expect(advanceSession(fresh, { kind: "lesson", topicId: "mat01", outcome: "passed" })).toBeNull();
     expect(advanceSession(fresh, { kind: "review", topicId: "lrn02", correct: 2 })).toBeNull();
+  });
+});
+
+describe("modes", () => {
+  // Section 13: 3, 4, 14 and 15 days away pick the right mode.
+  it.each([
+    [3, "normal"],
+    [4, "catch_up"],
+    [14, "catch_up"],
+    [15, "return_check"],
+  ] as const)("%i days away is %s", (days, mode) => {
+    expect(build({ history: [session(days)] }).mode).toBe(mode);
+  });
+});
+
+describe("catch-up", () => {
+  const away = [session(4)];
+
+  it("gives reviews half the session and holds new lessons until what is due fits in 10 minutes", () => {
+    const blocked = build({
+      skeleton: withExtra,
+      lessons: extraLessons,
+      progress: [...starterDone, ...dueExtra(25)],
+      history: away,
+    });
+    // Half of 30 minutes is 15 minutes, which holds 22 reviews at 40 seconds.
+    expect(blocked.mode).toBe("catch_up");
+    expect(reviewIds(blocked)).toHaveLength(22);
+    expect(newIds(blocked)).toEqual([]);
+
+    const open = build({
+      skeleton: withExtra,
+      lessons: extraLessons,
+      progress: [...starterDone, ...dueExtra(15)],
+      history: away,
+    });
+    expect(reviewIds(open)).toHaveLength(15);
+    expect(newIds(open).length).toBeGreaterThan(0);
+  });
+
+  it("takes the half from the session length setting", () => {
+    const deck = build({
+      skeleton: withExtra,
+      lessons: extraLessons,
+      progress: [...starterDone, ...dueExtra(25)],
+      history: away,
+      settings: { sessionMinutes: 20 },
+    });
+    expect(reviewIds(deck)).toHaveLength(15);
+  });
+
+  it("does not use the normal-mode rate guard", () => {
+    const history = [session(4, { summary: summary([], Array.from({ length: 10 }, () => ({ topicId: "lrn01", correct: 0 }))) })];
+    expect(newIds(build({ progress: starterDone, history })).length).toBeGreaterThan(0);
+  });
+
+  it("keeps a short day as 15 minutes of reviews", () => {
+    const deck = build({
+      skeleton: withExtra,
+      lessons: extraLessons,
+      progress: [...starterDone, ...dueExtra(25)],
+      history: away,
+      settings: { sessionMinutes: 60 },
+      options: { kind: "short" },
+    });
+    expect(deck.mode).toBe("catch_up");
+    expect(deck.steps.every((s) => s.kind === "review" || s.kind === "end")).toBe(true);
+    expect(reviewIds(deck)).toHaveLength(22);
+    const full = build({
+      skeleton: withExtra,
+      lessons: extraLessons,
+      progress: [...starterDone, ...dueExtra(25)],
+      history: away,
+      settings: { sessionMinutes: 60 },
+    });
+    expect(reviewIds(full)).toHaveLength(25);
+  });
+});
+
+describe("consolidation", () => {
+  const done = season1Written();
+  // The season finished 20 days ago. Sessions after that day are the consolidation window.
+  const finished = session(20, {
+    summary: summary(
+      [{ kind: "lesson", topicId: "art01", isNew: true }],
+      [],
+      [],
+      [{ topicId: "art01", outcome: "passed" }],
+    ),
+  });
+  const later = (n: number) => [finished, ...Array.from({ length: n }, (_, i) => session(i + 1))];
+
+  function season1Written(): DeckProgress[] {
+    return skeleton.topics.filter((t) => t.season === 1 && !unwritten.has(t.id)).map((t) => row(t.id));
+  }
+
+  it("offers no new lessons for the next 7 full sessions", () => {
+    expect(newIds(build({ progress: done, history: later(6) }))).toEqual([]);
+    expect(newIds(build({ progress: done, history: later(7) }))).toEqual(["bio01"]);
+  });
+
+  it("does not count a short session toward the 7", () => {
+    const history = [...later(6), session(0, { kind: "short" })];
+    expect(newIds(build({ progress: done, history }))).toEqual([]);
+  });
+
+  it("does not let a refresher move the end of the season", () => {
+    const refresher = session(1, {
+      summary: summary(
+        [{ kind: "lesson", topicId: "art01", isNew: false, refresher: true }],
+        [],
+        [],
+        [{ topicId: "art01", outcome: "passed" }],
+      ),
+    });
+    expect(newIds(build({ progress: done, history: [finished, refresher, ...Array.from({ length: 6 }, (_, i) => session(i + 2))] }))).toEqual(["bio01"]);
+  });
+});
+
+describe("return check", () => {
+  const prereqSkeleton: DeckSkeleton = {
+    fields: [
+      { code: "LRN", kind: "starter" },
+      { code: "MAT", kind: "field" },
+      { code: "PHY", kind: "field" },
+    ],
+    topics: [
+      topic("lrn01", "LRN", 1, 1),
+      topic("mat01", "MAT", 1, 1),
+      topic("mat02", "MAT", 1, 2, ["mat01"]),
+      topic("phy01", "PHY", 1, 1),
+      topic("phy02", "PHY", 1, 2),
+    ],
+  };
+  const prereqLessons: DeckLesson[] = prereqSkeleton.topics.map((t) => ({ topicId: t.id, estMinutes: 8 }));
+  const learned = [
+    row("lrn01", { lastReviewedDay: addDays(today, -2) }),
+    row("mat01", { lastReviewedDay: addDays(today, -1) }),
+    row("phy01", { lastReviewedDay: addDays(today, -400) }),
+  ];
+
+  it("probes the prerequisites of the next lessons first", () => {
+    const deck = build({
+      skeleton: prereqSkeleton,
+      lessons: prereqLessons,
+      progress: learned,
+      history: [session(20)],
+      settings: { maxNewPerDay: 1 },
+    });
+    expect(deck.mode).toBe("return_check");
+    // mat01 was reviewed yesterday, phy01 much earlier. mat01 still comes first because mat02 is next.
+    expect(probeIds(deck)).toEqual(["mat01", "phy01", "lrn01"]);
+    expect(newIds(deck)).toEqual([]);
+  });
+
+  it("resumes new lessons before the queue is empty once those prerequisites have passed", () => {
+    const passed = session(1, {
+      summary: summary([{ kind: "probe", topicId: "mat01" }], [], [{ topicId: "mat01", passed: true }]),
+    });
+    const deck = build({
+      skeleton: prereqSkeleton,
+      lessons: prereqLessons,
+      progress: learned,
+      history: [session(20), passed],
+      settings: { maxNewPerDay: 1 },
+    });
+    expect(deck.mode).toBe("return_check");
+    expect(newIds(deck)).toEqual(["mat02"]);
+    expect(probeIds(deck).length).toBeGreaterThan(0);
+    expect(probeIds(deck)).not.toContain("mat01");
+  });
+
+  it("asks up to 15 minutes of probes", () => {
+    const pile = learnedPile(50);
+    const deck = build({ ...pile, history: [session(20)], settings: { maxNewPerDay: 0 } });
+    expect(probeIds(deck)).toHaveLength(45);
+    expect(deck.minutes).toBe(15);
+  });
+
+  it("keeps going the next day until every learned topic has been probed", () => {
+    const deck = build({
+      progress: learned,
+      history: [
+        session(20),
+        session(1, { summary: summary([{ kind: "probe", topicId: "lrn01" }], [], [{ topicId: "lrn01", passed: true }]) }),
+      ],
+      skeleton: prereqSkeleton,
+      lessons: prereqLessons,
+      settings: { maxNewPerDay: 1 },
+    });
+    expect(deck.mode).toBe("return_check");
+    expect(probeIds(deck)).not.toContain("lrn01");
+  });
+
+  it("starts the next review of a failed probe with the lesson cards", () => {
+    const deck = build({
+      progress: [row("lrn01", { dueAt: today, state: "learned" })],
+      history: [
+        session(2, {
+          summary: summary([{ kind: "probe", topicId: "lrn01" }], [], [{ topicId: "lrn01", passed: false }]),
+        }),
+      ],
+    });
+    const reviewAt = deck.steps.findIndex((s) => s.kind === "review" && s.topicId === "lrn01");
+    expect(deck.steps[reviewAt - 1]).toEqual({ kind: "lesson", topicId: "lrn01", isNew: false, refresher: true });
+  });
+
+  it("drops the refresher once that review has happened", () => {
+    const deck = build({
+      progress: [row("lrn01", { dueAt: today })],
+      history: [
+        session(3, {
+          summary: summary([{ kind: "probe", topicId: "lrn01" }], [], [{ topicId: "lrn01", passed: false }]),
+        }),
+        session(1, { summary: summary([{ kind: "review", topicId: "lrn01" }], [{ topicId: "lrn01", correct: 1 }]) }),
+      ],
+    });
+    expect(deck.steps.some((s) => s.kind === "lesson" && s.refresher)).toBe(false);
+  });
+
+  it("caps the first sessions after 60 days, then the next two, then the setting", () => {
+    const pile = learnedPile(50);
+    const first = build({ ...pile, history: [session(70)], settings: { sessionMinutes: 60 } });
+    expect(first.mode).toBe("return_check");
+    expect(probeIds(first)).toHaveLength(45);
+    expect(newIds(first)).toEqual([]);
+    expect(first.minutes).toBeLessThanOrEqual(20);
+
+    const third = build({
+      ...pile,
+      history: [session(80), session(3), session(2)],
+      settings: { sessionMinutes: 60 },
+    });
+    expect(third.mode).toBe("return_check");
+    expect(probeIds(third)).toHaveLength(45);
+    expect(newIds(third)).toEqual(["thk01", "his01"]);
+    expect(third.minutes).toBeLessThanOrEqual(40);
+  });
+});
+
+function learnedPile(count: number) {
+  const ids = Array.from({ length: count }, (_, n) => `pile${String(n).padStart(2, "0")}`);
+  const pileSkeleton: DeckSkeleton = {
+    fields: [...skeleton.fields, { code: "PILE", kind: "field" }],
+    topics: [...skeleton.topics, ...ids.map((id, n) => topic(id, "PILE", 1, n + 1))],
+  };
+  return {
+    skeleton: pileSkeleton,
+    lessons: [...lessons, ...ids.map((topicId) => ({ topicId, estMinutes: 8 }))],
+    progress: [...starterDone, ...ids.map((id) => row(id, { dueAt: addDays(today, 30) }))],
+  };
+}
+
+describe("welcome back", () => {
+  it("is said on the planned day when no session since then has been completed", () => {
+    expect(showWelcomeBack(today, today, [session(5)])).toBe(true);
+    expect(showWelcomeBack(today, addDays(today, -2), [session(5)])).toBe(true);
+  });
+
+  it("is not said before the date, with no date, or after a session on or after it", () => {
+    expect(showWelcomeBack(today, addDays(today, 1), [session(5)])).toBe(false);
+    expect(showWelcomeBack(today, null, [session(5)])).toBe(false);
+    expect(showWelcomeBack(today, addDays(today, -1), [session(0)])).toBe(false);
   });
 });
 
